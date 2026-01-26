@@ -1,0 +1,60 @@
+{
+  "id": "lower-alto-lycra",
+  "slug": "lower-alto-lycra",
+  "name": "Lower Alto Lycra",
+  "brand": "Zebro",
+
+  "category": "Lower",
+  "subCategory": "Sportswear",
+
+  "description": "Zebro Lower Alto Lycra is designed for effortless movement and everyday training, featuring sweat-wicking comfort, stretchable fabric, and a clean athletic finish.",
+
+  "material": "Alto Lycra",
+  "fit": "Regular Fit",
+  "gender": "Men",
+
+  "sizes": ["XS", "S", "M", "L", "XL", "XXL", "3XL", "4XL"],
+
+  "colors": [
+    "Grey",
+    "Black",
+    "Airforce Blue",
+    "Navy"
+  ],
+
+  "features": [
+    "Sweat-wicking fabric",
+    "Quick dry technology",
+    "Breathable material",
+    "Side pockets for essentials",
+    "Reflective tape detailing",
+    "Stretchable and comfortable for workouts"
+  ],
+
+  "care": [
+    "Machine wash cold",
+    "Do not bleach",
+    "Dry in shade",
+    "Easy care fabric"
+  ],
+
+  "images": [
+    "page_2_img_2.jpeg",
+    "page_3_img_3.jpeg",
+    "page_4_img_4.jpeg",
+    "page_5_img_5.jpeg",
+    "page_6_img_6.jpeg",
+    "page_7_img_7.jpeg",
+    "page_8_img_8.jpeg",
+    "page_9_img_9.jpeg",
+    "page_10_img_10.jpeg",
+    "page_11_img_11.jpeg",
+    "page_12_img_12.jpeg",
+    "page_13_img_13.jpeg"
+  ],
+
+  "seo": {
+    "title": "Lower Alto Lycra | Zebro Performance Sportswear",
+    "description": "Zebro Lower Alto Lycra with sweat-wicking, quick-dry fabric and reflective detailing for gym, training, and active wear."
+  }
+}

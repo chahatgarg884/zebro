@@ -1,0 +1,51 @@
+{
+  "id": "track-suit-poly-web",
+  "slug": "track-suit-poly-web",
+  "name": "Track Suit Poly Web",
+  "brand": "Zebro",
+
+  "category": "Track Suit",
+  "subCategory": "Sportswear",
+  "type": "Poly Fabric",
+  "gender": "Men",
+
+  "description": "Zebro Track Suit Poly Web features ultra-soft poly web fabric with breathable comfort, making it ideal for gym workouts and daily active wear.",
+
+  "material": "Poly Web Fabric",
+  "fit": "Regular Fit",
+
+  "sizes": ["S", "M", "L", "XL", "XXL", "3XL", "4XL"],
+
+  "colors": ["Black", "Airforce Blue", "Navy", "Grey"],
+
+  "features": [
+    "Ultra-soft fabric",
+    "Breathable construction",
+    "Zipper pockets",
+    "Printed logo",
+    "Lightweight comfort"
+  ],
+
+  "care": [
+    "Machine wash cold",
+    "Do not bleach",
+    "Dry in shade"
+  ],
+
+  "images": [
+    "page_2_img_2.jpeg",
+    "page_3_img_3.jpeg",
+    "page_4_img_4.jpeg",
+    "page_5_img_5.jpeg",
+    "page_6_img_6.jpeg",
+    "page_7_img_7.jpeg",
+    "page_8_img_8.jpeg",
+    "page_9_img_9.jpeg",
+    "page_10_img_10.jpeg"
+  ],
+
+  "seo": {
+    "title": "Track Suit Poly Web | Zebro Sports Track Suit",
+    "description": "Zebro Poly Web track suit with breathable fabric and zipper pockets for gym and active lifestyle wear."
+  }
+}

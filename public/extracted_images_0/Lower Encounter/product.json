@@ -1,0 +1,50 @@
+{
+  "id": "lower-ns-encounter",
+  "slug": "lower-ns-encounter",
+  "name": "Lower N/S Encounter",
+  "brand": "Zebro",
+
+  "category": "Lower",
+  "subCategory": "Sportswear",
+
+  "description": "Zebro Lower N/S Encounter is designed for intense workouts and daily training, offering stretch, comfort, and a modern athletic fit.",
+
+  "material": "Melange NS Lycra",
+  "fit": "Regular Fit",
+  "gender": "Men",
+
+  "sizes": ["S", "M", "L", "XL", "XXL"],
+
+  "colors": ["Black", "Light Grey", "Dark Grey", "Navy"],
+
+  "features": [
+    "Drawstring waistband",
+    "Double pocket with zip",
+    "Gold color branding",
+    "Stretchable fabric",
+    "Quick dry",
+    "Easy care"
+  ],
+
+  "care": [
+    "Machine wash cold",
+    "Do not bleach",
+    "Dry in shade"
+  ],
+
+  "images": [
+    "page_2_img_2.jpeg",
+    "page_3_img_3.jpeg",
+    "page_4_img_4.jpeg",
+    "page_5_img_5.jpeg",
+    "page_6_img_6.jpeg",
+    "page_7_img_7.jpeg",
+    "page_8_img_8.jpeg",
+    "page_9_img_9.jpeg"
+  ],
+
+  "seo": {
+    "title": "Lower N/S Encounter | Zebro Sportswear",
+    "description": "Zebro Lower N/S Encounter made with Melange NS Lycra, featuring zip pockets and stretchable fabric for training and workouts."
+  }
+}

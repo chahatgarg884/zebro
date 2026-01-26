@@ -1,0 +1,51 @@
+{
+  "id": "upper-element",
+  "slug": "upper-element",
+  "name": "Upper Element",
+  "brand": "Zebro",
+
+  "category": "Upper",
+  "subCategory": "Sportswear",
+  "type": "Training Jacket",
+
+  "description": "Zebro Upper Element is a lightweight training jacket designed for daily workouts, offering breathable comfort and a clean athletic silhouette.",
+
+  "material": "Performance Polyester Fabric",
+  "fit": "Regular Fit",
+  "gender": "Men",
+
+  "sizes": ["S", "M", "L", "XL", "XXL"],
+  "colors": ["Black", "Grey", "Navy"],
+
+  "features": [
+    "Lightweight fabric",
+    "Breathable construction",
+    "Zipper pockets",
+    "Minimal sporty design",
+    "Comfort fit"
+  ],
+
+  "care": [
+    "Machine wash cold",
+    "Do not bleach",
+    "Dry in shade"
+  ],
+
+  "images": [
+    "page_1_img_1.jpeg",
+    "page_2_img_2.jpeg",
+    "page_3_img_3.jpeg",
+    "page_4_img_4.jpeg",
+    "page_5_img_5.jpeg",
+    "page_6_img_6.jpeg",
+    "page_7_img_7.jpeg",
+    "page_8_img_8.jpeg",
+    "page_9_img_9.jpeg",
+    "page_10_img_10.jpeg"
+  ],
+
+  "seo": {
+    "title": "Upper Element Training Jacket | Zebro Sportswear",
+    "description": "Zebro Upper Element lightweight training jacket with breathable fabric for gym and workouts."
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "id": "lower-ms-universe",
+  "slug": "lower-ms-universe",
+  "name": "Lower Ms Universe",
+  "brand": "Zebro",
+
+  "category": "Lower",
+  "subCategory": "Sportswear",
+
+  "description": "Zebro Lower Ms Universe is designed for women, combining stretch, comfort, and style for workouts, yoga, and active wear.",
+
+  "material": "Stretchable Lycra Blend",
+  "fit": "Slim Fit",
+  "gender": "Women",
+
+  "sizes": ["S", "M", "L", "XL"],
+
+  "colors": ["Dark Grey", "Light Grey"],
+
+  "features": [
+    "Stretchable fabric",
+    "Side pocket design",
+    "Comfort waistband",
+    "Quick dry",
+    "Easy care",
+    "Designed for active movement"
+  ],
+
+  "care": [
+    "Machine wash cold",
+    "Do not bleach",
+    "Dry in shade"
+  ],
+
+  "images": [
+    "page_2_img_2.jpeg",
+    "page_3_img_3.jpeg",
+    "page_4_img_4.jpeg",
+    "page_5_img_5.jpeg",
+    "page_6_img_6.jpeg",
+    "page_7_img_7.jpeg",
+    "page_8_img_8.jpeg"
+  ],
+
+  "seo": {
+    "title": "Lower Ms Universe | Zebro Women Sportswear",
+    "description": "Zebro Lower Ms Universe women sports lower with stretchable fabric and side pockets for workouts and yoga."
+  }
+}

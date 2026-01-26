@@ -1,0 +1,47 @@
+{
+    "id": "shorts-camo",
+    "slug": "shorts-camo",
+    "name": "Shorts Camo",
+    "brand": "Zebro",
+    "category": "Shorts",
+    "subCategory": "Sportswear",
+    "type": "Lifestyle",
+    "description": "Zebro Shorts Camo feature a bold camouflage look with breathable comfort, suitable for training and casual wear.",
+    "material": "Polyester Blend",
+    "fit": "Regular Fit",
+    "gender": "Men",
+    "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+    ],
+    "colors": [
+        "Camo Green",
+        "Camo Grey"
+    ],
+    "features": [
+        "Camouflage design",
+        "Breathable fabric",
+        "Elastic waistband with drawstring",
+        "Side pockets"
+    ],
+    "care": [
+        "Machine wash cold",
+        "Do not bleach",
+        "Dry in shade"
+    ],
+    "images": [
+        "page_2_img_2.jpeg",
+        "page_3_img_3.jpeg",
+        "page_4_img_4.jpeg",
+        "page_5_img_5.jpeg",
+        "page_6_img_6.jpeg",
+        "page_7_img_7.jpeg"
+    ],
+    "seo": {
+        "title": "Shorts Camo | Zebro Sportswear",
+        "description": "Zebro camo shorts with breathable fabric for training and casual wear."
+    }
+}

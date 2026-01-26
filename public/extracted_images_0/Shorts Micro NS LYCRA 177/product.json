@@ -1,0 +1,32 @@
+{
+  "id": "shorts-micro-ns-lycra-177",
+  "slug": "shorts-micro-ns-lycra-177",
+  "name": "Shorts Micro NS Lycra 177",
+  "brand": "Zebro",
+  "category": "Shorts",
+  "subCategory": "Sportswear",
+  "type": "Training",
+  "description": "Lightweight training shorts with Micro NS Lycra for maximum flexibility.",
+  "material": "Micro NS Lycra",
+  "fit": "Regular Fit",
+  "gender": "Men",
+  "sizes": ["S", "M", "L", "XL", "XXL"],
+  "colors": ["Black", "Navy"],
+  "features": [
+    "Lightweight fabric",
+    "Stretchable Lycra",
+    "Quick dry",
+    "Elastic waistband"
+  ],
+  "care": ["Machine wash cold", "Do not bleach", "Dry in shade"],
+  "images": [
+    "page_2_img_2.jpeg",
+    "page_3_img_3.jpeg",
+    "page_4_img_4.jpeg",
+    "page_5_img_5.jpeg"
+  ],
+  "seo": {
+    "title": "Shorts Micro NS Lycra 177 | Zebro Training Shorts",
+    "description": "Zebro Micro NS Lycra 177 shorts for lightweight training comfort."
+  }
+}

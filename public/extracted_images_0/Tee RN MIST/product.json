@@ -1,0 +1,85 @@
+{
+  "id": "tee-rn-mist",
+  "slug": "tee-rn-mist",
+  "name": "Tee R/N Mist",
+  "brand": "Zebro",
+
+  "category": "Tee",
+  "subCategory": "Sportswear",
+  "type": "Training",
+
+  "description": "Zebro Tee R/N Mist is a lightweight round neck training t-shirt designed with quick-dry technology and breathable fabric for intense workouts and daily training.",
+
+  "material": "Performance Polyester Knit",
+  "fit": "Regular Fit",
+  "gender": "Men",
+
+  "sizes": ["S", "M", "L", "XL", "XXL"],
+
+  "colors": [
+    "Scuba Blue",
+    "Black"
+  ],
+
+  "features": [
+    "Quick dry fabric",
+    "Breathable and lightweight",
+    "Stretchable material",
+    "Round neck design",
+    "Reflective back detailing",
+    "Ideal for gym and training"
+  ],
+
+  "care": [
+    "Machine wash cold",
+    "Do not bleach",
+    "Dry in shade",
+    "Easy care fabric"
+  ],
+
+  "images": [
+    "page_2_img_2.jpeg",
+    "page_3_img_3.jpeg",
+    "page_4_img_4.jpeg",
+    "page_5_img_5.jpeg",
+    "page_6_img_6.jpeg",
+    "page_7_img_7.jpeg",
+    "page_8_img_8.jpeg",
+    "page_9_img_9.jpeg",
+    "page_10_img_10.jpeg",
+    "page_11_img_11.jpeg",
+    "page_12_img_12.jpeg",
+    "page_13_img_13.jpeg",
+    "page_14_img_14.jpeg",
+    "page_15_img_15.jpeg",
+    "page_16_img_16.jpeg",
+    "page_17_img_17.jpeg",
+    "page_18_img_18.jpeg",
+    "page_19_img_19.jpeg",
+    "page_20_img_20.jpeg",
+    "page_21_img_21.jpeg",
+    "page_22_img_22.jpeg",
+    "page_23_img_23.jpeg",
+    "page_24_img_24.jpeg",
+    "page_25_img_25.jpeg",
+    "page_26_img_26.jpeg",
+    "page_27_img_27.jpeg",
+    "page_28_img_28.jpeg",
+    "page_29_img_29.jpeg",
+    "page_30_img_30.jpeg",
+    "page_31_img_31.jpeg",
+    "page_32_img_32.jpeg",
+    "page_33_img_33.jpeg",
+    "page_34_img_34.jpeg",
+    "page_35_img_35.jpeg",
+    "page_36_img_36.jpeg",
+    "page_37_img_37.jpeg",
+    "page_38_img_38.jpeg",
+    "page_39_img_39.jpeg"
+  ],
+
+  "seo": {
+    "title": "Tee R/N Mist | Zebro Training T-Shirt",
+    "description": "Zebro Tee R/N Mist round neck training t-shirt with quick-dry, breathable fabric for workouts and active wear."
+  }
+}

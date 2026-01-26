@@ -1,0 +1,52 @@
+{
+  "id": "track-pant-007-ns",
+  "slug": "track-pant-007-ns",
+  "name": "Track Pant 007 NS",
+  "brand": "Zebro",
+
+  "category": "Track Pant",
+  "subCategory": "Sportswear",
+  "type": "Training",
+
+  "description": "Zebro Track Pant 007 NS is a premium training track pant featuring breathable fabric, sweat-wicking technology, and utility pockets for intense workouts.",
+
+  "material": "Performance Polyester",
+  "fit": "Regular Fit",
+  "gender": "Men",
+
+  "sizes": ["S", "M", "L", "XL", "XXL", "3XL", "4XL", "5XL"],
+
+  "colors": [
+    "Black",
+    "Navy"
+  ],
+
+  "features": [
+    "Breathable material",
+    "Sweat-wicking fabric",
+    "Cargo-style side pocket with 007 branding",
+    "Elastic waistband",
+    "Comfort against garment clinging"
+  ],
+
+  "care": [
+    "Machine wash cold",
+    "Do not bleach",
+    "Dry in shade"
+  ],
+
+  "images": [
+    "page_2_img_2.jpeg",
+    "page_3_img_3.jpeg",
+    "page_4_img_4.jpeg",
+    "page_5_img_5.jpeg",
+    "page_6_img_6.jpeg",
+    "page_7_img_7.jpeg",
+    "page_8_img_8.jpeg"
+  ],
+
+  "seo": {
+    "title": "Track Pant 007 NS | Zebro Training Track Pants",
+    "description": "Zebro Track Pant 007 NS with breathable fabric and sweat-wicking comfort for training and workouts."
+  }
+}

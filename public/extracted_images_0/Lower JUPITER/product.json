@@ -1,0 +1,46 @@
+{
+  "id": "lower-jupiter",
+  "slug": "lower-jupiter",
+  "name": "Lower Jupiter",
+  "brand": "Zebro",
+
+  "category": "Lower",
+  "subCategory": "Sportswear",
+
+  "description": "Zebro Lower Jupiter is a performance-driven sports lower designed with stretchable fabric and reflective detailing for workouts and training.",
+
+  "material": "Stretchable Polyester Blend",
+  "fit": "Slim Fit",
+  "gender": "Men",
+
+  "sizes": ["S", "M", "L", "XL", "XXL"],
+
+  "colors": ["Black", "Navy Blue"],
+
+  "features": [
+    "Comfortable zipper pockets",
+    "Neon color zipper detailing",
+    "Rainbow reflective artwork",
+    "Stretchable fabric",
+    "Quick dry",
+    "Easy care"
+  ],
+
+  "care": [
+    "Machine wash cold",
+    "Do not bleach",
+    "Dry in shade"
+  ],
+
+  "images": [
+    "page_2_img_2.jpeg",
+    "page_3_img_3.jpeg",
+    "page_4_img_4.jpeg",
+    "page_5_img_5.jpeg"
+  ],
+
+  "seo": {
+    "title": "Lower Jupiter | Zebro Performance Sportswear",
+    "description": "Zebro Lower Jupiter with stretchable fabric, reflective artwork and zipper pockets for gym and active workouts."
+  }
+}

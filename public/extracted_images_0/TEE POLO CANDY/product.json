@@ -1,0 +1,58 @@
+{
+  "id": "tee-polo-candy",
+  "slug": "tee-polo-candy",
+  "name": "Tee Polo Candy",
+  "brand": "Zebro",
+
+  "category": "Tee",
+  "subCategory": "Sportswear",
+  "type": "Polo",
+
+  "description": "Zebro Tee Polo Candy is a premium sports polo designed for gym, training, and athleisure wear, offering comfort, breathability, and a clean modern look.",
+
+  "material": "Soft Textured Polyester Knit",
+  "fit": "Regular Fit",
+  "gender": "Men",
+
+  "sizes": ["S", "M", "L", "XL", "XXL"],
+
+  "colors": [
+    "Grey",
+    "Airforce Blue",
+    "Navy",
+    "Black"
+  ],
+
+  "features": [
+    "Soft textured fabric",
+    "Breathable and lightweight",
+    "Chest zipper pocket",
+    "Comfortable collar design",
+    "Suitable for gym and athleisure"
+  ],
+
+  "care": [
+    "Machine wash cold",
+    "Do not bleach",
+    "Dry in shade",
+    "Easy care"
+  ],
+
+  "images": [
+    "page_2_img_2.jpeg",
+    "page_3_img_3.jpeg",
+    "page_4_img_4.jpeg",
+    "page_5_img_5.jpeg",
+    "page_6_img_6.jpeg",
+    "page_7_img_7.jpeg",
+    "page_8_img_8.jpeg",
+    "page_9_img_9.jpeg",
+    "page_10_img_10.jpeg",
+    "page_11_img_11.jpeg"
+  ],
+
+  "seo": {
+    "title": "Tee Polo Candy | Zebro Sports Polo T-Shirt",
+    "description": "Zebro Tee Polo Candy sports polo with breathable fabric and chest zipper pocket for gym and active wear."
+  }
+}

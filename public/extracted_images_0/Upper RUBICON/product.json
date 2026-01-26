@@ -1,0 +1,54 @@
+{
+  "id": "upper-rubicon",
+  "slug": "upper-rubicon",
+  "name": "Upper Rubicon",
+  "brand": "Zebro",
+
+  "category": "Upper",
+  "subCategory": "Sportswear",
+  "type": "Training Jacket",
+
+  "description": "Zebro Upper Rubicon is a premium training jacket designed with breathable fabric, reflective detailing, and multiple zipper pockets for workouts and outdoor training.",
+
+  "material": "Polyester-Spandex Blend",
+  "fit": "Regular Fit",
+  "gender": "Men",
+
+  "sizes": ["S", "M", "L", "XL", "XXL", "3XL", "4XL"],
+  "colors": ["Black", "Olive", "Grey", "Navy"],
+
+  "features": [
+    "Covered zipper",
+    "Side zip pockets",
+    "Chest zip pocket",
+    "Reflective back strip",
+    "Quick dry fabric",
+    "Breathable construction"
+  ],
+
+  "care": [
+    "Machine wash cold",
+    "Do not bleach",
+    "Dry in shade"
+  ],
+
+  "images": [
+    "page_2_img_2.jpeg",
+    "page_3_img_3.jpeg",
+    "page_4_img_4.jpeg",
+    "page_5_img_5.jpeg",
+    "page_6_img_6.jpeg",
+    "page_7_img_7.jpeg",
+    "page_8_img_8.jpeg",
+    "page_9_img_9.jpeg",
+    "page_10_img_10.jpeg",
+    "page_11_img_11.jpeg",
+    "page_12_img_12.jpeg",
+    "page_13_img_13.jpeg"
+  ],
+
+  "seo": {
+    "title": "Upper Rubicon Training Jacket | Zebro Sportswear",
+    "description": "Zebro Upper Rubicon men’s training jacket with breathable fabric, reflective detailing and zip pockets."
+  }
+}

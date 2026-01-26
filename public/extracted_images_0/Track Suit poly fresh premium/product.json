@@ -1,0 +1,48 @@
+{
+  "id": "track-suit-poly-fresh-premium",
+  "slug": "track-suit-poly-fresh-premium",
+  "name": "Track Suit Poly Fresh Premium",
+  "brand": "Zebro",
+
+  "category": "Track Suit",
+  "subCategory": "Sportswear",
+  "type": "Poly Fabric",
+  "gender": "Men",
+
+  "description": "Zebro Track Suit Poly Fresh Premium is made with heavy-quality poly fabric, designed for intense workouts with reflective detailing and premium comfort.",
+
+  "material": "Heavy Quality Poly Fabric",
+  "fit": "Regular Fit",
+
+  "sizes": ["XS", "S", "M", "L", "XL", "XXL", "3XL", "4XL"],
+
+  "colors": ["Black", "Navy"],
+
+  "features": [
+    "Reflective collar detailing",
+    "Zipper pockets",
+    "Elastic waistband",
+    "Breathable premium fabric",
+    "Durable construction"
+  ],
+
+  "care": [
+    "Machine wash cold",
+    "Do not bleach",
+    "Dry in shade"
+  ],
+
+  "images": [
+    "page_2_img_2.jpeg",
+    "page_3_img_3.jpeg",
+    "page_4_img_4.jpeg",
+    "page_5_img_5.jpeg",
+    "page_6_img_6.jpeg",
+    "page_7_img_7.jpeg"
+  ],
+
+  "seo": {
+    "title": "Track Suit Poly Fresh Premium | Zebro Track Suit",
+    "description": "Zebro Poly Fresh Premium track suit with heavy poly fabric, reflective details and zipper pockets for training and fitness."
+  }
+}

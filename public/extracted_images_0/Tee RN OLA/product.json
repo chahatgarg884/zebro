@@ -1,0 +1,75 @@
+{
+  "id": "tee-rn-ola",
+  "slug": "tee-rn-ola",
+  "name": "Tee R/N OLA",
+  "brand": "Zebro",
+
+  "category": "Tee",
+  "subCategory": "Sportswear",
+  "type": "Training",
+
+  "description": "Zebro Tee R/N OLA is a lightweight striped round-neck t-shirt designed for repetitive training and active sports, offering breathability, comfort, and a modern athletic look.",
+
+  "material": "Performance Polyester Knit",
+  "fit": "Regular Fit",
+  "gender": "Men",
+
+  "sizes": ["S", "M", "L", "XL", "XXL"],
+
+  "colors": [
+    "Black",
+    "Airforce Blue",
+    "Grey",
+    "Mint",
+    "Sky",
+    "Bottle Green"
+  ],
+
+  "features": [
+    "Lightweight fabric",
+    "Breathable construction",
+    "Quick dry technology",
+    "Striped texture design",
+    "Reflective Zebro branding",
+    "Round neck (R/N)",
+    "Ideal for training and active sports"
+  ],
+
+  "care": [
+    "Machine wash cold",
+    "Do not bleach",
+    "Dry in shade",
+    "Easy care fabric"
+  ],
+
+  "images": [
+    "page_1_img_1.jpeg",
+    "page_2_img_2.jpeg",
+    "page_3_img_3.jpeg",
+    "page_4_img_4.jpeg",
+    "page_5_img_5.jpeg",
+    "page_6_img_6.jpeg",
+    "page_7_img_7.jpeg",
+    "page_8_img_8.jpeg",
+    "page_9_img_9.jpeg",
+    "page_10_img_10.jpeg",
+    "page_11_img_11.jpeg",
+    "page_12_img_12.jpeg",
+    "page_13_img_13.jpeg",
+    "page_14_img_14.jpeg",
+    "page_15_img_15.jpeg",
+    "page_16_img_16.jpeg",
+    "page_17_img_17.jpeg",
+    "page_18_img_18.jpeg",
+    "page_19_img_19.jpeg",
+    "page_20_img_20.jpeg",
+    "page_21_img_21.jpeg",
+    "page_22_img_22.jpeg",
+    "page_23_img_23.jpeg"
+  ],
+
+  "seo": {
+    "title": "Tee R/N OLA | Zebro Training T-Shirt",
+    "description": "Zebro Tee R/N OLA striped round neck training t-shirt with breathable, quick-dry fabric for gym and sports activities."
+  }
+}

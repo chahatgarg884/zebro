@@ -1,0 +1,97 @@
+{
+  "id": "tee-rn-marshmallow",
+  "slug": "tee-rn-marshmallow",
+  "name": "Tee R/N Marshmallow",
+  "brand": "Zebro",
+
+  "category": "Tee",
+  "subCategory": "Sportswear",
+  "type": "Training",
+
+  "description": "Zebro Tee R/N Marshmallow is a lightweight, highly stretchable training t-shirt made with premium nylon fabric for superior comfort and performance.",
+
+  "material": "Premium Nylon Fabric",
+  "fit": "Regular Fit",
+  "gender": "Men",
+
+  "sizes": ["XS", "S", "M", "L", "XL", "XXL"],
+
+  "colors": [
+    "Black",
+    "Dark Grey"
+  ],
+
+  "features": [
+    "Highly stretchable fabric",
+    "Lightweight construction",
+    "Quick dry technology",
+    "Breathable material",
+    "Soft hand feel",
+    "Crew neck (Round Neck)"
+  ],
+
+  "care": [
+    "Machine wash cold",
+    "Do not bleach",
+    "Dry in shade",
+    "Easy care fabric"
+  ],
+
+  "images": [
+    "page_1_img_1.jpeg",
+    "page_2_img_2.jpeg",
+    "page_3_img_3.jpeg",
+    "page_4_img_4.jpeg",
+    "page_5_img_5.jpeg",
+    "page_6_img_6.jpeg",
+    "page_7_img_7.jpeg",
+    "page_8_img_8.jpeg",
+    "page_9_img_9.jpeg",
+    "page_10_img_10.jpeg",
+    "page_11_img_11.jpeg",
+    "page_12_img_12.jpeg",
+    "page_13_img_13.jpeg",
+    "page_14_img_14.jpeg",
+    "page_15_img_15.jpeg",
+    "page_16_img_16.jpeg",
+    "page_17_img_17.jpeg",
+    "page_18_img_18.jpeg",
+    "page_19_img_19.jpeg",
+    "page_20_img_20.jpeg",
+    "page_21_img_21.jpeg",
+    "page_22_img_22.jpeg",
+    "page_23_img_23.jpeg",
+    "page_24_img_24.jpeg",
+    "page_25_img_25.jpeg",
+    "page_26_img_26.jpeg",
+    "page_27_img_27.jpeg",
+    "page_28_img_28.jpeg",
+    "page_29_img_29.jpeg",
+    "page_30_img_30.jpeg",
+    "page_31_img_31.jpeg",
+    "page_32_img_32.jpeg",
+    "page_33_img_33.jpeg",
+    "page_34_img_34.jpeg",
+    "page_35_img_35.jpeg",
+    "page_36_img_36.jpeg",
+    "page_37_img_37.jpeg",
+    "page_38_img_38.jpeg",
+    "page_39_img_39.jpeg",
+    "page_40_img_40.jpeg",
+    "page_41_img_41.jpeg",
+    "page_42_img_42.jpeg",
+    "page_43_img_43.jpeg",
+    "page_44_img_44.jpeg",
+    "page_45_img_45.jpeg",
+    "page_46_img_46.jpeg",
+    "page_47_img_47.jpeg",
+    "page_48_img_48.jpeg",
+    "page_49_img_49.jpeg",
+    "page_50_img_50.jpeg"
+  ],
+
+  "seo": {
+    "title": "Tee R/N Marshmallow | Zebro Training T-Shirt",
+    "description": "Zebro Tee R/N Marshmallow training t-shirt made with premium nylon fabric, offering stretch, comfort and quick-dry performance."
+  }
+}

@@ -1,0 +1,61 @@
+{
+    "id":  "shorts-ns-border",
+    "slug":  "shorts-ns-border",
+    "name":  "Shorts Ns BORDER",
+    "brand":  "Zebro",
+    "category":  "Shorts",
+    "subCategory":  "Shorts",
+    "description":  "Stylish Zebro Ns BORDER shorts featuring distinctive border detailing and performance technology for modern athletes.",
+    "material":  "Ns Border Performance Fabric",
+    "fit":  "Modern Fit",
+    "gender":  "Men",
+    "sizes":  [
+                  "S",
+                  "M",
+                  "L",
+                  "XL",
+                  "XXL",
+                  "3XL"
+              ],
+    "colors":  [
+                   "Black with White Border",
+                   "Navy with Red Border",
+                   "Grey with Black Border",
+                   "White with Navy Border"
+               ],
+    "features":  [
+                     "Contrast border detailing",
+                     "Moisture-wicking technology",
+                     "Quick-dry fabric",
+                     "Modern athletic styling",
+                     "Side pockets",
+                     "Elastic waistband",
+                     "Reinforced seams",
+                     "Professional appearance"
+                 ],
+    "care":  [
+                 "Machine wash cold",
+                 "Do not bleach",
+                 "Tumble dry low",
+                 "Medium iron if needed"
+             ],
+    "images":  [
+        "page_2_img_2.jpeg",
+        "page_3_img_3.jpeg",
+        "page_4_img_4.jpeg",
+        "page_5_img_5.jpeg",
+        "page_6_img_6.jpeg",
+        "page_7_img_7.jpeg",
+        "page_8_img_8.jpeg",
+        "page_9_img_9.jpeg",
+        "page_10_img_10.jpeg",
+        "page_11_img_11.jpeg",
+        "page_12_img_12.jpeg",
+        "page_13_img_13.jpeg",
+        "page_14_img_14.jpeg"
+    ],
+    "seo":  {
+                "title":  "Shorts Ns BORDER | Zebro Sportswear",
+                "description":  "Zebro Shorts Ns BORDER with contrast border detailing, moisture-wicking technology and modern athletic styling."
+            }
+}

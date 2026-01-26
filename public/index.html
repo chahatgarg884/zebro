@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Sportswear Collection | Performance Wear Showcase</title>
+  <meta name="description" content="Explore our premium sportswear collection including uppers, lowers, track suits and training wear." />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container">
+      <div class="logo-container">
+        <img src="asset/logo.png" alt="Sports Wear Logo" class="logo-image" />
+      </div>
+      
+      <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      
+      <nav class="nav" id="mainNav">
+        <a href="#featured" class="nav-link">Products</a>
+        <a href="#categories" class="nav-link">Categories</a>
+        <a href="#" class="nav-link" onclick="showAbout()">About</a>
+        <a href="#" class="nav-link" onclick="showContact()">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <div class="search-container">
+          <input type="text" placeholder="Search products..." class="search-input" id="searchInput">
+          <button class="search-btn" onclick="searchProducts()">Search</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1>Premium Sportswear Collection</h1>
+          <p>Discover our curated showcase of performance sportswear designed for athletes who demand excellence in comfort, durability, and style.</p>
+          <div class="hero-stats">
+            <div class="stat">
+              <span class="stat-number">50+</span>
+              <span class="stat-label">Products</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">10+</span>
+              <span class="stat-label">Collections</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">Premium</span>
+              <span class="stat-label">Quality</span>
+            </div>
+          </div>
+          <a href="#featured" class="btn">Explore Collection</a>
+        </div>
+        <div class="hero-visual">
+          <div class="hero-image-container">
+            <img src="asset/banner.jpg" alt="Sportswear Collection Banner" class="hero-banner-image" />
+            <div class="hero-overlay"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURED PRODUCTS -->
+  <section class="featured" id="featured">
+    <div class="container">
+      <h2>Featured Products</h2>
+      <p>Highlight pieces from our premium sportswear collection</p>
+
+      <div class="filter-buttons" id="filterButtons">
+        <!-- Filter buttons will be dynamically loaded here -->
+      </div>
+
+      <div class="product-grid" id="productGrid">
+        <!-- Products will be dynamically loaded here -->
+      </div>
+    </div>
+  </section>
+
+  <!-- PRODUCT DETAIL MODAL -->
+  <div id="productModal" class="product-modal">
+    <div class="modal-overlay" onclick="closeProductModal()"></div>
+    <div class="modal-content">
+      <button class="modal-close" onclick="closeProductModal()">×</button>
+      <div class="product-detail">
+        <div class="product-images">
+          <img id="modalProductImage" src="" alt="" class="main-product-image">
+          <div class="product-thumbnails" id="productThumbnails"></div>
+        </div>
+        <div class="product-info">
+          <h2 id="modalProductName"></h2>
+          <p id="modalProductCategory" class="product-category"></p>
+          <div id="modalProductDescription" class="product-description"></div>
+          <div id="modalProductFeatures" class="product-features"></div>
+          <div id="modalProductCare" class="product-care"></div>
+          <div class="product-actions">
+            <button class="explore-btn" onclick="exploreCategory()">Explore More Products</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026 ZEBRO. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+        // Global data storage
+        let productsData = [];
+        let categoriesData = [];
+
+        // Search functionality
+        function searchProducts() {
+            const searchTerm = document.getElementById('searchInput').value.toLowerCase();
+            if (!searchTerm) {
+                renderProducts();
+                return;
+            }
+            
+            const filteredProducts = productsData.filter(product => 
+                product.name.toLowerCase().includes(searchTerm) ||
+                product.category.toLowerCase().includes(searchTerm) ||
+                (product.description && product.description.toLowerCase().includes(searchTerm))
+            );
+            
+            renderFilteredProducts(filteredProducts, `Search Results: "${searchTerm}"`);
+        }
+
+        // Mobile menu toggle
+        function toggleMobileMenu() {
+            const nav = document.getElementById('mainNav');
+            const menuBtn = document.querySelector('.mobile-menu-btn');
+            
+            nav.classList.toggle('active');
+            menuBtn.classList.toggle('active');
+            
+            // Prevent body scroll when menu is open
+            if (nav.classList.contains('active')) {
+                document.body.style.overflow = 'hidden';
+            } else {
+                document.body.style.overflow = 'auto';
+            }
+        }
+
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                const nav = document.getElementById('mainNav');
+                const menuBtn = document.querySelector('.mobile-menu-btn');
+                
+                nav.classList.remove('active');
+                menuBtn.classList.remove('active');
+                document.body.style.overflow = 'auto';
+            });
+        });
+
+        // About and Contact modals
+        function showAbout() {
+            alert('Sports Wear - Premium Sportswear Collection\n\nWe offer high-quality sportswear including uppers, lowers, track suits, and training wear designed for athletes who demand excellence in comfort, durability, and style.');
+        }
+
+        function showContact() {
+            alert('Contact Us\n\n📧 Email: info@sportswear.com\n📞 Phone: +1-234-567-8900\n📍 Address: 123 Sports Street, Athletic City, AC 12345\n\nWe\'re here to help with all your sportswear needs!');
+        }
+
+        // Search on Enter key
+        document.addEventListener('DOMContentLoaded', function() {
+            const searchInput = document.getElementById('searchInput');
+            if (searchInput) {
+                searchInput.addEventListener('keypress', function(e) {
+                    if (e.key === 'Enter') {
+                        searchProducts();
+                    }
+                });
+            }
+        });
+
+        // Fetch products and build categories
+        async function loadProducts() {
+            try {
+                productsData = [];
+                
+                // Get all folders in extracted_images_0
+                const folders = await getFolderList();
+                
+                // Fetch product.json from each folder
+                for (const folder of folders) {
+                    try {
+                        const productResponse = await fetch(`extracted_images_0/${folder}/product.json`);
+                        if (productResponse.ok) {
+                            const product = await productResponse.json();
+                            // Add folder path to product for image references
+                            product.folderPath = `extracted_images_0/${folder}`;
+                            productsData.push(product);
+                        }
+                    } catch (error) {
+                        console.log(`No product.json found in ${folder} or error loading it`);
+                    }
+                }
+                
+                // Extract unique categories
+                const categoryMap = new Map();
+                
+                productsData.forEach(product => {
+                    const categoryName = product.category || 'Sportswear';
+                    
+                    // Initialize category if not exists
+                    if (!categoryMap.has(categoryName)) {
+                        categoryMap.set(categoryName, {
+                            name: categoryName,
+                            count: 0,
+                            description: getCategoryDescription(categoryName)
+                        });
+                    }
+                    
+                    categoryMap.get(categoryName).count++;
+                });
+                
+                // Convert to Array for easier handling
+                categoriesData = Array.from(categoryMap.values());
+                
+                // Update UI
+                renderFilterButtons();
+                renderProducts();
+                
+            } catch (error) {
+                console.error('Error loading products:', error);
+            }
+        }
+
+        // Helper function to get folder list
+        async function getFolderList() {
+            return [
+                "Jacket Bulletproof", "Jacket LOCK-UP HOODED", "Jacket QUILTED NSWR",
+                "Lower Alto Lycra", "Lower Encounter", "Lower JUPITER", "Lower Ms.UNIVERSE",
+                "SHORTS 5G", "SHORTS CAMO", "SHORTS DUAL CORE", "Shorts GAMMA", "Shorts JUPITER",
+                "Shorts Micro NS LYCRA 177", "Shorts NS  EMBOSS", "Shorts NS Cargo", "Shorts Ns BORDER",
+                "TEE POLO CANDY", "TEE POLO KIT KAT", "TEE POLO MIST", "TEE POLO STARBUCKS",
+                "TRACK PANT TOE", "Tee  RN  MARSHMALLOW", "Tee Polo BOAT", "Tee Polo Galaxy",
+                "Tee RN  METALLICA", "Tee RN MIST", "Tee RN NYLON DOBBY", "Tee RN OLA",
+                "Track Pant 007 Ns", "Track Pant Camo", "Track Pant FITNESS NS", "Track Pant G WAGON",
+                "Track Pant GAMMA", "Track Pant NO LIMITS", "Track Pant OTP", "Track Pant RUBICON",
+                "Track Pant THAR", "Track Pant UNSTOPPABLE", "Track Suit Melange kids",
+                "Track Suit Micro Ns spandex", "Track Suit NS SPANDEX WHITE", "Track Suit poly fresh premium",
+                "Track suit JUNIOR PDF", "Track suit Micro Ns CRUISER", "Track suit Poly Web",
+                "Track suit SUPER SPANDEX", "Track suit TITAN", "Track suit micro NS ENCOUNTER",
+                "UPPER CRUSH LYCRA-TRACK SUIT CRUSH LYCRA", "UPPER MACKINTOSH", "Upper ELEMENT",
+                "Upper NS NEXA", "Upper RUBICON", "Upper dimond lycra"
+            ];
+        }
+
+        // Get category description
+        function getCategoryDescription(category) {
+            const descriptions = {
+                'Upper': 'T-Shirts, Jackets, Polo shirts and more',
+                'Lower': 'Track pants, shorts, joggers and more',
+                'Track Suits': 'Complete training sets and coordinated outfits',
+                'Accessories': 'Caps, bags, water bottles and training gear',
+                'Footwear': 'Running shoes, trainers and athletic footwear',
+                'Training': 'Training equipment and fitness accessories'
+            };
+            return descriptions[category] || 'Premium sportswear and athletic gear';
+        }
+
+        // Render filter buttons
+        function renderFilterButtons() {
+            const filterButtonsContainer = document.getElementById('filterButtons');
+            filterButtonsContainer.innerHTML = '';
+            
+            // Add "All" button
+            const allButton = document.createElement('button');
+            allButton.className = 'filter-btn active';
+            allButton.textContent = 'All Collections';
+            allButton.onclick = () => filterByCategory('all');
+            filterButtonsContainer.appendChild(allButton);
+            
+            // Add category buttons
+            categoriesData.forEach(category => {
+                const button = document.createElement('button');
+                button.className = 'filter-btn';
+                button.textContent = category.name;
+                button.onclick = () => filterByCategory(category.name);
+                filterButtonsContainer.appendChild(button);
+            });
+        }
+
+        // Filter by category
+        function filterByCategory(categoryName) {
+            // Update active button
+            const buttons = document.querySelectorAll('.filter-btn');
+            buttons.forEach(btn => btn.classList.remove('active'));
+            
+            if (categoryName === 'all') {
+                buttons[0].classList.add('active');
+                renderProducts();
+            } else {
+                const targetButton = Array.from(buttons).find(btn => btn.textContent === categoryName);
+                if (targetButton) targetButton.classList.add('active');
+                
+                // Filter products
+                const filteredProducts = productsData.filter(product => product.category === categoryName);
+                renderFilteredProducts(filteredProducts, categoryName);
+            }
+        }
+
+        // Global variables for pagination
+        let currentProducts = [];
+        let displayedCount = 6;
+        const PRODUCTS_PER_PAGE = 6;
+
+        // Render all products
+        function renderProducts() {
+            const productGrid = document.getElementById('productGrid');
+            const sectionTitle = document.querySelector('.featured h2');
+            
+            sectionTitle.textContent = 'All Products';
+            currentProducts = [...productsData];
+            displayedCount = PRODUCTS_PER_PAGE;
+            
+            renderProductsWithPagination();
+        }
+
+        // Render products with pagination
+        function renderProductsWithPagination() {
+            const productGrid = document.getElementById('productGrid');
+            productGrid.innerHTML = '';
+            
+            if (currentProducts.length === 0) {
+                productGrid.innerHTML = '<p style="text-align: center; color: var(--text-secondary);">No products found in this collection.</p>';
+                return;
+            }
+            
+            // Show only first 6 products
+            const productsToShow = currentProducts.slice(0, displayedCount);
+            
+            productsToShow.forEach(product => {
+                const productCard = document.createElement('div');
+                productCard.className = 'product-card';
+                productCard.innerHTML = `
+                    <img src="${getProductImage(product)}" alt="${product.name}" />
+                    <h3>${product.name}</h3>
+                    <a href="#" class="link" onclick="viewProduct('${product.id}')">Explore Product</a>
+                `;
+                productGrid.appendChild(productCard);
+            });
+            
+            // Add "View More" button if there are more products
+            if (currentProducts.length > displayedCount) {
+                const viewMoreBtn = document.createElement('button');
+                viewMoreBtn.className = 'view-more-btn';
+                viewMoreBtn.textContent = `View More (${currentProducts.length - displayedCount} remaining)`;
+                viewMoreBtn.onclick = loadMoreProducts;
+                productGrid.appendChild(viewMoreBtn);
+            }
+        }
+
+        // Load more products
+        function loadMoreProducts() {
+            displayedCount += PRODUCTS_PER_PAGE;
+            renderProductsWithPagination();
+        }
+
+        // Render filtered products
+        function renderFilteredProducts(products, title) {
+            const productGrid = document.getElementById('productGrid');
+            const sectionTitle = document.querySelector('.featured h2');
+            
+            if (title) {
+                sectionTitle.textContent = title;
+            }
+            
+            currentProducts = [...products];
+            displayedCount = PRODUCTS_PER_PAGE;
+            
+            renderProductsWithPagination();
+        }
+
+        // View individual product
+        function viewProduct(productId) {
+            const product = productsData.find(p => p.id === productId);
+            if (!product) return;
+            
+            showProductModal(product);
+        }
+
+        // Show product modal
+        function showProductModal(product) {
+            const modal = document.getElementById('productModal');
+            const modalImage = document.getElementById('modalProductImage');
+            const modalName = document.getElementById('modalProductName');
+            const modalCategory = document.getElementById('modalProductCategory');
+            const modalDescription = document.getElementById('modalProductDescription');
+            const modalFeatures = document.getElementById('modalProductFeatures');
+            const modalCare = document.getElementById('modalProductCare');
+            const thumbnails = document.getElementById('productThumbnails');
+            
+            // Set basic product info
+            modalImage.src = getProductImage(product);
+            modalImage.alt = product.name;
+            modalName.textContent = product.name;
+            modalCategory.textContent = product.category;
+            
+            // Set description
+            if (product.description) {
+                modalDescription.innerHTML = `<p>${product.description}</p>`;
+            } else {
+                modalDescription.innerHTML = '<p>Discover this premium sportswear product designed for athletes who demand excellence in performance and style.</p>';
+            }
+            
+            // Set features
+            if (product.features && product.features.length > 0) {
+                modalFeatures.innerHTML = `
+                    <h4>Features</h4>
+                    <ul>
+                        ${product.features.map(feature => `<li>${feature}</li>`).join('')}
+                    </ul>
+                `;
+            } else {
+                modalFeatures.innerHTML = `
+                    <h4>Features</h4>
+                    <ul>
+                        <li>Premium quality materials</li>
+                        <li>Advanced moisture-wicking technology</li>
+                        <li>Ergonomic design for maximum comfort</li>
+                        <li>Durable construction for long-lasting performance</li>
+                    </ul>
+                `;
+            }
+            
+            // Set care instructions
+            if (product.care) {
+                modalCare.innerHTML = `
+                    <h4>Care Instructions</h4>
+                    <p>${product.care}</p>
+                `;
+            } else {
+                modalCare.innerHTML = `
+                    <h4>Care Instructions</h4>
+                    <p>Machine wash cold with like colors. Tumble dry low. Do not bleach. Iron on low heat if needed.</p>
+                `;
+            }
+            
+            // Create thumbnails
+            if (product.images && product.images.length > 1) {
+                thumbnails.innerHTML = product.images.map((img, index) => 
+                    `<img src="${product.folderPath}/${img}" alt="${product.name} - Image ${index + 1}" 
+                     onclick="changeMainImage('${product.folderPath}/${img}')" 
+                     class="${index === 0 ? 'active' : ''}">`
+                ).join('');
+            } else {
+                thumbnails.innerHTML = '';
+            }
+            
+            // Show modal
+            modal.style.display = 'flex';
+            document.body.style.overflow = 'hidden';
+        }
+
+        // Close product modal
+        function closeProductModal() {
+            const modal = document.getElementById('productModal');
+            modal.style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }
+
+        // Change main image in modal
+        function changeMainImage(imageSrc) {
+            const modalImage = document.getElementById('modalProductImage');
+            const thumbnails = document.querySelectorAll('.product-thumbnails img');
+            
+            modalImage.src = imageSrc;
+            
+            // Update active thumbnail
+            thumbnails.forEach(thumb => thumb.classList.remove('active'));
+            event.target.classList.add('active');
+        }
+
+        // Explore more products in category
+        function exploreCategory() {
+            const modalName = document.getElementById('modalProductName').textContent;
+            const product = productsData.find(p => p.name === modalName);
+            
+            if (product) {
+                closeProductModal();
+                const filteredProducts = productsData.filter(p => p.category === product.category);
+                renderFilteredProducts(filteredProducts, product.category);
+                
+                // Scroll to products section
+                document.getElementById('featured').scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+
+        // Helper function to get product image
+        function getProductImage(product) {
+            if (product.images && product.images.length > 0) {
+                const firstImage = product.images[0];
+                if (firstImage.startsWith('/')) {
+                    return firstImage;
+                } else if (product.folderPath) {
+                    return `${product.folderPath}/${firstImage}`;
+                } else {
+                    return firstImage;
+                }
+            }
+            return `https://images.unsplash.com/photo-${Math.floor(Math.random() * 1000000000)}?w=400&h=300&fit=crop`;
+        }
+
+        // Header scroll effect
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('.header');
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+
+        // Initialize the page
+        document.addEventListener('DOMContentLoaded', loadProducts);
+  </script>
+</body>
+</html>

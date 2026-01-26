@@ -1,0 +1,60 @@
+{
+  "id": "tee-polo-galaxy",
+  "slug": "tee-polo-galaxy",
+  "name": "Tee Polo Galaxy",
+  "brand": "Zebro",
+
+  "category": "Tee",
+  "subCategory": "Sportswear",
+  "type": "Polo",
+
+  "description": "Zebro Tee Polo Galaxy is a high-performance sports polo designed for training and racket sports, featuring breathable fabric, sweat-wicking technology, and a modern athletic fit.",
+
+  "material": "Performance Polyester Knit",
+  "fit": "Regular Fit",
+  "gender": "Men",
+
+  "sizes": ["S", "M", "L", "XL", "XXL"],
+
+  "colors": [
+    "Grey",
+    "Navy",
+    "Airforce Blue",
+    "Black"
+  ],
+
+  "features": [
+    "Anti-odour fabric treatment",
+    "Sun protection (SPF 30)",
+    "Sweat-wicking technology",
+    "Breathable and ultra-soft fabric",
+    "Contrast shoulder panel detailing",
+    "Designed for tennis and training"
+  ],
+
+  "care": [
+    "Machine wash cold",
+    "Do not bleach",
+    "Dry in shade",
+    "Easy care fabric"
+  ],
+
+  "images": [
+    "page_2_img_2.jpeg",
+    "page_3_img_3.jpeg",
+    "page_4_img_4.jpeg",
+    "page_5_img_5.jpeg",
+    "page_6_img_6.jpeg",
+    "page_7_img_7.jpeg",
+    "page_8_img_8.jpeg",
+    "page_9_img_9.jpeg",
+    "page_10_img_10.jpeg",
+    "page_11_img_11.jpeg",
+    "page_12_img_12.jpeg"
+  ],
+
+  "seo": {
+    "title": "Tee Polo Galaxy | Zebro Performance Polo T-Shirt",
+    "description": "Zebro Tee Polo Galaxy sports polo with sweat-wicking, anti-odour fabric and SPF protection for training and tennis."
+  }
+}

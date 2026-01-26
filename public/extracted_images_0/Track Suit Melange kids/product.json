@@ -1,0 +1,48 @@
+{
+  "id": "track-suit-melange-lycra-kids",
+  "slug": "track-suit-melange-lycra-kids",
+  "name": "Track Suit Melange Lycra",
+  "brand": "Zebro",
+
+  "category": "Track Suit",
+  "subCategory": "Sportswear",
+  "type": "Training",
+
+  "description": "Zebro Track Suit Melange Lycra for kids features ultra-soft fabric, breathable comfort, sweat-wicking performance, and reflective branding.",
+
+  "material": "Polyester Spandex Melange",
+  "fit": "Regular Fit",
+  "gender": "Kids",
+
+  "sizes": ["4XS", "3XS", "2XS", "XS", "S"],
+
+  "colors": [
+    "Dark Grey",
+    "Medium Grey",
+    "Navy"
+  ],
+
+  "features": [
+    "Ultra-soft fabric",
+    "Breathable material",
+    "Sweat-wicking",
+    "Chest zipper pocket",
+    "Reflective back logo"
+  ],
+
+  "care": [
+    "Machine wash cold",
+    "Do not bleach",
+    "Dry in shade"
+  ],
+
+  "images": [
+    "page_2_img_2.jpeg",
+    "page_3_img_3.jpeg",
+    "page_4_img_4.jpeg",
+    "page_5_img_5.jpeg",
+    "page_6_img_6.jpeg",
+    "page_7_img_7.jpeg",
+    "page_8_img_8.jpeg"
+  ]
+}

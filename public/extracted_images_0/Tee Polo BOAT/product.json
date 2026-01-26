@@ -1,0 +1,67 @@
+{
+  "id": "tee-polo-boat",
+  "slug": "tee-polo-boat",
+  "name": "Tee Polo Boat",
+  "brand": "Zebro",
+
+  "category": "Tee",
+  "subCategory": "Sportswear",
+  "type": "Polo",
+
+  "description": "Zebro Tee Polo Boat is a classic collar polo t-shirt designed for sports and daily active wear, featuring advanced rapid-dry fabric and breathable mesh panels for all-day comfort.",
+
+  "material": "Textured Rice Knit Fabric",
+  "fit": "Regular Fit",
+  "gender": "Men",
+
+  "sizes": ["S", "M", "L", "XL", "XXL"],
+
+  "colors": [
+    "Maroon",
+    "Black",
+    "Navy",
+    "Firozi",
+    "White"
+  ],
+
+  "features": [
+    "Advanced rapid dry technology",
+    "Anti-microbial fabric treatment",
+    "Mesh panel for sweat ventilation",
+    "Contrast collar design",
+    "Keeps you cool and dry throughout the day"
+  ],
+
+  "care": [
+    "Machine wash cold",
+    "Do not bleach",
+    "Dry in shade",
+    "Easy care fabric"
+  ],
+
+  "images": [
+    "page_1_img_1.jpeg",
+    "page_3_img_3.jpeg",
+    "page_4_img_4.jpeg",
+    "page_5_img_5.jpeg",
+    "page_6_img_6.jpeg",
+    "page_7_img_7.jpeg",
+    "page_8_img_8.jpeg",
+    "page_9_img_9.jpeg",
+    "page_10_img_10.jpeg",
+    "page_11_img_11.jpeg",
+    "page_12_img_12.jpeg",
+    "page_13_img_13.jpeg",
+    "page_14_img_14.jpeg",
+    "page_15_img_15.jpeg",
+    "page_16_img_16.jpeg",
+    "page_17_img_17.jpeg",
+    "page_18_img_18.jpeg",
+    "page_19_img_19.jpeg"
+  ],
+
+  "seo": {
+    "title": "Tee Polo Boat | Zebro Polo Sports T-Shirt",
+    "description": "Zebro Tee Polo Boat with rapid-dry, anti-microbial fabric and mesh ventilation for sports and active wear."
+  }
+}

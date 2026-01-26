@@ -1,0 +1,58 @@
+{
+  "id": "tee-polo-kit-kat",
+  "slug": "tee-polo-kit-kat",
+  "name": "Tee Polo Kit Kat",
+  "brand": "Zebro",
+
+  "category": "Tee",
+  "subCategory": "Sportswear",
+  "type": "Polo",
+
+  "description": "Zebro Tee Polo Kit Kat is a premium sports polo crafted for performance sports like tennis and squash, featuring lightweight fabric, modern hexagon print design, and superior comfort.",
+
+  "material": "Super Sarina Dryfit Fabric",
+  "fit": "Regular Fit",
+  "gender": "Men",
+
+  "sizes": ["S", "M", "L", "XL", "XXL"],
+
+  "colors": [
+    "Olive",
+    "Black",
+    "Navy",
+    "White"
+  ],
+
+  "features": [
+    "Lightweight performance fabric",
+    "Superior sweat-wicking",
+    "Hexagon graphic print design",
+    "Breathable construction",
+    "Comfort collar for sports movement",
+    "Designed for tennis and squash"
+  ],
+
+  "care": [
+    "Machine wash cold",
+    "Do not bleach",
+    "Dry in shade",
+    "Easy care"
+  ],
+
+  "images": [
+    "page_3_img_3.jpeg",
+    "page_4_img_4.jpeg",
+    "page_5_img_5.jpeg",
+    "page_6_img_6.jpeg",
+    "page_7_img_7.jpeg",
+    "page_8_img_8.jpeg",
+    "page_9_img_9.jpeg",
+    "page_10_img_10.jpeg",
+    "page_11_img_11.jpeg"
+  ],
+
+  "seo": {
+    "title": "Tee Polo Kit Kat | Zebro Sports Polo T-Shirt",
+    "description": "Zebro Tee Polo Kit Kat sports polo with Super Sarina Dryfit fabric and breathable design for tennis and training."
+  }
+}

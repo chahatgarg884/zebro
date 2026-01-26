@@ -1,0 +1,41 @@
+{
+  "id": "shorts-5g",
+  "slug": "shorts-5g",
+  "name": "Shorts 5G",
+  "brand": "Zebro",
+  "category": "Shorts",
+  "subCategory": "Sportswear",
+  "type": "Performance",
+  "description": "Modern performance shorts built for mobility, comfort, and everyday workouts.",
+  "material": "Performance Polyester",
+  "fit": "Regular Fit",
+  "gender": "Men",
+  "sizes": ["S", "M", "L", "XL", "XXL"],
+  "colors": ["Black", "Navy", "Grey"],
+  "features": [
+    "Lightweight fabric",
+    "Quick dry",
+    "Breathable construction",
+    "Elastic waistband"
+  ],
+  "care": ["Machine wash cold", "Do not bleach", "Dry in shade"],
+  "images": [
+    "page_2_img_2.jpeg",
+    "page_3_img_3.jpeg",
+    "page_4_img_4.jpeg",
+    "page_5_img_5.jpeg",
+    "page_6_img_6.jpeg",
+    "page_7_img_7.jpeg",
+    "page_8_img_8.jpeg",
+    "page_9_img_9.jpeg",
+    "page_10_img_10.jpeg",
+    "page_11_img_11.jpeg",
+    "page_12_img_12.jpeg",
+    "page_13_img_13.jpeg",
+    "page_14_img_14.jpeg"
+  ],
+  "seo": {
+    "title": "Shorts 5G | Zebro Performance Shorts",
+    "description": "Zebro 5G performance shorts for gym and active wear."
+  }
+}

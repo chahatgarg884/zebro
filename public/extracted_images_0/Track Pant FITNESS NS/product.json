@@ -1,0 +1,55 @@
+{
+  "id": "track-pant-fitness-ns",
+  "slug": "track-pant-fitness-ns",
+  "name": "Track Pant Fitness NS",
+  "brand": "Zebro",
+
+  "category": "Track Pant",
+  "subCategory": "Sportswear",
+  "type": "Training",
+
+  "description": "Zebro Track Pant Fitness NS is designed for daily workouts with breathable, durable fabric and multiple pockets for convenience.",
+
+  "material": "Cotton-Feel Performance Fabric",
+  "fit": "Regular Fit",
+  "gender": "Men",
+
+  "sizes": ["S", "M", "L", "XL", "XXL", "3XL", "4XL", "5XL"],
+
+  "colors": [
+    "Navy",
+    "Grey",
+    "Black"
+  ],
+
+  "features": [
+    "Breathable fabric",
+    "Fade resistant material",
+    "Durable construction",
+    "Four side pockets",
+    "Elastic waistband"
+  ],
+
+  "care": [
+    "Machine wash cold",
+    "Do not bleach",
+    "Dry in shade"
+  ],
+
+  "images": [
+    "page_2_img_2.jpeg",
+    "page_3_img_3.jpeg",
+    "page_4_img_4.jpeg",
+    "page_5_img_5.jpeg",
+    "page_6_img_6.jpeg",
+    "page_7_img_7.jpeg",
+    "page_8_img_8.jpeg",
+    "page_9_img_9.jpeg",
+    "page_10_img_10.jpeg"
+  ],
+
+  "seo": {
+    "title": "Track Pant Fitness NS | Zebro Workout Track Pants",
+    "description": "Zebro Track Pant Fitness NS with breathable, durable fabric for daily fitness routines."
+  }
+}

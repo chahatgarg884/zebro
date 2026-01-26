@@ -1,0 +1,54 @@
+{
+  "id": "track-pant-rubicon",
+  "slug": "track-pant-rubicon",
+  "name": "Track Pant Rubicon",
+  "brand": "Zebro",
+
+  "category": "Track Pant",
+  "subCategory": "Sportswear",
+  "type": "Cargo",
+
+  "description": "Zebro Track Pant Rubicon is a utility-inspired cargo track pant featuring moisture-absorbing fabric, multiple pockets, and relaxed comfort for workouts and active routines.",
+
+  "material": "Moisture-Absorbing Performance Fabric",
+  "fit": "Regular Fit",
+  "gender": "Men",
+
+  "sizes": ["M", "L", "XL", "XXL"],
+
+  "colors": [
+    "Olive",
+    "Black",
+    "Navy"
+  ],
+
+  "features": [
+    "Cargo-style utility pockets",
+    "Moisture-absorbing fabric",
+    "Fly dry technology",
+    "Elastic waistband with drawcord",
+    "Designed for workout comfort"
+  ],
+
+  "care": [
+    "Machine wash cold",
+    "Do not bleach",
+    "Dry in shade"
+  ],
+
+  "images": [
+    "page_2_img_2.jpeg",
+    "page_3_img_3.jpeg",
+    "page_4_img_4.jpeg",
+    "page_5_img_5.jpeg",
+    "page_6_img_6.jpeg",
+    "page_7_img_7.jpeg",
+    "page_8_img_8.jpeg",
+    "page_9_img_9.jpeg"
+  ],
+
+  "seo": {
+    "title": "Track Pant Rubicon | Zebro Cargo Track Pants",
+    "description": "Zebro Track Pant Rubicon cargo track pants with moisture-absorbing fabric and multiple utility pockets."
+  }
+}

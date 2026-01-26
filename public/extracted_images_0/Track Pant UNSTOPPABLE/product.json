@@ -1,0 +1,60 @@
+{
+  "id": "track-pant-unstoppable",
+  "slug": "track-pant-unstoppable",
+  "name": "Track Pant Unstoppable",
+  "brand": "Zebro",
+
+  "category": "Track Pant",
+  "subCategory": "Sportswear",
+  "type": "Training",
+
+  "description": "Zebro Track Pant Unstoppable is a moisture-wicking training track pant crafted for unmatched comfort, seamless design, and daily workout performance.",
+
+  "material": "Moisture-Wicking Performance Fabric",
+  "fit": "Regular Fit",
+  "gender": "Men",
+
+  "sizes": ["S", "M", "L", "XL", "XXL", "3XL", "4XL", "5XL"],
+
+  "colors": [
+    "Airforce Blue",
+    "Grey",
+    "Black",
+    "Navy"
+  ],
+
+  "features": [
+    "Moisture-wicking fabric",
+    "Unmatched comfort and seamless design",
+    "Breathable construction",
+    "Elastic waistband",
+    "Side pockets",
+    "Ideal for gym and training"
+  ],
+
+  "care": [
+    "Machine wash cold",
+    "Do not bleach",
+    "Dry in shade"
+  ],
+
+  "images": [
+    "page_2_img_2.jpeg",
+    "page_3_img_3.jpeg",
+    "page_4_img_4.jpeg",
+    "page_5_img_5.jpeg",
+    "page_6_img_6.jpeg",
+    "page_7_img_7.jpeg",
+    "page_8_img_8.jpeg",
+    "page_9_img_9.jpeg",
+    "page_10_img_10.jpeg",
+    "page_11_img_11.jpeg",
+    "page_12_img_12.jpeg",
+    "page_13_img_13.jpeg"
+  ],
+
+  "seo": {
+    "title": "Track Pant Unstoppable | Zebro Training Track Pants",
+    "description": "Zebro Track Pant Unstoppable with moisture-wicking fabric and seamless comfort for intense workouts."
+  }
+}

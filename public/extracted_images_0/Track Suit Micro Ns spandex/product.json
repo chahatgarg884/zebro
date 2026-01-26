@@ -1,0 +1,60 @@
+{
+    "id":  "track-suit-micro-ns-spandex",
+    "slug":  "track-suit-micro-ns-spandex",
+    "name":  "Track Suit Micro Ns Spandex",
+    "brand":  "Zebro",
+    "category":  "Track Suit",
+    "subCategory":  "Track Suit",
+    "description":  "Elite Zebro track suit featuring Micro NS Spandex technology for ultimate flexibility and performance during intense training.",
+    "material":  "Micro NS Spandex Blend",
+    "fit":  "Athletic Fit",
+    "gender":  "Men",
+    "sizes":  [
+                  "S",
+                  "M",
+                  "L",
+                  "XL",
+                  "XXL",
+                  "3XL"
+              ],
+    "colors":  [
+                   "Black",
+                   "Navy Blue",
+                   "Grey",
+                   "Red"
+               ],
+    "features":  [
+                     "Micro NS spandex technology",
+                     "4-way stretch fabric",
+                     "Moisture-wicking interior",
+                     "Quick-dry performance",
+                     "Zippered pockets",
+                     "Elastic cuffs and waist",
+                     "Reflective detailing",
+                     "Anti-microbial treatment"
+                 ],
+    "care":  [
+                 "Machine wash cold",
+                 "Do not use fabric softener",
+                 "Hang dry recommended",
+                 "Do not iron"
+             ],
+    "images":  [
+        "page_2_img_2.jpeg",
+        "page_3_img_3.jpeg",
+        "page_4_img_4.jpeg",
+        "page_5_img_5.jpeg",
+        "page_6_img_6.jpeg",
+        "page_7_img_7.jpeg",
+        "page_8_img_8.jpeg",
+        "page_9_img_9.jpeg",
+        "page_10_img_10.jpeg",
+        "page_11_img_11.jpeg",
+        "page_12_img_12.jpeg",
+        "page_13_img_13.jpeg"
+    ],
+    "seo":  {
+                "title":  "Track Suit Micro Ns Spandex | Zebro Sportswear",
+                "description":  "Zebro Track Suit Micro Ns Spandex with 4-way stretch, moisture-wicking and quick-dry technology for elite performance."
+            }
+}

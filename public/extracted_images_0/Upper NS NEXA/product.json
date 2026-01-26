@@ -1,0 +1,49 @@
+{
+  "id": "upper-ns-nexa",
+  "slug": "upper-ns-nexa",
+  "name": "Upper NS Nexa",
+  "brand": "Zebro",
+
+  "category": "Upper",
+  "subCategory": "Sportswear",
+  "type": "Performance Jacket",
+
+  "description": "Zebro Upper NS Nexa is a premium performance jacket crafted with NS fabric, offering breathability, stretch, and a modern athletic look.",
+
+  "material": "NS Performance Fabric",
+  "fit": "Athletic Fit",
+  "gender": "Men",
+
+  "sizes": ["M", "L", "XL", "XXL"],
+  "colors": ["Black", "Grey", "Navy"],
+
+  "features": [
+    "Premium NS fabric",
+    "Stretchable material",
+    "Zipper pockets",
+    "Breathable construction",
+    "Modern sporty design"
+  ],
+
+  "care": [
+    "Machine wash cold",
+    "Do not bleach",
+    "Dry in shade"
+  ],
+
+  "images": [
+    "page_2_img_2.jpeg",
+    "page_3_img_3.jpeg",
+    "page_4_img_4.jpeg",
+    "page_5_img_5.jpeg",
+    "page_6_img_6.jpeg",
+    "page_7_img_7.jpeg",
+    "page_8_img_8.jpeg",
+    "page_9_img_9.jpeg"
+  ],
+
+  "seo": {
+    "title": "Upper NS Nexa Performance Jacket | Zebro",
+    "description": "Zebro Upper NS Nexa performance jacket with breathable NS fabric and athletic fit for training."
+  }
+}

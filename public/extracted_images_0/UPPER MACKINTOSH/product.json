@@ -1,0 +1,59 @@
+{
+  "id": "upper-mackintosh",
+  "slug": "upper-mackintosh",
+  "name": "Upper Mackintosh",
+  "brand": "Zebro",
+
+  "category": "Upper",
+  "subCategory": "Sportswear",
+  "type": "Winter Jacket",
+
+  "description": "Zebro Upper Mackintosh is a winter-ready sports jacket designed with insulated fabric, protective hood, and durable construction for cold weather training.",
+
+  "material": "Insulated Polyester Fabric",
+  "fit": "Regular Fit",
+  "gender": "Men",
+
+  "sizes": ["M", "L", "XL", "XXL"],
+  "colors": ["Black", "Navy", "Olive"],
+
+  "features": [
+    "Insulated warm fabric",
+    "Attached hood",
+    "Zipper pockets",
+    "Wind protection",
+    "Winter training wear"
+  ],
+
+  "care": [
+    "Machine wash cold",
+    "Do not bleach",
+    "Dry in shade"
+  ],
+
+  "images": [
+    "page_2_img_2.jpeg",
+    "page_3_img_3.jpeg",
+    "page_4_img_4.jpeg",
+    "page_5_img_5.jpeg",
+    "page_6_img_6.jpeg",
+    "page_7_img_7.jpeg",
+    "page_8_img_8.jpeg",
+    "page_9_img_9.jpeg",
+    "page_10_img_10.jpeg",
+    "page_11_img_11.jpeg",
+    "page_12_img_12.jpeg",
+    "page_13_img_13.jpeg",
+    "page_14_img_14.jpeg",
+    "page_15_img_15.jpeg",
+    "page_16_img_16.jpeg",
+    "page_17_img_17.jpeg",
+    "page_18_img_18.jpeg",
+    "page_19_img_19.jpeg"
+  ],
+
+  "seo": {
+    "title": "Upper Mackintosh Winter Sports Jacket | Zebro",
+    "description": "Zebro Upper Mackintosh insulated sports jacket with hood for winter training and outdoor wear."
+  }
+}

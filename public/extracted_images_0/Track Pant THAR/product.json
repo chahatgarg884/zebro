@@ -1,0 +1,59 @@
+{
+  "id": "track-pant-thar",
+  "slug": "track-pant-thar",
+  "name": "Track Pant Thar",
+  "brand": "Zebro",
+
+  "category": "Track Pant",
+  "subCategory": "Sportswear",
+  "type": "Cargo",
+
+  "description": "Zebro Track Pant Thar is a stylish cargo track pant designed for training and lifestyle wear, featuring multiple utility pockets, ankle cuffs, and a premium stretchable waistband.",
+
+  "material": "Premium Stretchable Performance Fabric",
+  "fit": "Regular Fit",
+  "gender": "Men",
+
+  "sizes": ["M", "L", "XL", "XXL"],
+
+  "colors": [
+    "Black",
+    "Grey",
+    "Airforce Blue",
+    "Navy"
+  ],
+
+  "features": [
+    "Stretchable premium waist elastic",
+    "Cargo side pockets",
+    "Stylish back pockets",
+    "Side pocket with reflective print",
+    "Ankle cuff finish",
+    "Comfortable and stylish design"
+  ],
+
+  "care": [
+    "Machine wash cold",
+    "Do not bleach",
+    "Dry in shade"
+  ],
+
+  "images": [
+    "page_2_img_2.jpeg",
+    "page_3_img_3.jpeg",
+    "page_4_img_4.jpeg",
+    "page_5_img_5.jpeg",
+    "page_6_img_6.jpeg",
+    "page_7_img_7.jpeg",
+    "page_8_img_8.jpeg",
+    "page_9_img_9.jpeg",
+    "page_10_img_10.jpeg",
+    "page_11_img_11.jpeg",
+    "page_12_img_12.jpeg"
+  ],
+
+  "seo": {
+    "title": "Track Pant Thar | Zebro Cargo Track Pants",
+    "description": "Zebro Track Pant Thar cargo-style track pants with stretchable fabric, utility pockets, and ankle cuffs for training and lifestyle wear."
+  }
+}

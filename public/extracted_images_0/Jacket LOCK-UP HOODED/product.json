@@ -1,0 +1,48 @@
+{
+  "id": "jacket-lock-up-hooded",
+  "slug": "jacket-lock-up-hooded",
+  "name": "Jacket Lock-Up Hooded",
+  "brand": "Zebro",
+
+  "category": "Jacket",
+  "subCategory": "Winter Wear",
+
+  "description": "Stylish hooded winter jacket designed for warmth and comfort with a modern sporty appeal.",
+
+  "material": "Polyester Blend",
+  "fit": "Regular Fit",
+  "gender": "Men",
+
+  "sizes": ["S", "M", "L", "XL", "XXL", "3XL", "4XL"],
+
+  "colors": ["Black", "Navy", "Dark Grey", "Olive"],
+
+  "features": [
+    "Attached hood for extra warmth",
+    "Full zipper closure",
+    "Wind resistant fabric",
+    "Comfortable winter wear",
+    "Suitable for casual and outdoor use"
+  ],
+
+  "care": [
+    "Machine wash cold",
+    "Do not bleach",
+    "Dry in shade",
+    "Easy care"
+  ],
+
+  "images": [
+    "page_2_img_2.jpeg",
+    "page_3_img_3.jpeg",
+    "page_4_img_4.jpeg",
+    "page_5_img_5.jpeg",
+    "page_6_img_6.jpeg",
+    "page_7_img_7.jpeg"
+  ],
+
+  "seo": {
+    "title": "Jacket Lock-Up Hooded | Zebro Hooded Jacket",
+    "description": "Zebro Jacket Lock-Up Hooded winter jacket with attached hood, warm fabric, and modern sporty design."
+  }
+}

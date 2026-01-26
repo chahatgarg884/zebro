@@ -1,0 +1,45 @@
+{
+  "id": "track-suit-ns-spandex-white",
+  "slug": "track-suit-ns-spandex-white",
+  "name": "Track Suit NS Spandex White",
+  "brand": "Zebro",
+
+  "category": "Track Suit",
+  "subCategory": "Sportswear",
+  "type": "Spandex",
+  "gender": "Men",
+
+  "description": "Zebro Track Suit NS Spandex White is a premium white tracksuit designed with stretchable spandex fabric, offering comfort, durability, and a clean athletic look.",
+
+  "material": "NS Spandex Fabric",
+  "fit": "Regular Fit",
+
+  "sizes": ["S", "M", "L", "XL", "XXL", "3XL", "4XL"],
+
+  "colors": ["White"],
+
+  "features": [
+    "Stretchable spandex fabric",
+    "Zipper pockets",
+    "Breathable construction",
+    "Clean white sporty design",
+    "Comfortable for training and daily wear"
+  ],
+
+  "care": [
+    "Machine wash cold",
+    "Do not bleach",
+    "Dry in shade"
+  ],
+
+  "images": [
+    "page_2_img_2.jpeg",
+    "page_3_img_3.jpeg",
+    "page_4_img_4.jpeg"
+  ],
+
+  "seo": {
+    "title": "Track Suit NS Spandex White | Zebro Sportswear",
+    "description": "Zebro NS Spandex White track suit with stretchable fabric and zipper pockets for premium sportswear comfort."
+  }
+}

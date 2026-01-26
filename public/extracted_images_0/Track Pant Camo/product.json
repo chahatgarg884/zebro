@@ -1,0 +1,54 @@
+{
+  "id": "track-pant-camo",
+  "slug": "track-pant-camo",
+  "name": "Track Pant Camo",
+  "brand": "Zebro",
+
+  "category": "Track Pant",
+  "subCategory": "Sportswear",
+  "type": "Training",
+
+  "description": "Zebro Track Pant Camo combines a modern camouflage design with breathable, ultra-soft fabric for training and active lifestyle use.",
+
+  "material": "Camouflage Performance Polyester",
+  "fit": "Regular Fit",
+  "gender": "Men",
+
+  "sizes": ["4XS", "XS", "S", "M", "L", "XL", "XXL", "3XL", "4XL", "5XL"],
+
+  "colors": [
+    "Grey Camo",
+    "Black Camo",
+    "Navy Camo"
+  ],
+
+  "features": [
+    "Camouflage pattern",
+    "Ultra-soft fabric",
+    "Breathable construction",
+    "Zipper pocket for security",
+    "Elastic waistband"
+  ],
+
+  "care": [
+    "Machine wash cold",
+    "Do not bleach",
+    "Dry in shade"
+  ],
+
+  "images": [
+    "page_1_img_1.jpeg",
+    "page_2_img_2.jpeg",
+    "page_3_img_3.jpeg",
+    "page_4_img_4.jpeg",
+    "page_5_img_5.jpeg",
+    "page_6_img_6.jpeg",
+    "page_7_img_7.jpeg",
+    "page_8_img_8.jpeg"
+  ],
+
+  "seo": {
+    "title": "Track Pant Camo | Zebro Sports Track Pants",
+    "description": "Zebro Track Pant Camo with breathable fabric, zipper pocket, and modern camouflage design."
+  }
+}

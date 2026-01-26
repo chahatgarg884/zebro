@@ -1,0 +1,50 @@
+{
+  "id": "track-suit-titan",
+  "slug": "track-suit-titan",
+  "name": "Track Suit Titan",
+  "brand": "Zebro",
+
+  "category": "Track Suit",
+  "subCategory": "Sportswear",
+  "type": "Premium Poly",
+  "gender": "Men",
+
+  "description": "Zebro Track Suit Titan is a premium sports tracksuit featuring a detachable hood, reflective detailing, and breathable fabric for outdoor and training use.",
+
+  "material": "Premium Poly Fabric",
+  "fit": "Regular Fit",
+
+  "sizes": ["S", "M", "L", "XL", "XXL", "3XL", "4XL"],
+
+  "colors": ["Black", "Navy", "Dark Grey"],
+
+  "features": [
+    "Detachable hood",
+    "Reflective detailing",
+    "Zipper pockets",
+    "Breathable fabric",
+    "Premium embroidered branding"
+  ],
+
+  "care": [
+    "Machine wash cold",
+    "Do not bleach",
+    "Dry in shade"
+  ],
+
+  "images": [
+    "page_2_img_2.jpeg",
+    "page_3_img_3.jpeg",
+    "page_4_img_4.jpeg",
+    "page_5_img_5.jpeg",
+    "page_6_img_6.jpeg",
+    "page_7_img_7.jpeg",
+    "page_8_img_8.jpeg",
+    "page_9_img_9.jpeg"
+  ],
+
+  "seo": {
+    "title": "Track Suit Titan | Zebro Premium Track Suit",
+    "description": "Zebro Track Suit Titan with detachable hood, reflective panels and breathable fabric for premium sportswear performance."
+  }
+}

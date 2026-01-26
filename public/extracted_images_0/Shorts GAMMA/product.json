@@ -1,0 +1,81 @@
+{
+    "id":  "shorts-gamma",
+    "slug":  "shorts-gamma",
+    "name":  "Shorts GAMMA",
+    "brand":  "Zebro",
+    "category":  "Shorts",
+    "subCategory":  "Shorts",
+    "description":  "Premium Zebro GAMMA shorts designed with cutting-edge technology for athletes who demand excellence in performance and style.",
+    "material":  "GAMMA Performance Fabric",
+    "fit":  "Regular Fit",
+    "gender":  "Men",
+    "sizes":  [
+                  "S",
+                  "M",
+                  "L",
+                  "XL",
+                  "XXL",
+                  "3XL",
+                  "4XL"
+              ],
+    "colors":  [
+                   "Black",
+                   "Navy Blue",
+                   "Charcoal",
+                   "Olive"
+               ],
+    "features":  [
+                     "GAMMA compression technology",
+                     "Enhanced muscle support",
+                     "Moisture management system",
+                     "Anti-chafe seamless design",
+                     "Reinforced stitching",
+                     "Multiple storage pockets",
+                     "Reflective details for safety",
+                     "Quick recovery fabric"
+                 ],
+    "care":  [
+                 "Machine wash cold",
+                 "Do not use fabric softener",
+                 "Hang dry recommended",
+                 "Do not dry clean"
+             ],
+    "images":  [
+        "page_2_img_2.jpeg",
+        "page_3_img_3.jpeg",
+        "page_4_img_4.jpeg",
+        "page_5_img_5.jpeg",
+        "page_6_img_6.jpeg",
+        "page_7_img_7.jpeg",
+        "page_8_img_8.jpeg",
+        "page_9_img_9.jpeg",
+        "page_10_img_10.jpeg",
+        "page_11_img_11.jpeg",
+        "page_12_img_12.jpeg",
+        "page_13_img_13.jpeg",
+        "page_14_img_14.jpeg",
+        "page_15_img_15.jpeg",
+        "page_16_img_16.jpeg",
+        "page_17_img_17.jpeg",
+        "page_18_img_18.jpeg",
+        "page_19_img_19.jpeg",
+        "page_20_img_20.jpeg",
+        "page_21_img_21.jpeg",
+        "page_22_img_22.jpeg",
+        "page_23_img_23.jpeg",
+        "page_24_img_24.jpeg",
+        "page_25_img_25.jpeg",
+        "page_26_img_26.jpeg",
+        "page_27_img_27.jpeg",
+        "page_28_img_28.jpeg",
+        "page_29_img_29.jpeg",
+        "page_30_img_30.jpeg",
+        "page_31_img_31.jpeg",
+        "page_32_img_32.jpeg",
+        "page_33_img_33.jpeg"
+    ],
+    "seo":  {
+                "title":  "Shorts GAMMA | Zebro Sportswear",
+                "description":  "Zebro Shorts GAMMA with compression technology, muscle support and moisture management for serious athletic performance."
+            }
+}

@@ -1,0 +1,46 @@
+{
+  "id": "upper-diamond-lycra",
+  "slug": "upper-diamond-lycra",
+  "name": "Upper Diamond Lycra",
+  "brand": "Zebro",
+
+  "category": "Upper",
+  "subCategory": "Sportswear",
+  "type": "Performance Jacket",
+
+  "description": "Zebro Upper Diamond Lycra features premium lycra fabric with a textured diamond pattern, offering flexibility, comfort, and modern athletic styling.",
+
+  "material": "Diamond Lycra Fabric",
+  "fit": "Athletic Fit",
+  "gender": "Men",
+
+  "sizes": ["M", "L", "XL", "XXL"],
+  "colors": ["Black", "Navy", "Dark Grey"],
+
+  "features": [
+    "Textured diamond pattern",
+    "Stretchable lycra fabric",
+    "Zipper pockets",
+    "Breathable design",
+    "Modern sporty look"
+  ],
+
+  "care": [
+    "Machine wash cold",
+    "Do not bleach",
+    "Dry in shade"
+  ],
+
+  "images": [
+    "page_2_img_2.jpeg",
+    "page_3_img_3.jpeg",
+    "page_4_img_4.jpeg",
+    "page_5_img_5.jpeg",
+    "page_6_img_6.jpeg"
+  ],
+
+  "seo": {
+    "title": "Upper Diamond Lycra Sports Jacket | Zebro",
+    "description": "Zebro Upper Diamond Lycra jacket with premium stretch fabric and textured design for training and active wear."
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "id": "tee-polo-starbucks",
+  "slug": "tee-polo-starbucks",
+  "name": "Tee Polo Starbucks",
+  "brand": "Zebro",
+
+  "category": "Tee",
+  "subCategory": "Sportswear",
+  "type": "Polo",
+
+  "description": "Zebro Tee Polo Starbucks is a premium performance polo featuring moisture management technology and modern printed design, ideal for sports like rugby, training, and active wear.",
+
+  "material": "Performance Polyester Fabric",
+  "fit": "Regular Fit",
+  "gender": "Men",
+
+  "sizes": ["S", "M", "L", "XL", "XXL"],
+
+  "colors": [
+    "Black",
+    "Olive",
+    "White",
+    "Navy"
+  ],
+
+  "features": [
+    "Advanced moisture management technology",
+    "Anti-microbial treatment",
+    "Breathable fabric",
+    "Modern all-over print design",
+    "Quick dry performance",
+    "Polo collar"
+  ],
+
+  "care": [
+    "Machine wash cold",
+    "Do not bleach",
+    "Dry in shade",
+    "Easy care"
+  ],
+
+  "images": [
+    "page_2_img_2.jpeg",
+    "page_3_img_3.jpeg",
+    "page_4_img_4.jpeg",
+    "page_5_img_5.jpeg",
+    "page_6_img_6.jpeg",
+    "page_7_img_7.jpeg",
+    "page_8_img_8.jpeg",
+    "page_9_img_9.jpeg"
+  ],
+
+  "seo": {
+    "title": "Tee Polo Starbucks | Zebro Performance Polo T-Shirt",
+    "description": "Zebro Tee Polo Starbucks polo t-shirt with moisture management and breathable fabric for sports and active wear."
+  }
+}

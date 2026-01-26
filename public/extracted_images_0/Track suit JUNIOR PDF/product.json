@@ -1,0 +1,43 @@
+{
+  "id": "track-suit-junior",
+  "slug": "track-suit-junior",
+  "name": "Track Suit Junior",
+  "brand": "Zebro",
+
+  "category": "Track Suit",
+  "subCategory": "Sportswear",
+  "type": "Training",
+
+  "description": "Zebro Track Suit Junior is a lightweight and comfortable tracksuit designed for kids, suitable for sports, play, and daily wear.",
+
+  "material": "Performance Polyester",
+  "fit": "Regular Fit",
+  "gender": "Kids",
+
+  "sizes": ["4XS", "3XS", "2XS", "XS", "S"],
+
+  "colors": [
+    "Navy",
+    "Black"
+  ],
+
+  "features": [
+    "Lightweight fabric",
+    "Zipper jacket",
+    "Comfortable for daily wear",
+    "Easy movement design"
+  ],
+
+  "care": [
+    "Machine wash cold",
+    "Do not bleach",
+    "Dry in shade"
+  ],
+
+  "images": [
+    "page_2_img_2.jpeg",
+    "page_3_img_3.jpeg",
+    "page_4_img_4.jpeg",
+    "page_5_img_5.jpeg"
+  ]
+}
