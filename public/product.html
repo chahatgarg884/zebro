@@ -2,11 +2,20 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
   <title id="productPageTitle">Product Details | Sportswear Collection</title>
   <meta name="description" content="Detailed information about our premium sportswear products." />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      overflow-x: hidden;
+      width: 100%;
+    }
+  </style>
 </head>
 <body>
 
@@ -21,22 +30,25 @@
         <a href="index.html" class="nav-link">← Back to Products</a>
         <a href="#contact" class="nav-link">Contact</a>
       </nav>
+      
+      <button class="mobile-menu-btn" id="mobileMenuBtn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
     </div>
   </header>
 
   <!-- PRODUCT HERO -->
   <section class="product-hero">
-    <div class="product-wrapper" style="display: flex; gap: 40px; align-items: flex-start; max-width: 1200px; margin: 0 auto; padding: 40px 20px; width: 100%; box-sizing: border-box;">
-      <div class="product-images" style="flex: 0 0 45%; position: sticky; top: 100px; height: fit-content; max-width: 540px;">
+    <div class="product-detail-container">
+      <div class="product-images-section">
         <div class="main-image-container">
-          <img id="mainProductImage" src="" alt="" class="main-product-image">
-        </div>
-        <div class="product-thumbnails" id="productThumbnails">
-          <!-- Thumbnails will be dynamically loaded here -->
+          <img src="asset/products/mens-tennis/image1.jpg" alt="Product Main Image" class="main-product-image" id="mainProductImage" />
         </div>
       </div>
       
-      <div class="product-details" style="flex: 1; padding: 20px 0; min-width: 0; overflow-wrap: break-word;">
+      <div class="product-info-section">
         <h1 id="productName" class="product-title"></h1>
         <p id="productCategory" class="product-category"></p>
         
@@ -157,6 +169,74 @@
   </footer>
 
   <script>
+        // Mobile Menu Functionality
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const nav = document.querySelector('.nav');
+        
+        if (mobileMenuBtn) {
+            mobileMenuBtn.addEventListener('click', () => {
+                mobileMenuBtn.classList.toggle('active');
+                nav.classList.toggle('active');
+            });
+        }
+        
+        // Close mobile menu when clicking on links
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenuBtn.classList.remove('active');
+                nav.classList.remove('active');
+            });
+        });
+
+        // Automatic Image Carousel
+        let currentImageIndex = 0;
+        let productImages = [];
+        let carouselInterval;
+        
+        function setupImageCarousel() {
+            const mainImage = document.getElementById('mainProductImage');
+            
+            if (!mainImage || !currentProduct || !currentProduct.images || currentProduct.images.length <= 1) {
+                return; // No carousel needed for single image
+            }
+            
+            productImages = currentProduct.images;
+            
+            function changeImage() {
+                currentImageIndex = (currentImageIndex + 1) % productImages.length;
+                const imagePath = `${currentProduct.folderPath}/${productImages[currentImageIndex]}`;
+                mainImage.src = imagePath;
+                mainImage.alt = `${currentProduct.name} - Image ${currentImageIndex + 1}`;
+            }
+            
+            function startCarousel() {
+                stopCarousel(); // Clear any existing interval
+                carouselInterval = setInterval(changeImage, 3000); // Change every 3 seconds
+            }
+            
+            function stopCarousel() {
+                if (carouselInterval) {
+                    clearInterval(carouselInterval);
+                }
+            }
+            
+            // Start carousel
+            startCarousel();
+            
+            // Pause on hover
+            mainImage.addEventListener('mouseenter', stopCarousel);
+            mainImage.addEventListener('mouseleave', startCarousel);
+            
+            // Pause when page is not visible
+            document.addEventListener('visibilitychange', () => {
+                if (document.hidden) {
+                    stopCarousel();
+                } else {
+                    startCarousel();
+                }
+            });
+        }
+
         // Global data storage
         let currentProduct = null;
         let allProducts = [];
@@ -382,21 +462,8 @@
                 `;
             }
             
-            // Create thumbnails
-            const thumbnailsContainer = document.getElementById('productThumbnails');
-            if (currentProduct.images && currentProduct.images.length > 1) {
-                thumbnailsContainer.innerHTML = '';
-                currentProduct.images.forEach((img, index) => {
-                    const thumbnailImg = createLazyImage(`${currentProduct.folderPath}/${img}`, `${currentProduct.name} - Image ${index + 1}`, 'thumbnail');
-                    if (index === 0) {
-                        thumbnailImg.classList.add('active');
-                    }
-                    thumbnailImg.onclick = () => changeMainImage(`${currentProduct.folderPath}/${img}`);
-                    thumbnailsContainer.appendChild(thumbnailImg);
-                });
-            } else {
-                thumbnailsContainer.innerHTML = '';
-            }
+            // Setup automatic image carousel
+            setTimeout(setupImageCarousel, 100);
         }
 
         // Load related products
@@ -451,18 +518,6 @@
                 </div>
             `;
             document.getElementById('relatedProducts').style.display = 'none';
-        }
-
-        // Change main image
-        function changeMainImage(imageSrc) {
-            const mainImage = document.getElementById('mainProductImage');
-            const thumbnails = document.querySelectorAll('.product-thumbnails img');
-            
-            mainImage.src = imageSrc;
-            
-            // Update active thumbnail
-            thumbnails.forEach(thumb => thumb.classList.remove('active'));
-            event.target.classList.add('active');
         }
 
         // Helper function to get product image
