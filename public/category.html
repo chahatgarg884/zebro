@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Sportswear Collection | Performance Wear Showcase</title>
-  <meta name="description" content="Explore our premium sportswear collection including uppers, lowers, track suits and training wear." />
+  <title>Category Products | Sportswear Collection</title>
+  <meta name="description" content="Browse our complete collection of sportswear products by category." />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
@@ -17,71 +17,31 @@
         <img src="asset/logo.png" alt="Sports Wear Logo" class="logo-image" />
       </div>
       
-      <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-      
-      <nav class="nav" id="mainNav">
-        <a href="#featured" class="nav-link">Categories</a>
-        <a href="#" class="nav-link" onclick="showAbout()">About</a>
+      <nav class="nav">
+        <a href="index.html" class="nav-link">← Back to Home</a>
         <a href="#contact" class="nav-link">Contact</a>
       </nav>
-
-      <div class="nav-actions">
-        <div class="search-container">
-          <input type="text" placeholder="Search products..." class="search-input" id="searchInput">
-          <button class="search-btn" onclick="searchProducts()">Search</button>
-        </div>
-      </div>
     </div>
   </header>
 
-  <!-- HERO SECTION -->
-  <section class="hero">
+  <!-- CATEGORY HERO -->
+  <section class="category-hero">
     <div class="container">
-      <div class="hero-content">
-        <div class="hero-text">
-          <h1>Premium Sportswear Collection</h1>
-          <p>Discover our curated showcase of performance sportswear designed for athletes who demand excellence in comfort, durability, and style.</p>
-          <div class="hero-stats">
-            <div class="stat">
-              <span class="stat-number">50+</span>
-              <span class="stat-label">Products</span>
-            </div>
-            <div class="stat">
-              <span class="stat-number">10+</span>
-              <span class="stat-label">Collections</span>
-            </div>
-            <div class="stat">
-              <span class="stat-number">Premium</span>
-              <span class="stat-label">Quality</span>
-            </div>
-          </div>
-          <a href="#featured" class="btn">Explore Collection</a>
-        </div>
-        <div class="hero-visual">
-          <div class="hero-image-container">
-            <img src="asset/banner.jpg" alt="Sportswear Collection Banner" class="hero-banner-image" />
-            <div class="hero-overlay"></div>
-          </div>
-        </div>
-      </div>
+      <h1 id="categoryTitle">Category Products</h1>
+      <p id="categoryDescription">Browse our complete collection</p>
     </div>
   </section>
 
-  <!-- FEATURED PRODUCTS -->
-  <section class="featured" id="featured">
+  <!-- PRODUCTS SECTION -->
+  <section class="category-products">
     <div class="container">
-      <h2>Products</h2>
-      <p>Highlight pieces from our premium sportswear collection</p>
-
-      <div class="filter-buttons" id="filterButtons">
-        <!-- Filter buttons will be dynamically loaded here -->
+      <div class="products-header">
+        <div class="products-count">
+          <span id="productsCount">0</span> products found
+        </div>
       </div>
-
-      <div class="product-grid" id="productGrid">
+      
+      <div class="product-grid" id="categoryProductGrid">
         <!-- Products will be dynamically loaded here -->
       </div>
     </div>
@@ -104,7 +64,7 @@
           <div id="modalProductFeatures" class="product-features"></div>
           <div id="modalProductCare" class="product-care"></div>
           <div class="product-actions">
-            <button class="explore-btn" onclick="exploreCategory()">Explore More Products</button>
+            <button class="explore-btn" onclick="window.close()">Close & Return to Home</button>
           </div>
         </div>
       </div>
@@ -199,8 +159,8 @@
 
   <script>
         // Global data storage
-        let productsData = [];
-        let categoriesData = [];
+        let categoryProducts = [];
+        let selectedCategory = '';
 
         // Image lazy loading with Intersection Observer
         let imageObserver;
@@ -248,54 +208,6 @@
             return img;
         }
 
-        // Search functionality
-        function searchProducts() {
-            const searchTerm = document.getElementById('searchInput').value.toLowerCase();
-            if (!searchTerm) {
-                renderProducts();
-                return;
-            }
-            
-            const filteredProducts = productsData.filter(product => 
-                product.name.toLowerCase().includes(searchTerm)
-            );
-            
-            renderFilteredProducts(filteredProducts, `Search Results: "${searchTerm}"`);
-        }
-
-        // Mobile menu toggle
-        function toggleMobileMenu() {
-            const nav = document.getElementById('mainNav');
-            const menuBtn = document.querySelector('.mobile-menu-btn');
-            
-            nav.classList.toggle('active');
-            menuBtn.classList.toggle('active');
-            
-            // Prevent body scroll when menu is open
-            if (nav.classList.contains('active')) {
-                document.body.style.overflow = 'hidden';
-            } else {
-                document.body.style.overflow = 'auto';
-            }
-        }
-
-        // Close mobile menu when clicking on a link
-        document.querySelectorAll('.nav-link').forEach(link => {
-            link.addEventListener('click', () => {
-                const nav = document.getElementById('mainNav');
-                const menuBtn = document.querySelector('.mobile-menu-btn');
-                
-                nav.classList.remove('active');
-                menuBtn.classList.remove('active');
-                document.body.style.overflow = 'auto';
-            });
-        });
-
-        // About and Contact modals
-        function showAbout() {
-            alert('Sports Wear - Premium Sportswear Collection\n\nWe offer high-quality sportswear including uppers, lowers, track suits, and training wear designed for athletes who demand excellence in comfort, durability, and style.');
-        }
-
         // Handle contact form submission
         function handleContactSubmit(event) {
             event.preventDefault();
@@ -309,6 +221,7 @@
                 `Name: ${data.name}\n` +
                 `Email: ${data.email}\n` +
                 `Phone: ${data.phone || 'Not provided'}\n` +
+                `Subject: ${data.subject}\n\n` +
                 `Message:\n${data.message}`
             );
             
@@ -316,91 +229,25 @@
             event.target.reset();
         }
 
-        // Search on Enter key
+        // Initialize category page
         document.addEventListener('DOMContentLoaded', function() {
-            const searchInput = document.getElementById('searchInput');
-            if (searchInput) {
-                searchInput.addEventListener('keypress', function(e) {
-                    if (e.key === 'Enter') {
-                        searchProducts();
-                    }
-                });
+            setupImageObserver();
+            // Load category data from localStorage
+            selectedCategory = localStorage.getItem('selectedCategory') || 'Products';
+            const storedProducts = localStorage.getItem('categoryProducts');
+            
+            if (storedProducts) {
+                categoryProducts = JSON.parse(storedProducts);
             }
+            
+            // Update page title and description
+            document.getElementById('categoryTitle').textContent = selectedCategory;
+            document.getElementById('categoryDescription').textContent = getCategoryDescription(selectedCategory);
+            document.getElementById('productsCount').textContent = categoryProducts.length;
+            
+            // Render products
+            renderCategoryProducts();
         });
-
-        // Fetch products and build categories
-        async function loadProducts() {
-            try {
-                productsData = [];
-                
-                // Get all folders in extracted_images_0
-                const folders = await getFolderList();
-                
-                // Fetch product.json from each folder
-                for (const folder of folders) {
-                    try {
-                        const productResponse = await fetch(`extracted_images_0/${folder}/product.json`);
-                        if (productResponse.ok) {
-                            const product = await productResponse.json();
-                            // Add folder path to product for image references
-                            product.folderPath = `extracted_images_0/${folder}`;
-                            productsData.push(product);
-                        }
-                    } catch (error) {
-                        console.log(`No product.json found in ${folder} or error loading it`);
-                    }
-                }
-                
-                // Extract unique categories
-                const categoryMap = new Map();
-                
-                productsData.forEach(product => {
-                    const categoryName = product.category || 'Sportswear';
-                    
-                    // Initialize category if not exists
-                    if (!categoryMap.has(categoryName)) {
-                        categoryMap.set(categoryName, {
-                            name: categoryName,
-                            count: 0,
-                            description: getCategoryDescription(categoryName)
-                        });
-                    }
-                    
-                    categoryMap.get(categoryName).count++;
-                });
-                
-                // Convert to Array for easier handling
-                categoriesData = Array.from(categoryMap.values());
-                
-                // Update UI
-                renderFilterButtons();
-                renderProducts();
-                
-            } catch (error) {
-                console.error('Error loading products:', error);
-            }
-        }
-
-        // Helper function to get folder list
-        async function getFolderList() {
-            return [
-                "Jacket Bulletproof", "Jacket LOCK-UP HOODED", "Jacket QUILTED NSWR",
-                "Lower Alto Lycra", "Lower Encounter", "Lower JUPITER", "Lower Ms.UNIVERSE",
-                "SHORTS 5G", "SHORTS CAMO", "SHORTS DUAL CORE", "Shorts GAMMA", "Shorts JUPITER",
-                "Shorts Micro NS LYCRA 177", "Shorts NS  EMBOSS", "Shorts NS Cargo", "Shorts Ns BORDER",
-                "TEE POLO CANDY", "TEE POLO KIT KAT", "TEE POLO MIST", "TEE POLO STARBUCKS",
-                "TRACK PANT TOE", "Tee  RN  MARSHMALLOW", "Tee Polo BOAT", "Tee Polo Galaxy",
-                "Tee RN  METALLICA", "Tee RN MIST", "Tee RN NYLON DOBBY", "Tee RN OLA",
-                "Track Pant 007 Ns", "Track Pant Camo", "Track Pant FITNESS NS", "Track Pant G WAGON",
-                "Track Pant GAMMA", "Track Pant NO LIMITS", "Track Pant OTP", "Track Pant RUBICON",
-                "Track Pant THAR", "Track Pant UNSTOPPABLE", "Track Suit Melange kids",
-                "Track Suit Micro Ns spandex", "Track Suit NS SPANDEX WHITE", "Track Suit poly fresh premium",
-                "Track suit JUNIOR PDF", "Track suit Micro Ns CRUISER", "Track suit Poly Web",
-                "Track suit SUPER SPANDEX", "Track suit TITAN", "Track suit micro NS ENCOUNTER",
-                "UPPER CRUSH LYCRA-TRACK SUIT CRUSH LYCRA", "UPPER MACKINTOSH", "Upper ELEMENT",
-                "Upper NS NEXA", "Upper RUBICON", "Upper dimond lycra"
-            ];
-        }
 
         // Get category description
         function getCategoryDescription(category) {
@@ -415,77 +262,17 @@
             return descriptions[category] || 'Premium sportswear and athletic gear';
         }
 
-        // Render filter buttons
-        function renderFilterButtons() {
-            const filterButtonsContainer = document.getElementById('filterButtons');
-            filterButtonsContainer.innerHTML = '';
-            
-            // Add "All" button
-            const allButton = document.createElement('button');
-            allButton.className = 'filter-btn active';
-            allButton.textContent = 'All Collections';
-            allButton.onclick = () => filterByCategory('all');
-            filterButtonsContainer.appendChild(allButton);
-            
-            // Add category buttons
-            categoriesData.forEach(category => {
-                const button = document.createElement('button');
-                button.className = 'filter-btn';
-                button.textContent = category.name;
-                button.onclick = () => filterByCategory(category.name);
-                filterButtonsContainer.appendChild(button);
-            });
-        }
-
-        // Filter by category
-        function filterByCategory(categoryName) {
-            // Update active button
-            const buttons = document.querySelectorAll('.filter-btn');
-            buttons.forEach(btn => btn.classList.remove('active'));
-            
-            if (categoryName === 'all') {
-                buttons[0].classList.add('active');
-                renderProducts();
-            } else {
-                const targetButton = Array.from(buttons).find(btn => btn.textContent === categoryName);
-                if (targetButton) targetButton.classList.add('active');
-                
-                // Filter products
-                const filteredProducts = productsData.filter(product => product.category === categoryName);
-                renderFilteredProducts(filteredProducts, categoryName);
-            }
-        }
-
-        // Global variables for pagination
-        let currentProducts = [];
-        let displayedCount = 6;
-        const PRODUCTS_PER_PAGE = 6;
-
-        // Render all products
-        function renderProducts() {
-            const productGrid = document.getElementById('productGrid');
-            const sectionTitle = document.querySelector('.featured h2');
-            
-            currentProducts = [...productsData];
-            displayedCount = PRODUCTS_PER_PAGE;
-            
-            renderProductsWithPagination();
-        }
-
-        // Render products with pagination
-        function renderProductsWithPagination() {
-            const productGrid = document.getElementById('productGrid');
+        // Render category products
+        function renderCategoryProducts() {
+            const productGrid = document.getElementById('categoryProductGrid');
             productGrid.innerHTML = '';
             
-            if (currentProducts.length === 0) {
-                productGrid.innerHTML = '<p style="text-align: center; color: var(--text-secondary);">No products found in this collection.</p>';
+            if (categoryProducts.length === 0) {
+                productGrid.innerHTML = '<p style="text-align: center; color: var(--text-secondary);">No products found in this category.</p>';
                 return;
             }
             
-            // Show only first 6 products
-            const productsToShow = currentProducts.slice(0, displayedCount);
-            
-            productsToShow.forEach(product => {
+            categoryProducts.forEach(product => {
                 const productCard = document.createElement('div');
                 productCard.className = 'product-card';
                 
@@ -507,48 +294,11 @@
                 
                 productGrid.appendChild(productCard);
             });
-            
-            // Add "See All Products" button if there are more products
-            if (currentProducts.length > displayedCount) {
-                const viewMoreBtn = document.createElement('button');
-                viewMoreBtn.className = 'view-more-btn';
-                const sectionTitle = document.querySelector('.featured h2').textContent;
-                viewMoreBtn.textContent = `See All ${sectionTitle} (${currentProducts.length} total)`;
-                viewMoreBtn.onclick = () => {
-                    // Store category data for the category page
-                    localStorage.setItem('selectedCategory', sectionTitle);
-                    localStorage.setItem('categoryProducts', JSON.stringify(currentProducts));
-                    // Open category page in new tab
-                    window.open('category.html', '_blank');
-                };
-                productGrid.appendChild(viewMoreBtn);
-            }
-        }
-
-        // Load more products
-        function loadMoreProducts() {
-            displayedCount += PRODUCTS_PER_PAGE;
-            renderProductsWithPagination();
-        }
-
-        // Render filtered products
-        function renderFilteredProducts(products, title) {
-            const productGrid = document.getElementById('productGrid');
-            const sectionTitle = document.querySelector('.featured h2');
-            
-            if (title) {
-                sectionTitle.textContent = title;
-            }
-            
-            currentProducts = [...products];
-            displayedCount = PRODUCTS_PER_PAGE;
-            
-            renderProductsWithPagination();
         }
 
         // View individual product
         function viewProduct(productId) {
-            const product = productsData.find(p => p.id === productId);
+            const product = categoryProducts.find(p => p.id === productId);
             if (!product) return;
             
             showProductModal(product);
@@ -566,8 +316,7 @@
             const thumbnails = document.getElementById('productThumbnails');
             
             // Set basic product info
-            const imageUrl = getProductImage(product);
-            modalImage.src = imageUrl;
+            modalImage.src = getProductImage(product);
             modalImage.alt = product.name;
             modalName.textContent = product.name;
             modalCategory.textContent = product.category;
@@ -612,17 +361,13 @@
                 `;
             }
             
-            // Create thumbnails with lazy loading
+            // Create thumbnails
             if (product.images && product.images.length > 1) {
-                thumbnails.innerHTML = '';
-                product.images.forEach((img, index) => {
-                    const thumbnailImg = createLazyImage(`${product.folderPath}/${img}`, `${product.name} - Image ${index + 1}`, 'thumbnail');
-                    if (index === 0) {
-                        thumbnailImg.classList.add('active');
-                    }
-                    thumbnailImg.onclick = () => changeMainImage(`${product.folderPath}/${img}`);
-                    thumbnails.appendChild(thumbnailImg);
-                });
+                thumbnails.innerHTML = product.images.map((img, index) => 
+                    `<img src="${product.folderPath}/${img}" alt="${product.name} - Image ${index + 1}" 
+                     onclick="changeMainImage('${product.folderPath}/${img}')" 
+                     class="${index === 0 ? 'active' : ''}">`
+                ).join('');
             } else {
                 thumbnails.innerHTML = '';
             }
@@ -649,21 +394,6 @@
             // Update active thumbnail
             thumbnails.forEach(thumb => thumb.classList.remove('active'));
             event.target.classList.add('active');
-        }
-
-        // Explore more products in category
-        function exploreCategory() {
-            const modalName = document.getElementById('modalProductName').textContent;
-            const product = productsData.find(p => p.name === modalName);
-            
-            if (product) {
-                closeProductModal();
-                const filteredProducts = productsData.filter(p => p.category === product.category);
-                renderFilteredProducts(filteredProducts, product.category);
-                
-                // Scroll to products section
-                document.getElementById('featured').scrollIntoView({ behavior: 'smooth' });
-            }
         }
 
         // Helper function to get product image
@@ -700,12 +430,6 @@
                     target.scrollIntoView({ behavior: 'smooth', block: 'start' });
                 }
             });
-        });
-
-        // Initialize the page
-        document.addEventListener('DOMContentLoaded', function() {
-            setupImageObserver();
-            loadProducts();
         });
   </script>
 </body>
