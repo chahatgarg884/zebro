@@ -32,6 +32,49 @@
     </div>
   </section>
 
+  <!-- CATEGORY LIFESTYLE SECTION -->
+  <section class="category-lifestyle">
+    <div class="container">
+      <div class="lifestyle-grid">
+        <div class="lifestyle-images">
+          <div class="lifestyle-main">
+            <img id="lifestyleImage1" src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&h=600&fit=crop" alt="Lifestyle Image 1" class="lifestyle-img">
+          </div>
+          <div class="lifestyle-secondary">
+            <img id="lifestyleImage2" src="https://images.unsplash.com/photo-1551698618-1d58bc4df5d1?w=400&h=300&fit=crop" alt="Lifestyle Image 2" class="lifestyle-img">
+            <img id="lifestyleImage3" src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=400&h=300&fit=crop" alt="Lifestyle Image 3" class="lifestyle-img">
+          </div>
+        </div>
+        <div class="category-info">
+          <div class="flat-lay-container">
+            <img id="flatLayImage" src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=600&h=400&fit=crop" alt="Flat Lay Product" class="flat-lay-img">
+          </div>
+          <div class="category-details">
+            <h3>Product Specifications</h3>
+            <div class="category-specs">
+              <div class="spec-section">
+                <h4>Fabric Composition</h4>
+                <ul id="fabricComposition" class="spec-list">
+                  <li>Premium polyester blend</li>
+                  <li>Moisture-wicking technology</li>
+                  <li>Four-way stretch fabric</li>
+                </ul>
+              </div>
+              <div class="spec-section">
+                <h4>Key Benefits</h4>
+                <ul id="keyBenefits" class="spec-list">
+                  <li>Enhanced durability for long-term use</li>
+                  <li>Superior breathability and comfort</li>
+                  <li>Retail-ready quality finish</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- PRODUCTS SECTION -->
   <section class="category-products">
     <div class="container">
@@ -245,16 +288,286 @@
             document.getElementById('categoryDescription').textContent = getCategoryDescription(selectedCategory);
             document.getElementById('productsCount').textContent = categoryProducts.length;
             
+            // Update category-specific content
+            updateCategoryContent(selectedCategory);
+            
             // Render products
             renderCategoryProducts();
         });
 
+        // Update category-specific content
+        function updateCategoryContent(category) {
+            // Filter products by category
+            const productsInCategory = categoryProducts.filter(product => product.category === category);
+            
+            if (productsInCategory.length === 0) {
+                console.warn(`No products found for category: ${category}. Using fallback data.`);
+                // Use fallback data if no products found
+                useFallbackData(category);
+                return;
+            }
+            
+            // Select a random product from the filtered list
+            const randomProduct = productsInCategory[Math.floor(Math.random() * productsInCategory.length)];
+            
+            // Update images using the random product's images
+            if (randomProduct.images && randomProduct.images.length > 0) {
+                const productPath = randomProduct.folderPath || '';
+                document.getElementById('lifestyleImage1').src = `${productPath}/${randomProduct.images[0]}`;
+                document.getElementById('lifestyleImage2').src = randomProduct.images[1] ? `${productPath}/${randomProduct.images[1]}` : `${productPath}/${randomProduct.images[0]}`;
+                document.getElementById('lifestyleImage3').src = randomProduct.images[2] ? `${productPath}/${randomProduct.images[2]}` : `${productPath}/${randomProduct.images[0]}`;
+                document.getElementById('flatLayImage').src = randomProduct.images[3] ? `${productPath}/${randomProduct.images[3]}` : `${productPath}/${randomProduct.images[0]}`;
+            } else {
+                // Fallback to placeholder images if no product images
+                useFallbackImages();
+            }
+            
+            // Extract fabric composition and key benefits from product data
+            const fabricComposition = extractFabricComposition(randomProduct, category);
+            const keyBenefits = extractKeyBenefits(randomProduct, category);
+            
+            updateSpecLists(fabricComposition, keyBenefits);
+        }
+        
+        // Extract fabric composition from product data
+        function extractFabricComposition(product, category) {
+            // Check if product has custom fabric composition
+            if (product.fabricComposition && Array.isArray(product.fabricComposition) && product.fabricComposition.length > 0) {
+                return product.fabricComposition;
+            }
+            
+            // Try to extract from description
+            if (product.description) {
+                const fabricKeywords = ['polyester', 'cotton', 'spandex', 'nylon', 'mesh', 'fabric', 'material', 'blend', 'stretch'];
+                const sentences = product.description.split('.');
+                
+                for (let sentence of sentences) {
+                    if (fabricKeywords.some(keyword => sentence.toLowerCase().includes(keyword))) {
+                        // Clean up and return the sentence as fabric info
+                        const cleaned = sentence.trim();
+                        if (cleaned.length > 10 && cleaned.length < 100) {
+                            return [cleaned];
+                        }
+                    }
+                }
+            }
+            
+            // Try to extract from features
+            if (product.features && Array.isArray(product.features)) {
+                const fabricKeywords = ['polyester', 'cotton', 'spandex', 'nylon', 'mesh', 'fabric', 'material', 'blend', 'stretch'];
+                const fabricFeatures = product.features.filter(feature => 
+                    fabricKeywords.some(keyword => feature.toLowerCase().includes(keyword))
+                );
+                if (fabricFeatures.length > 0) {
+                    return fabricFeatures.slice(0, 3);
+                }
+            }
+            
+            // Use category defaults
+            return getDefaultFabricComposition(category);
+        }
+        
+        // Extract key benefits from product data
+        function extractKeyBenefits(product, category) {
+            // Check if product has custom key benefits
+            if (product.keyBenefits && Array.isArray(product.keyBenefits) && product.keyBenefits.length > 0) {
+                return product.keyBenefits;
+            }
+            
+            // Extract from features
+            if (product.features && Array.isArray(product.features) && product.features.length > 0) {
+                // Filter out fabric-related features and keep benefits
+                const benefitKeywords = ['durable', 'comfortable', 'breathable', 'lightweight', 'quick-dry', 'moisture', 'performance', 'quality', 'design'];
+                const benefits = product.features.filter(feature => 
+                    benefitKeywords.some(keyword => feature.toLowerCase().includes(keyword))
+                );
+                
+                if (benefits.length > 0) {
+                    return benefits.slice(0, 4);
+                }
+                
+                // If no specific benefits found, use first few features
+                return product.features.slice(0, 4);
+            }
+            
+            // Extract from description
+            if (product.description) {
+                const benefitKeywords = ['durable', 'comfortable', 'breathable', 'lightweight', 'quick-dry', 'moisture', 'performance', 'quality', 'design'];
+                const sentences = product.description.split('.');
+                
+                const benefitSentences = sentences.filter(sentence => 
+                    benefitKeywords.some(keyword => sentence.toLowerCase().includes(keyword))
+                );
+                
+                if (benefitSentences.length > 0) {
+                    return benefitSentences.slice(0, 4).map(s => s.trim());
+                }
+            }
+            
+            // Use category defaults
+            return getDefaultKeyBenefits(category);
+        }
+        
+        // Use fallback data for category
+        function useFallbackData(category) {
+            const fabricComposition = getDefaultFabricComposition(category);
+            const keyBenefits = getDefaultKeyBenefits(category);
+            
+            // Use fallback images
+            useFallbackImages();
+            
+            // Update spec lists with defaults
+            updateSpecLists(fabricComposition, keyBenefits);
+        }
+        
+        // Use fallback images
+        function useFallbackImages() {
+            document.getElementById('lifestyleImage1').src = 'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&h=600&fit=crop';
+            document.getElementById('lifestyleImage2').src = 'https://images.unsplash.com/photo-1551698618-1d58bc4df5d1?w=400&h=300&fit=crop';
+            document.getElementById('lifestyleImage3').src = 'https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=400&h=300&fit=crop';
+            document.getElementById('flatLayImage').src = 'https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=600&h=400&fit=crop';
+        }
+        
+        // Get default fabric composition by category
+        function getDefaultFabricComposition(category) {
+            const defaults = {
+                'Tee': [
+                    '65% Polyester, 35% Cotton blend',
+                    'Moisture-wicking polyester fibers',
+                    'Reinforced stitching at stress points',
+                    'Anti-pilling finish'
+                ],
+                'Track Pant': [
+                    '80% Polyester, 20% Spandex blend',
+                    'Four-way stretch technology',
+                    'Brushed interior for comfort',
+                    'Quick-dry fabric treatment'
+                ],
+                'Track Suit': [
+                    '100% Premium polyester mesh',
+                    'Breathable mesh panels',
+                    'Water-resistant outer layer',
+                    'Thermal lining for warmth'
+                ],
+                'Shorts': [
+                    '85% Polyester, 15% Spandex blend',
+                    'Lightweight breathable fabric',
+                    'Quick-dry technology',
+                    'Reinforced seams'
+                ],
+                'Jacket': [
+                    '70% Polyester, 30% Nylon blend',
+                    'Wind-resistant outer shell',
+                    'Insulated lining',
+                    'Water-repellent coating'
+                ],
+                'Upper': [
+                    '70% Polyester, 30% Nylon blend',
+                    'Wind-resistant outer shell',
+                    'Insulated lining',
+                    'Water-repellent coating'
+                ],
+                'Accessories': [
+                    'High-density synthetic materials',
+                    'UV-resistant coatings',
+                    'Reinforced stress points',
+                    'Quick-dry synthetic fabrics'
+                ],
+                'Footwear': [
+                    'Engineered mesh upper',
+                    'TPU sole construction',
+                    'EVA foam midsole',
+                    'Rubber outsole with traction'
+                ],
+                'Training': [
+                    'Industrial-grade synthetic materials',
+                    'Reinforced steel components',
+                    'Anti-slip rubber grips',
+                    'Weather-resistant coatings'
+                ]
+            };
+            return defaults[category] || defaults['Tee'];
+        }
+        
+        // Get default key benefits by category
+        function getDefaultKeyBenefits(category) {
+            const defaults = {
+                'Tee': [
+                    'Enhanced durability for frequent wear',
+                    'Superior breathability during activity',
+                    'Retail-ready premium finish',
+                    'Color-fast technology for lasting appearance'
+                ],
+                'Track Pant': [
+                    'Maximum flexibility and range of motion',
+                    'Superior moisture management',
+                    'Retail-ready quality construction',
+                    'Durable for high-intensity training'
+                ],
+                'Track Suit': [
+                    'Complete coordinated outfit system',
+                    'All-weather versatility and comfort',
+                    'Retail-ready presentation',
+                    'Built for team and individual use'
+                ],
+                'Shorts': [
+                    'Lightweight comfort for training',
+                    'Quick-dry moisture management',
+                    'Retail-ready athletic styling',
+                    'Durable for repeated washing'
+                ],
+                'Jacket': [
+                    'Weather protection for outdoor use',
+                    'Insulated warmth for cold conditions',
+                    'Retail-ready professional appearance',
+                    'Durable construction for daily wear'
+                ],
+                'Upper': [
+                    'Weather protection for outdoor use',
+                    'Insulated warmth for cold conditions',
+                    'Retail-ready professional appearance',
+                    'Durable construction for daily wear'
+                ],
+                'Accessories': [
+                    'Enhanced durability for outdoor use',
+                    'Weather-resistant performance',
+                    'Retail-ready branding options',
+                    'Ergonomic design for comfort'
+                ],
+                'Footwear': [
+                    'Superior cushioning and support',
+                    'Enhanced durability for daily training',
+                    'Retail-ready premium aesthetics',
+                    'Advanced traction technology'
+                ],
+                'Training': [
+                    'Professional-grade durability',
+                    'Enhanced safety features',
+                    'Retail-ready packaging and display',
+                    'Ergonomic design for efficiency'
+                ]
+            };
+            return defaults[category] || defaults['Tee'];
+        }
+
+        // Helper function to update spec lists
+        function updateSpecLists(fabricComposition, keyBenefits) {
+            const fabricList = document.getElementById('fabricComposition');
+            fabricList.innerHTML = fabricComposition.map(item => `<li>${item}</li>`).join('');
+            
+            const benefitsList = document.getElementById('keyBenefits');
+            benefitsList.innerHTML = keyBenefits.map(item => `<li>${item}</li>`).join('');
+        }
+
         // Get category description
         function getCategoryDescription(category) {
             const descriptions = {
-                'Upper': 'T-Shirts, Jackets, Polo shirts and more',
-                'Lower': 'Track pants, shorts, joggers and more',
-                'Track Suits': 'Complete training sets and coordinated outfits',
+                'Tee': 'T-Shirts, Polo shirts and more',
+                'Track Pant': 'Track pants, shorts, joggers and more',
+                'Track Suit': 'Complete training sets and coordinated outfits',
+                'Shorts': 'Training shorts and athletic wear',
+                'Jacket': 'Jackets, hoodies and outerwear',
+                'Upper': 'Jackets, hoodies and upper body wear',
                 'Accessories': 'Caps, bags, water bottles and training gear',
                 'Footwear': 'Running shoes, trainers and athletic footwear',
                 'Training': 'Training equipment and fitness accessories'
