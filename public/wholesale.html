@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Wholesale & Retail Partnerships | ZEBRO Activewear</title>
+  <title>Wholesale & Retail Partnerships | ZEBRO Sportswear</title>
   <meta name="description" content="Partner with ZEBRO for premium athleisure manufacturing. Bulk orders, container shipping, and retail-ready solutions for large distributors." />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -21,15 +21,27 @@
         <a href="index.html" class="nav-link">← Back to Home</a>
         <a href="#contact" class="nav-link">Contact</a>
       </nav>
+
+      <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
     </div>
   </header>
+
+  <!-- MOBILE MENU -->
+  <nav class="mobile-nav" id="mobileNav">
+    <a href="index.html" class="mobile-nav-link">← Back to Home</a>
+    <a href="#contact" class="mobile-nav-link">Contact</a>
+  </nav>
 
   <!-- HERO SECTION -->
   <section class="wholesale-hero">
     <div class="container">
       <div class="wholesale-hero-content">
-        <h1>Manufacturing Partnership Portal</h1>
-        <p>Large-scale athleisure production for retail chains, distributors, and institutional buyers</p>
+        <h1>ZEBRO Sportswear <span class="hero-subtagline"></span>Built to Move. Designed to Sell.</span></h1>
+        <p>The sportswear brand retailers trust for consistent sell-through and customer satisfaction.</p>
         <div class="hero-buttons">
           <a href="#enquiry-form" class="btn btn-primary">Start Wholesale Enquiry</a>
           <a href="#categories" class="btn btn-secondary">View Product Categories</a>
@@ -38,44 +50,105 @@
     </div>
   </section>
 
-  <!-- WHO ZEBRO IS -->
-  <section class="who-zebro" id="intro">
+  <!-- WHY ZEBRO IS RETAIL-READY -->
+  <section class="retail-ready" id="retail-ready">
     <div class="container">
       <div class="section-header">
-        <h2>Manufacturing Overview</h2>
-        <p>Vertically integrated athleisure manufacturer for global retail distribution</p>
+        <h2>� Why Retailers Choose ZEBRO</h2>
+        <p>Brand-built sportswear designed for retail success and customer loyalty</p>
       </div>
-      <div class="zebro-intro">
-        <div class="intro-content">
-          <p>ZEBRO is a vertically integrated athleisure manufacturer based in India, specializing in large-scale production for retail chains, distributors, and institutional buyers. Our manufacturing facilities are equipped with advanced production technology and comprehensive quality control systems, ensuring consistent output for retail distribution channels. We provide complete supply chain solutions from raw material sourcing to finished product delivery.</p>
-          <div class="intro-stats">
-            <div class="stat">
-              <span class="stat-number">500K+</span>
-              <span class="stat-label">Units Monthly Capacity</span>
-            </div>
-            <div class="stat">
-              <span class="stat-number">15+</span>
-              <span class="stat-label">Years Manufacturing</span>
-            </div>
-            <div class="stat">
-              <span class="stat-number">50+</span>
-              <span class="stat-label">Export Markets</span>
+      
+      <div class="retail-ready-grid">
+        <div class="retail-card">
+          <div class="retail-header">
+            <div class="retail-icon">🎯</div>
+            <h3>Retail-Ready Designs</h3>
+          </div>
+          <div class="retail-content">
+            <p>Shelf-tested sportswear that customers love and retailers profit from.</p>
+            <div class="retail-features">
+              <div class="feature-item">
+                <span class="feature-icon">✓</span>
+                <span>Customer-approved</span>
+              </div>
+              <div class="feature-item">
+                <span class="feature-icon">✓</span>
+                <span>Fast-selling styles</span>
+              </div>
             </div>
           </div>
         </div>
-        <div class="intro-image">
-          <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=600&h=400&fit=crop" alt="Manufacturing Facility" class="intro-img">
+        
+        <div class="retail-card">
+          <div class="retail-header">
+            <div class="retail-icon">👕</div>
+            <h3>Designed for Everyday Wear</h3>
+          </div>
+          <div class="retail-content">
+            <p>Comfort-focused sportswear that keeps customers coming back for more.</p>
+            <div class="retail-features">
+              <div class="feature-item">
+                <span class="feature-icon">✓</span>
+                <span>All-day comfort</span>
+              </div>
+              <div class="feature-item">
+                <span class="feature-icon">✓</span>
+                <span>Durable quality</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="retail-card">
+          <div class="retail-header">
+            <div class="retail-icon">📊</div>
+            <h3>Brand-Built Identity</h3>
+          </div>
+          <div class="retail-content">
+            <p>Complete brand package with SKU systems and retail-ready product identification.</p>
+            <div class="retail-features">
+              <div class="feature-item">
+                <span class="feature-icon">✓</span>
+                <span>Brand consistency</span>
+              </div>
+              <div class="feature-item">
+                <span class="feature-icon">✓</span>
+                <span>Retail integration</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="retail-card">
+          <div class="retail-header">
+            <div class="retail-icon">�</div>
+            <h3>Scalable Supply</h3>
+          </div>
+          <div class="retail-content">
+            <p>Growing brand with flexible supply that scales with your retail success.</p>
+            <div class="retail-features">
+              <div class="feature-item">
+                <span class="feature-icon">✓</span>
+                <span>Growth partnership</span>
+              </div>
+              <div class="feature-item">
+                <span class="feature-icon">✓</span>
+                <span>Seasonal flexibility</span>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
+
   <!-- PRODUCT CATEGORIES -->
   <section class="product-categories" id="categories">
     <div class="container">
       <div class="section-header">
-        <h2>Product Manufacturing Categories</h2>
-        <p>Manufacturing capabilities across athleisure product lines</p>
+        <h2>🎯 Brand Collection</h2>
+        <p>Customer-favorite sportswear categories that drive retail success</p>
       </div>
       <div class="categories-grid">
         <div class="category-card" onclick="goToCategory('Tee')" style="background-image: url('https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=400&h=300&fit=crop'); background-size: cover; background-position: center;">
@@ -127,50 +200,52 @@
   <section class="moq-leadtime">
     <div class="container">
       <div class="section-header">
-        <h2>Order Requirements</h2>
-        <p>Minimum order quantities and production lead times</p>
+        <h2>� Manufacturing Specifications</h2>
+        <p>Production capacity and order requirements for wholesale partnerships</p>
       </div>
       <div class="moq-grid">
         <div class="moq-card">
-          <h3>Minimum Order Quantity</h3>
-          <div class="moq-ranges">
-            <div class="range-item">
-              <span class="range-category">Upper Wear</span>
-              <span class="range-value">500 - 1,000 pieces</span>
+          <div class="spec-header">
+            <div class="spec-icon">�</div>
+            <h3>Minimum Order Quantity</h3>
+          </div>
+          <div class="spec-content">
+            <div class="spec-main">
+              <span class="spec-number">300</span>
+              <span class="spec-unit">units per SKU</span>
             </div>
-            <div class="range-item">
-              <span class="range-category">Lower Wear</span>
-              <span class="range-value">500 - 1,000 pieces</span>
-            </div>
-            <div class="range-item">
-              <span class="range-category">Track Suits</span>
-              <span class="range-value">200 - 500 sets</span>
-            </div>
-            <div class="range-item">
-              <span class="range-category">Accessories</span>
-              <span class="range-value">1,000 - 5,000 pieces</span>
+            <div class="spec-details">
+              <div class="detail-item">
+                <span class="detail-label">Sample Order:</span>
+                <span class="detail-value">Available</span>
+              </div>
+              <div class="detail-item">
+                <span class="detail-label">Production Time:</span>
+                <span class="detail-value">30-45 days</span>
+              </div>
             </div>
           </div>
         </div>
         
         <div class="moq-card">
-          <h3>Production Lead Time</h3>
-          <div class="moq-ranges">
-            <div class="range-item">
-              <span class="range-category">Sample Orders</span>
-              <span class="range-value">7-14 days</span>
+          <div class="spec-header">
+            <div class="spec-icon">🚢</div>
+            <h3>Container Capacity</h3>
+          </div>
+          <div class="spec-content">
+            <div class="capacity-grid">
+              <div class="capacity-item">
+                <div class="container-size">20' Container</div>
+                <div class="capacity-value">~25,000<span class="capacity-unit">units</span></div>
+              </div>
+              <div class="capacity-item">
+                <div class="container-size">40' Container</div>
+                <div class="capacity-value">~60,000<span class="capacity-unit">units</span></div>
+              </div>
             </div>
-            <div class="range-item">
-              <span class="range-category">Standard Orders</span>
-              <span class="range-value">30-45 days</span>
-            </div>
-            <div class="range-item">
-              <span class="range-category">Large Orders</span>
-              <span class="range-value">45-60 days</span>
-            </div>
-            <div class="range-item">
-              <span class="range-category">Repeat Orders</span>
-              <span class="range-value">21-30 days</span>
+            <div class="capacity-note">
+              <div class="note-icon">ℹ️</div>
+              <span>Flexible loading configuration for mixed SKUs</span>
             </div>
           </div>
         </div>
@@ -251,84 +326,109 @@
     </div>
   </section>
 
-  <!-- RESOURCES FOR PARTNERS -->
-  <section class="partner-resources" id="resources">
+  <!-- SOCIAL PROOF SECTION -->
+  <section class="social-proof" id="social-proof">
     <div class="container">
       <div class="section-header">
-        <h2>Business Resources</h2>
-        <p>Download essential materials for partnership evaluation</p>
+        <h2>💬 Retail Confidence</h2>
+        <p>Trusted by sportswear enthusiasts and early adopters nationwide</p>
       </div>
       
-      <div class="resources-grid">
-        <div class="resource-card" onclick="downloadResource('catalogue')">
-          <div class="resource-icon">
-            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2z"/>
-              <path d="M14 2v6l-6 6 6-6"/>
-              <path d="M10 11v2"/>
-            </svg>
+      <div class="social-proof-grid">
+        <div class="proof-card">
+          <div class="proof-header">
+            <div class="proof-icon">💬</div>
+            <h3>Created by Enthusiasts</h3>
           </div>
-          <div class="resource-content">
-            <h3>Product Catalogue</h3>
-            <p>Complete product collection with specifications</p>
-            <div class="resource-meta">
-              <span>PDF • 15MB</span>
+          <div class="proof-content">
+            <p>"Created by sportswear enthusiasts who believe sportswear should feel great and sell well. Loved by early testers nationwide."</p>
+            <div class="proof-features">
+              <div class="feature-item">
+                <span class="feature-icon">✓</span>
+                <span>Performance-tested</span>
+              </div>
+              <div class="feature-item">
+                <span class="feature-icon">✓</span>
+                <span>Comfort-focused</span>
+              </div>
+              <div class="feature-item">
+                <span class="feature-icon">✓</span>
+                <span>Style-approved</span>
+              </div>
             </div>
-          </div>
-          <div class="download-indicator">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M21 15v4a2 2 0 0 0-2-2H5a2 2 0 0 0-2-2v-4a2 2 0 0 0 2-2h14a2 2 0 0 0 2 2z"/>
-              <polyline points="7,10 12,15 17,10"/>
-            </svg>
           </div>
         </div>
         
-        <div class="resource-card" onclick="downloadResource('pitch-deck')">
-          <div class="resource-icon">
-            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M4 6h16M4 12h16M4 18h16"/>
-            </svg>
+        <div class="proof-card">
+          <div class="proof-header">
+            <div class="proof-icon">📈</div>
+            <h3>Growing Brand Presence</h3>
           </div>
-          <div class="resource-content">
-            <h3>Wholesale Pitch Deck</h3>
-            <p>Business overview and partnership opportunities</p>
-            <div class="resource-meta">
-              <span>PDF • 8MB</span>
+          <div class="proof-content">
+            <p>"Growing brand presence with 2.4K+ engaged followers."</p>
+            <div class="instagram-preview">
+              <div class="instagram-header">
+                <div class="instagram-icon">📷</div>
+                <h4>@zebro_sportswear</h4>
+              </div>
+              <div class="instagram-feed">
+                <div class="feed-post">
+                  <div class="post-image" style="background-image: url('asset/insta1.png');"></div>
+                  <div class="post-stats">
+                    <span class="likes">❤️ 13.8K</span>
+                    <span class="comments">💬 5</span>
+                  </div>
+                </div>
+                <div class="feed-post">
+                  <div class="post-image" style="background-image: url('asset/insta2.png');"></div>
+                  <div class="post-stats">
+                    <span class="likes">❤️ 6.7k</span>
+                    <span class="comments">💬 49</span>
+                  </div>
+                </div>
+                <div class="feed-post">
+                  <div class="post-image" style="background-image: url('asset/insta3.png');"></div>
+                  <div class="post-stats">
+                    <span class="likes">❤️ 24.9</span>
+                    <span class="comments">💬 20</span>
+                  </div>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="download-indicator">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M21 15v4a2 2 0 0 0-2-2H5a2 2 0 0 0-2-2v-4a2 2 0 0 0 2-2h14a2 2 0 0 0 2 2z"/>
-              <polyline points="7,10 12,15 17,10"/>
-            </svg>
           </div>
         </div>
         
-        <div class="resource-card" onclick="downloadResource('planning-summary')">
-          <div class="resource-icon">
-            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
-              <line x1="9" y1="9" x2="15" y2="9"/>
-              <line x1="9" y1="15" x2="15" y2="15"/>
-            </svg>
+        <div class="proof-card">
+          <div class="proof-header">
+            <div class="proof-icon">⭐</div>
+            <h3>Early Adopter Feedback</h3>
           </div>
-          <div class="resource-content">
-            <h3>Container Planning Summary</h3>
-            <p>Shipping and logistics information</p>
-            <div class="resource-meta">
-              <span>PDF • 5MB</span>
+          <div class="proof-content">
+            <div class="testimonial">
+              <div class="testimonial-content">
+                <p>"The quality exceeded our expectations. Our customers love the fit and durability!"</p>
+                <div class="testimonial-author">
+                  <span class="author-name">- Sarah M., Retail Store Owner</span>
+                  <span class="author-type">Pilot Program</span>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="download-indicator">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M21 15v4a2 2 0 0 0-2-2H5a2 2 0 0 0-2-2v-4a2 2 0 0 0 2-2h14a2 2 0 0 0 2 2z"/>
-              <polyline points="7,10 12,15 17,10"/>
-            </svg>
+            <div class="testimonial">
+              <div class="testimonial-content">
+                <p>"Best sportswear supplier we've worked with. Consistent quality and reliable delivery."</p>
+                <div class="testimonial-author">
+                  <span class="author-name">- Mike R., Distribution Manager</span>
+                  <span class="author-type">Bulk Order</span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </section>
+
+
 
   <!-- WHOLESALE ENQUIRY -->
   <section class="wholesale-enquiry-new" id="enquiry-form">
@@ -336,45 +436,24 @@
       <div class="enquiry-wrapper">
         <div class="enquiry-left">
           <div class="enquiry-header">
-            <h2>Partnership Enquiry</h2>
+            <h2>Wholesale Enquiry</h2>
             <p>Begin your manufacturing partnership with ZEBRO</p>
           </div>
           
           <div class="enquiry-features">
             <div class="feature-item">
-              <div class="feature-icon">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
-                </svg>
-              </div>
+              <div class="feature-icon">⚡</div>
               <div>
                 <h4>Fast Response</h4>
-                <p>Get reply within 24 hours</p>
+                <p>Reply within 24 hours</p>
               </div>
             </div>
             
             <div class="feature-item">
-              <div class="feature-icon">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M12 2L2 7v10c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-10-5z"/>
-                </svg>
-              </div>
+              <div class="feature-icon">🔒</div>
               <div>
                 <h4>Secure Process</h4>
                 <p>Your information is protected</p>
-              </div>
-            </div>
-            
-            <div class="feature-item">
-              <div class="feature-icon">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
-                  <polyline points="22,4 12,14.01 9,11.01"/>
-                </svg>
-              </div>
-              <div>
-                <h4>Expert Support</h4>
-                <p>Dedicated account manager</p>
               </div>
             </div>
           </div>
@@ -386,69 +465,56 @@
                 <span class="contact-emoji">📧</span>
                 <span>info@headstrongcommerce.com</span>
               </a>
-              <a href="tel:+919876543210" class="contact-method">
-                <span class="contact-emoji">📞</span>
-                <span>+91-98765-43210</span>
-              </a>
             </div>
           </div>
         </div>
         
         <div class="enquiry-right">
           <div class="enquiry-form-card">
-            <h3>Partnership Enquiry Form</h3>
+            <h3>Wholesale Enquiry Form</h3>
             <form class="modern-form" onsubmit="handleWholesaleEnquiry(event)">
-              <div class="form-group-modern">
-                <label for="company">Company Name</label>
-                <input type="text" id="company" name="company" required placeholder="Your company name">
-              </div>
-              
-              <div class="form-row-modern">
+              <div class="form-row">
                 <div class="form-group-modern">
-                  <label for="contact">Contact Person</label>
-                  <input type="text" id="contact" name="contact" required placeholder="Your name">
+                  <label for="company">Business Name *</label>
+                  <input type="text" id="company" name="company" required placeholder="Your registered business name">
                 </div>
+                
                 <div class="form-group-modern">
-                  <label for="phone">Phone</label>
-                  <input type="tel" id="phone" name="phone" required placeholder="+91 XXXXX XXXXX">
+                  <label for="contact">Contact Person *</label>
+                  <input type="text" id="contact" name="contact" required placeholder="Primary contact person name">
                 </div>
               </div>
               
-              <div class="form-group-modern">
-                <label for="email">Email Address</label>
-                <input type="email" id="email" name="email" required placeholder="your@email.com">
-              </div>
-              
-              <div class="form-row-modern">
+              <div class="form-row">
                 <div class="form-group-modern">
-                  <label for="business-type">Business Type</label>
-                  <select id="business-type" name="business-type" required>
-                    <option value="">Select type</option>
-                    <option value="retail-chain">Retail Chain</option>
-                    <option value="distributor">Distributor</option>
-                    <option value="wholesaler">Wholesaler</option>
-                    <option value="institutional">Institutional</option>
-                  </select>
+                  <label for="email">Email Address *</label>
+                  <input type="email" id="email" name="email" required placeholder="business@company.com">
                 </div>
+                
                 <div class="form-group-modern">
-                  <label for="order-quantity">Order Quantity</label>
-                  <select id="order-quantity" name="order-quantity" required>
-                    <option value="">Select range</option>
-                    <option value="500-1000">500-1,000</option>
-                    <option value="1000-5000">1,000-5,000</option>
-                    <option value="5000-10000">5,000-10,000</option>
-                    <option value="10000+">10,000+</option>
-                  </select>
+                  <label for="phone">Phone Number</label>
+                  <input type="tel" id="phone" name="phone" placeholder="+91 XXXXX XXXXX">
                 </div>
               </div>
               
               <div class="form-group-modern">
-                <label for="message">Message</label>
-                <textarea id="message" name="message" rows="3" placeholder="Tell us about your requirements..."></textarea>
+                <label for="order-size">Estimated Order Size *</label>
+                <select id="order-size" name="order-size" required>
+                  <option value="">Select order size</option>
+                  <option value="500-1000">500 - 1,000 units</option>
+                  <option value="1000-5000">1,000 - 5,000 units</option>
+                  <option value="5000-10000">5,000 - 10,000 units</option>
+                  <option value="10000+">10,000+ units</option>
+                </select>
+              </div>
+              
+              <div class="form-group-modern">
+                <label for="message">Additional Requirements</label>
+                <textarea id="message" name="message" rows="3" placeholder="Specific requirements or special notes..."></textarea>
               </div>
               
               <button type="submit" class="submit-btn-modern">
-                <span>Send Enquiry</span>
+                <span>Send Wholesale Enquiry</span>
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                   <line x1="22" y1="2" x2="11" y2="13"/>
                   <polygon points="22,2 15,22 11,13 2,9 22,2"/>
@@ -469,6 +535,22 @@
   </footer>
 
   <script>
+    // Mobile menu toggle
+        function toggleMobileMenu() {
+            const nav = document.getElementById('mobileNav');
+            const menuBtn = document.querySelector('.mobile-menu-btn');
+            
+            nav.classList.toggle('active');
+            menuBtn.classList.toggle('active');
+            
+            // Prevent body scroll when menu is open
+            if (nav.classList.contains('active')) {
+                document.body.style.overflow = 'hidden';
+            } else {
+                document.body.style.overflow = 'auto';
+            }
+        }
+
     // Go to category page with all products
     function goToCategory(category) {
       // Store category data in localStorage
@@ -551,15 +633,15 @@
         `Company: ${data.company}\n` +
         `Contact Person: ${data.contact}\n` +
         `Email: ${data.email}\n` +
-        `Phone: ${data.phone}\n` +
+        `ABN: ${data.abn}\n` +
         `Business Type: ${data.businessType}\n` +
         `Target Market: ${data.targetMarket}\n` +
-        `Categories: ${data.categories}\n` +
-        `Order Quantity: ${data.orderQuantity}\n\n` +
+        `Order Size: ${data.orderSize}\n` +
+        `Delivery Window: ${data.delivery}\n\n` +
         `Additional Requirements:\n${data.message || 'None specified'}`
       );
       
-      window.location.href = `mailto:info@headstrongcommerce.com?subject=${subject}&body=${body}`;
+      window.location.href = `mailto:wholesale@zebrosportswear.com?subject=${subject}&body=${body}`;
       event.target.reset();
     }
 

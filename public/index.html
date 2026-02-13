@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Sportswear Collection | Performance Wear Showcase</title>
-  <meta name="description" content="Explore our premium sportswear collection including uppers, lowers, track suits and training wear." />
+  <title>ZEBRO Sportswear | Brand-Built Performance Wear</title>
+  <meta name="description" content="ZEBRO Sportswear - Brand-built performance wear designed for retail success and customer satisfaction." />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
@@ -24,10 +24,10 @@
       </button>
       
       <nav class="nav" id="mainNav">
-        <a href="#featured" class="nav-link">Categories</a>
-        <a href="wholesale.html#intro" class="nav-link">Retail / Wholesale</a>
-        <a href="wholesale.html#intro" class="nav-link">About</a>
-        <a href="#contact" class="nav-link">Contact</a>
+        <a href="wholesale.html" class="nav-link">Retail Partnership</a>
+        <a href="wholesale.html#retail-ready" class="nav-link">Why ZEBRO</a>
+        <a href="#featured" class="nav-link">Collection</a>
+        <a href="wholesale.html#enquiry-form" class="nav-link">Partner With Us</a>
       </nav>
 
       <div class="nav-actions">
@@ -44,16 +44,16 @@
     <div class="container">
       <div class="hero-content">
         <div class="hero-text">
-          <h1 class="hero-headline">ZEBRO <span class="accent-text"> Manufacturing</span></h1>
-          <p>Large-scale athleisure manufacturing for retail chains, distributors, and institutional buyers. Premium quality at competitive scale.</p>
+          <h1 class="hero-headline">ZEBRO Sportswear <span class="hero-subtagline"></span>Built to Move. Designed to Sell.</span></h1>
+          <p>The sportswear brand that delivers customer satisfaction and retail success.</p>
           <div class="hero-buttons">
-            <a href="wholesale.html" class="btn btn-primary">Wholesale Partnership</a>
-            <a href="#featured" class="btn btn-secondary">Product Catalog</a>
+            <a href="wholesale.html" class="btn btn-primary">Partner With ZEBRO</a>
+            <a href="#featured" class="btn btn-secondary">Explore Collection</a>
           </div>
         </div>
         <div class="hero-visual">
           <div class="hero-image-container">
-            <img src="asset/banner.jpg" alt="ZEBRO Activewear Banner" class="hero-banner-image" />
+            <img src="asset/banner.jpg" alt="ZEBRO Sportswear Banner" class="hero-banner-image" />
             <div class="hero-overlay"></div>
           </div>
         </div>
@@ -61,12 +61,12 @@
     </div>
   </section>
 
-  <!-- MANUFACTURING CAPABILITIES -->
+  <!-- BRAND STRENGTHS -->
   <section class="why-zebro">
     <div class="container">
       <div class="why-zebro-header">
-        <h2>Manufacturing Capabilities</h2>
-        <p>Scale-ready production for retail chains and distribution partners</p>
+        <h2>🏆 Brand Strengths</h2>
+        <p>Why retailers and customers choose ZEBRO Sportswear</p>
       </div>
       <div class="why-zebro-grid">
         <div class="why-zebro-item">
@@ -75,8 +75,8 @@
               <path d="M12 2L2 7v10c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-10-5z"/>
             </svg>
           </div>
-          <h3>Industrial Grade</h3>
-          <p>Commercial-grade materials and construction for retail durability</p>
+          <h3>Retail-Ready Quality</h3>
+          <p>Shelf-tested sportswear that keeps customers coming back</p>
         </div>
         <div class="why-zebro-item">
           <div class="why-zebro-icon">
@@ -84,8 +84,8 @@
               <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
             </svg>
           </div>
-          <h3>Manufacturing Excellence</h3>
-          <p>State-of-the-art facilities with robust quality control systems</p>
+          <h3>Customer-Focused Design</h3>
+          <p>Sportswear designed for real people and everyday comfort</p>
         </div>
         <div class="why-zebro-item">
           <div class="why-zebro-icon">
@@ -93,8 +93,8 @@
               <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
             </svg>
           </div>
-          <h3>Competitive Pricing</h3>
-          <p>Optimized FOB pricing for wholesale margins and retail profitability</p>
+          <h3>Retail Profitability</h3>
+          <p>Competitive pricing that drives retail margins and customer value</p>
         </div>
         <div class="why-zebro-item">
           <div class="why-zebro-icon">
@@ -102,8 +102,8 @@
               <path d="M20 7h-9l-2-2H4a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z"/>
             </svg>
           </div>
-          <h3>Container Capacity</h3>
-          <p>Full container-level production for large retail orders</p>
+          <h3>Scalable Partnership</h3>
+          <p>Growing brand with flexible supply for retail expansion</p>
         </div>
         <div class="why-zebro-item">
           <div class="why-zebro-icon">
@@ -630,8 +630,8 @@
                     // Store category data for the category page
                     localStorage.setItem('selectedCategory', sectionTitle);
                     localStorage.setItem('categoryProducts', JSON.stringify(currentProducts));
-                    // Open category page in new tab
-                    window.open('category.html', '_blank');
+                    // Open category page in same tab
+                    window.location.href = 'category.html';
                 };
                 productGrid.appendChild(viewMoreBtn);
             }

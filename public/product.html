@@ -15,6 +15,7 @@
       overflow-x: hidden;
       width: 100%;
     }
+    
   </style>
 </head>
 <body>
@@ -46,8 +47,12 @@
         <div class="main-image-container">
           <img src="asset/products/mens-tennis/image1.jpg" alt="Product Main Image" class="main-product-image" id="mainProductImage" />
         </div>
-        <div class="product-thumbnails" id="productThumbnails">
-          <!-- Thumbnails will be dynamically loaded here -->
+        <div class="thumbnail-navigation">
+          <button class="thumbnail-arrow" id="prevThumbnail" onclick="navigateThumbnails(-1)">‹</button>
+          <div class="product-thumbnails" id="productThumbnails">
+            <!-- Thumbnails will be dynamically loaded here -->
+          </div>
+          <button class="thumbnail-arrow" id="nextThumbnail" onclick="navigateThumbnails(1)">›</button>
         </div>
       </div>
       
@@ -464,17 +469,98 @@
             thumbnailsContainer.innerHTML = '';
             
             if (!currentProduct.images || currentProduct.images.length <= 1) {
-                return; // No thumbnails needed for single image
+                // Hide navigation if no thumbnails needed
+                const navContainer = document.querySelector('.thumbnail-navigation');
+                if (navContainer) navContainer.style.display = 'none';
+                return;
             }
             
+            // Show navigation
+            const navContainer = document.querySelector('.thumbnail-navigation');
+            if (navContainer) navContainer.style.display = 'flex';
+            
+            // Initialize thumbnail navigation state
+            window.currentThumbnailIndex = 0;
+            window.maxVisibleThumbnails = 6;
+            
             currentProduct.images.forEach((image, index) => {
-                const thumbnail = document.createElement('img');
-                thumbnail.src = `${currentProduct.folderPath}/${image}`;
-                thumbnail.alt = `${currentProduct.name} - Image ${index + 1}`;
-                thumbnail.className = `thumbnail ${index === 0 ? 'active' : ''}`;
-                thumbnail.onclick = () => changeMainImage(`${currentProduct.folderPath}/${image}`, thumbnail);
+                const thumbnail = document.createElement('div');
+                thumbnail.className = `thumbnail ${index === 0 ? 'active visible' : ''}`;
+                thumbnail.dataset.index = index;
+                
+                const img = document.createElement('img');
+                img.src = `${currentProduct.folderPath}/${image}`;
+                img.alt = `${currentProduct.name} - Image ${index + 1}`;
+                img.onclick = () => changeMainImage(`${currentProduct.folderPath}/${image}`, thumbnail);
+                
+                thumbnail.appendChild(img);
                 thumbnailsContainer.appendChild(thumbnail);
             });
+            
+            // Update thumbnail visibility
+            updateThumbnailVisibility();
+        }
+        
+        // Update thumbnail visibility based on current index
+        function updateThumbnailVisibility() {
+            const thumbnails = document.querySelectorAll('.thumbnail');
+            const prevBtn = document.getElementById('prevThumbnail');
+            const nextBtn = document.getElementById('nextThumbnail');
+            
+            if (thumbnails.length <= window.maxVisibleThumbnails) {
+                // Show all thumbnails if less than or equal to max
+                thumbnails.forEach(thumb => {
+                    thumb.classList.add('visible');
+                });
+                // Hide arrows if not needed
+                if (prevBtn) prevBtn.style.display = 'none';
+                if (nextBtn) nextBtn.style.display = 'none';
+                return;
+            }
+            
+            // Show arrows if needed
+            if (prevBtn) prevBtn.style.display = 'flex';
+            if (nextBtn) nextBtn.style.display = 'flex';
+            
+            // Hide all thumbnails first
+            thumbnails.forEach(thumb => {
+                thumb.classList.remove('visible');
+            });
+            
+            // Calculate visible range
+            const startIndex = window.currentThumbnailIndex;
+            const endIndex = Math.min(startIndex + window.maxVisibleThumbnails, thumbnails.length);
+            
+            // Show visible thumbnails
+            for (let i = startIndex; i < endIndex; i++) {
+                thumbnails[i].classList.add('visible');
+            }
+            
+            // Update arrow states
+            if (prevBtn) {
+                prevBtn.disabled = startIndex === 0;
+            }
+            if (nextBtn) {
+                nextBtn.disabled = endIndex >= thumbnails.length;
+            }
+        }
+        
+        // Navigate thumbnails
+        function navigateThumbnails(direction) {
+            const thumbnails = document.querySelectorAll('.thumbnail');
+            const totalThumbnails = thumbnails.length;
+            
+            if (totalThumbnails <= window.maxVisibleThumbnails) return;
+            
+            const newIndex = window.currentThumbnailIndex + direction;
+            
+            // Ensure we don't go out of bounds
+            if (newIndex < 0 || newIndex > totalThumbnails - window.maxVisibleThumbnails) {
+                return;
+            }
+            
+            window.currentThumbnailIndex = newIndex;
+            updateThumbnailVisibility();
         }
         
         // Change main image when thumbnail is clicked
@@ -485,6 +571,17 @@
             // Update active thumbnail
             document.querySelectorAll('.thumbnail').forEach(thumb => thumb.classList.remove('active'));
             thumbnailElement.classList.add('active');
+            
+            // Auto-navigate to show clicked thumbnail if it's not visible
+            const thumbnailIndex = parseInt(thumbnailElement.dataset.index);
+            if (thumbnailIndex < window.currentThumbnailIndex || 
+                thumbnailIndex >= window.currentThumbnailIndex + window.maxVisibleThumbnails) {
+                
+                // Calculate best starting index to show the clicked thumbnail
+                window.currentThumbnailIndex = Math.max(0, 
+                    Math.min(thumbnailIndex, thumbnailIndex - window.maxVisibleThumbnails + 1));
+                updateThumbnailVisibility();
+            }
         }
         
         // Extract fabric composition from product data
