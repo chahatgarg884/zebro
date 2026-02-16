@@ -3873,10 +3873,15 @@ body {
     right: 0;
     height: 3px;
     background: linear-gradient(90deg, var(--accent) 0%, var(--accent-light) 100%);
-    border-radius: 20px 20px 0 0;
 }
 
-.proof-card:hover {
+.proof-card-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.proof-card-link:hover .proof-card {
     transform: translateY(-8px);
     box-shadow: 0 20px 64px rgba(0, 0, 0, 0.12), 0 0 0 1px rgba(249, 115, 22, 0.2);
     border-color: rgba(249, 115, 22, 0.2);
@@ -3981,6 +3986,19 @@ body {
     margin: 0;
 }
 
+.instagram-handle {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin: 0;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.instagram-handle:hover {
+    color: var(--accent);
+}
+
 .instagram-feed {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -4037,7 +4055,7 @@ body {
     background: rgba(249, 115, 22, 0.03);
     border-radius: 12px;
     padding: 8px;
-    margin-bottom: 8px;
+    margin-bottom: 18px;
     border-left: 3px solid var(--accent);
 }
 
@@ -4073,6 +4091,19 @@ body {
     background: rgba(249, 115, 22, 0.1);
     padding: 4px 8px;
     border-radius: 4px;
+}
+
+.testimonial-source {
+    margin-top: 8px;
+    padding-top: 8px;
+    border-top: 1px solid rgba(249, 115, 22, 0.1);
+}
+
+.source-text {
+    font-size: 12px;
+    color: var(--text-secondary);
+    font-style: italic;
+    opacity: 0.8;
 }
 
 /* PARTNER RESOURCES SECTION */
@@ -6282,7 +6313,7 @@ body {
 
 .contact-info {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 24px;
 }
 
@@ -6290,24 +6321,6 @@ body {
     display: flex;
     align-items: flex-start;
     gap: 12px;
-}
-
-.contact-icon {
-    width: 44px;
-    height: 44px;
-    background: var(--text-primary);
-    border-radius: 12px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 18px;
-    flex-shrink: 0;
-    box-shadow: 0 2px 6px var(--shadow-sm);
-}
-
-.contact-item h4 {
-    font-size: 14px;
-    font-weight: 600;
     color: var(--background);
     margin-bottom: 4px;
 }
@@ -6317,6 +6330,19 @@ body {
     color: var(--surface);
     line-height: 1.5;
     margin: 0;
+}
+
+.contact-item .instagram-link {
+    font-size: 13px;
+    color: var(--surface);
+    line-height: 1.5;
+    margin: 0;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-item .instagram-link:hover {
+    color: var(--accent);
 }
 
 .contact-form {
