@@ -526,11 +526,8 @@
       // Store category data in localStorage
       localStorage.setItem('selectedCategory', category);
       
-      // Load all products and filter by category
-      loadAllProductsForCategory(category).then(() => {
-        // Navigate to category page
-        window.location.href = 'category.html';
-      });
+      // Navigate directly to category page - products will load there
+      window.location.href = 'category.html';
     }
     
     // Load all products for a specific category
