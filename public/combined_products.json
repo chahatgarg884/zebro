@@ -54,7 +54,7 @@
     {
         "id":  "jacket-lock-up-hooded",
         "slug":  "jacket-lock-up-hooded",
-        "name":  "Jacket Lock-Up Hooded",
+        "name":  "Jacket LOCK-UP HOODED",
         "brand":  "Zebro",
         "category":  "Jacket",
         "subCategory":  "Winter Wear",
@@ -106,7 +106,7 @@
     {
         "id":  "jacket-quilted-nswr",
         "slug":  "jacket-quilted-nswr",
-        "name":  "Jacket Quilted NSWR",
+        "name":  "Jacket QUILTED NSWR",
         "brand":  "Zebro",
         "category":  "Jacket",
         "subCategory":  "Winter Wear",
@@ -233,8 +233,8 @@
                 }
     },
     {
-        "id":  "lower-ns-encounter",
-        "slug":  "lower-ns-encounter",
+        "id":  "lower-encounter",
+        "slug":  "lower-encounter",
         "name":  "Lower Encounter",
         "brand":  "Zebro",
         "category":  "Lower",
@@ -287,7 +287,7 @@
     {
         "id":  "lower-jupiter",
         "slug":  "lower-jupiter",
-        "name":  "Lower Jupiter",
+        "name":  "Lower JUPITER",
         "brand":  "Zebro",
         "category":  "Lower",
         "subCategory":  "Sportswear",
@@ -331,9 +331,9 @@
                 }
     },
     {
-        "id":  "lower-ms-universe",
-        "slug":  "lower-ms-universe",
-        "name":  "Lower Ms Universe",
+        "id":  "lower-msuniverse",
+        "slug":  "lower-msuniverse",
+        "name":  "Lower Ms.UNIVERSE",
         "brand":  "Zebro",
         "category":  "Lower",
         "subCategory":  "Sportswear",
@@ -381,7 +381,7 @@
     {
         "id":  "shorts-5g",
         "slug":  "shorts-5g",
-        "name":  "Shorts 5G",
+        "name":  "SHORTS 5G",
         "brand":  "Zebro",
         "category":  "Shorts",
         "subCategory":  "Sportswear",
@@ -436,7 +436,7 @@
     {
         "id":  "shorts-camo",
         "slug":  "shorts-camo",
-        "name":  "Shorts Camo",
+        "name":  "SHORTS CAMO",
         "brand":  "Zebro",
         "category":  "Shorts",
         "subCategory":  "Sportswear",
@@ -481,9 +481,9 @@
                 }
     },
     {
-        "id":  "shorts-gamma",
-        "slug":  "shorts-gamma",
-        "name":  "Shorts Gamma",
+        "id":  "shorts-dual-core",
+        "slug":  "shorts-dual-core",
+        "name":  "SHORTS DUAL CORE",
         "brand":  "Zebro",
         "category":  "Shorts",
         "subCategory":  "Sportswear",
@@ -613,7 +613,7 @@
     {
         "id":  "shorts-jupiter",
         "slug":  "shorts-jupiter",
-        "name":  "Shorts Jupiter",
+        "name":  "Shorts JUPITER",
         "brand":  "Zebro",
         "category":  "Shorts",
         "subCategory":  "Sportswear",
@@ -665,7 +665,7 @@
     {
         "id":  "shorts-micro-ns-lycra-177",
         "slug":  "shorts-micro-ns-lycra-177",
-        "name":  "Shorts Micro NS Lycra 177",
+        "name":  "Shorts Micro NS LYCRA 177",
         "brand":  "Zebro",
         "category":  "Shorts",
         "subCategory":  "Sportswear",
@@ -708,9 +708,9 @@
                 }
     },
     {
-        "id":  "shorts-ns-cargo",
-        "slug":  "shorts-ns-cargo",
-        "name":  "Shorts NS Cargo",
+        "id":  "shorts-ns--emboss",
+        "slug":  "shorts-ns--emboss",
+        "name":  "Shorts NS  EMBOSS",
         "brand":  "Zebro",
         "category":  "Shorts",
         "subCategory":  "Sportswear",
@@ -917,9 +917,9 @@
                 }
     },
     {
-        "id":  "tee-rn-marshmallow",
-        "slug":  "tee-rn-marshmallow",
-        "name":  "Tee R/N Marshmallow",
+        "id":  "tee--rn--marshmallow",
+        "slug":  "tee--rn--marshmallow",
+        "name":  "Tee  RN  MARSHMALLOW",
         "brand":  "Zebro",
         "category":  "Tee",
         "subCategory":  "Sportswear",
@@ -1014,7 +1014,7 @@
     {
         "id":  "tee-polo-boat",
         "slug":  "tee-polo-boat",
-        "name":  "Tee Polo Boat",
+        "name":  "Tee Polo BOAT",
         "brand":  "Zebro",
         "category":  "Tee",
         "subCategory":  "Sportswear",
@@ -1078,7 +1078,7 @@
     {
         "id":  "tee-polo-candy",
         "slug":  "tee-polo-candy",
-        "name":  "Tee Polo Candy",
+        "name":  "TEE POLO CANDY",
         "brand":  "Zebro",
         "category":  "Tee",
         "subCategory":  "Sportswear",
@@ -1190,7 +1190,7 @@
     {
         "id":  "tee-polo-kit-kat",
         "slug":  "tee-polo-kit-kat",
-        "name":  "Tee Polo Kit Kat",
+        "name":  "TEE POLO KIT KAT",
         "brand":  "Zebro",
         "category":  "Tee",
         "subCategory":  "Sportswear",
@@ -1245,7 +1245,7 @@
     {
         "id":  "tee-polo-mist",
         "slug":  "tee-polo-mist",
-        "name":  "Tee Polo Mist",
+        "name":  "TEE POLO MIST",
         "brand":  "Zebro",
         "category":  "Tee",
         "subCategory":  "Sportswear",
@@ -1344,7 +1344,7 @@
     {
         "id":  "tee-polo-starbucks",
         "slug":  "tee-polo-starbucks",
-        "name":  "Tee Polo Starbucks",
+        "name":  "TEE POLO STARBUCKS",
         "brand":  "Zebro",
         "category":  "Tee",
         "subCategory":  "Sportswear",
@@ -1396,9 +1396,9 @@
                 }
     },
     {
-        "id":  "tee-rn-metallica",
-        "slug":  "tee-rn-metallica",
-        "name":  "Tee R/N Metallica",
+        "id":  "tee-rn--metallica",
+        "slug":  "tee-rn--metallica",
+        "name":  "Tee RN  METALLICA",
         "brand":  "Zebro",
         "category":  "Tee",
         "subCategory":  "Sportswear",
@@ -1490,7 +1490,7 @@
     {
         "id":  "tee-rn-mist",
         "slug":  "tee-rn-mist",
-        "name":  "Tee R/N Mist",
+        "name":  "Tee RN MIST",
         "brand":  "Zebro",
         "category":  "Tee",
         "subCategory":  "Sportswear",
@@ -1572,7 +1572,7 @@
     {
         "id":  "tee-rn-nylon-dobby",
         "slug":  "tee-rn-nylon-dobby",
-        "name":  "Tee R/N Nylon Dobby",
+        "name":  "Tee RN NYLON DOBBY",
         "brand":  "Zebro",
         "category":  "Tee",
         "subCategory":  "Sportswear",
@@ -1666,7 +1666,7 @@
     {
         "id":  "tee-rn-ola",
         "slug":  "tee-rn-ola",
-        "name":  "Tee R/N OLA",
+        "name":  "Tee RN OLA",
         "brand":  "Zebro",
         "category":  "Tee",
         "subCategory":  "Sportswear",
@@ -1738,7 +1738,7 @@
     {
         "id":  "track-pant-007-ns",
         "slug":  "track-pant-007-ns",
-        "name":  "Track Pant 007 NS",
+        "name":  "Track Pant 007 Ns",
         "brand":  "Zebro",
         "category":  "Track Pant",
         "subCategory":  "Sportswear",
@@ -1846,7 +1846,7 @@
     {
         "id":  "track-pant-fitness-ns",
         "slug":  "track-pant-fitness-ns",
-        "name":  "Track Pant Fitness NS",
+        "name":  "Track Pant FITNESS NS",
         "brand":  "Zebro",
         "category":  "Track Pant",
         "subCategory":  "Sportswear",
@@ -1957,9 +1957,9 @@
                 }
     },
     {
-        "id":  "track-pant-no-limits",
-        "slug":  "track-pant-no-limits",
-        "name":  "Track Pant No Limits",
+        "id":  "track-pant-gamma",
+        "slug":  "track-pant-gamma",
+        "name":  "Track Pant GAMMA",
         "brand":  "Zebro",
         "category":  "Track Pant",
         "subCategory":  "Sportswear",
@@ -2162,7 +2162,7 @@
     {
         "id":  "track-pant-rubicon",
         "slug":  "track-pant-rubicon",
-        "name":  "Track Pant Rubicon",
+        "name":  "Track Pant RUBICON",
         "brand":  "Zebro",
         "category":  "Track Pant",
         "subCategory":  "Sportswear",
@@ -2212,7 +2212,7 @@
     {
         "id":  "track-pant-thar",
         "slug":  "track-pant-thar",
-        "name":  "Track Pant Thar",
+        "name":  "Track Pant THAR",
         "brand":  "Zebro",
         "category":  "Track Pant",
         "subCategory":  "Sportswear",
@@ -2267,7 +2267,7 @@
     {
         "id":  "track-pant-toe",
         "slug":  "track-pant-toe",
-        "name":  "Track Pant TOE",
+        "name":  "TRACK PANT TOE",
         "brand":  "Zebro",
         "category":  "Track Pant",
         "subCategory":  "Sportswear",
@@ -2369,7 +2369,7 @@
     {
         "id":  "track-pant-unstoppable",
         "slug":  "track-pant-unstoppable",
-        "name":  "Track Pant Unstoppable",
+        "name":  "Track Pant UNSTOPPABLE",
         "brand":  "Zebro",
         "category":  "Track Pant",
         "subCategory":  "Sportswear",
@@ -2427,9 +2427,9 @@
                 }
     },
     {
-        "id":  "track-suit-junior",
-        "slug":  "track-suit-junior",
-        "name":  "Track Suit Junior",
+        "id":  "track-suit-junior-pdf",
+        "slug":  "track-suit-junior-pdf",
+        "name":  "Track suit JUNIOR PDF",
         "brand":  "Zebro",
         "category":  "Track Suit",
         "subCategory":  "Sportswear",
@@ -2468,9 +2468,9 @@
                    ]
     },
     {
-        "id":  "track-suit-melange-lycra-kids",
-        "slug":  "track-suit-melange-lycra-kids",
-        "name":  "Track Suit Melange Lycra",
+        "id":  "track-suit-melange-kids",
+        "slug":  "track-suit-melange-kids",
+        "name":  "Track Suit Melange kids",
         "brand":  "Zebro",
         "category":  "Track Suit",
         "subCategory":  "Sportswear",
@@ -2516,7 +2516,7 @@
     {
         "id":  "track-suit-micro-ns-cruiser",
         "slug":  "track-suit-micro-ns-cruiser",
-        "name":  "Track Suit Micro NS Cruiser",
+        "name":  "Track suit Micro Ns CRUISER",
         "brand":  "Zebro",
         "category":  "Track Suit",
         "subCategory":  "Sportswear",
@@ -2567,9 +2567,9 @@
                    ]
     },
     {
-        "id":  "track-suit-micro-ns-spandex",
-        "slug":  "track-suit-micro-ns-spandex",
-        "name":  "Track Suit Micro NS Spandex",
+        "id":  "track-suit-micro-ns-encounter",
+        "slug":  "track-suit-micro-ns-encounter",
+        "name":  "Track suit micro NS ENCOUNTER",
         "brand":  "Zebro",
         "category":  "Track Suit",
         "subCategory":  "Sportswear",
@@ -2620,7 +2620,7 @@
     {
         "id":  "track-suit-micro-ns-spandex",
         "slug":  "track-suit-micro-ns-spandex",
-        "name":  "Track Suit Micro Ns Spandex",
+        "name":  "Track Suit Micro Ns spandex",
         "brand":  "Zebro",
         "category":  "Track Suit",
         "subCategory":  "Track Suit",
@@ -2680,7 +2680,7 @@
     {
         "id":  "track-suit-ns-spandex-white",
         "slug":  "track-suit-ns-spandex-white",
-        "name":  "Track Suit NS Spandex White",
+        "name":  "Track Suit NS SPANDEX WHITE",
         "brand":  "Zebro",
         "category":  "Track Suit",
         "subCategory":  "Sportswear",
@@ -2726,7 +2726,7 @@
     {
         "id":  "track-suit-poly-fresh-premium",
         "slug":  "track-suit-poly-fresh-premium",
-        "name":  "Track Suit Poly Fresh Premium",
+        "name":  "Track Suit poly fresh premium",
         "brand":  "Zebro",
         "category":  "Track Suit",
         "subCategory":  "Sportswear",
@@ -2777,7 +2777,7 @@
     {
         "id":  "track-suit-poly-web",
         "slug":  "track-suit-poly-web",
-        "name":  "Track Suit Poly Web",
+        "name":  "Track suit Poly Web",
         "brand":  "Zebro",
         "category":  "Track Suit",
         "subCategory":  "Sportswear",
@@ -2832,7 +2832,7 @@
     {
         "id":  "track-suit-super-spandex",
         "slug":  "track-suit-super-spandex",
-        "name":  "Track Suit Super Spandex",
+        "name":  "Track suit SUPER SPANDEX",
         "brand":  "Zebro",
         "category":  "Track Suit",
         "subCategory":  "Sportswear",
@@ -2886,7 +2886,7 @@
     {
         "id":  "track-suit-titan",
         "slug":  "track-suit-titan",
-        "name":  "Track Suit Titan",
+        "name":  "Track suit TITAN",
         "brand":  "Zebro",
         "category":  "Track Suit",
         "subCategory":  "Sportswear",
@@ -2937,9 +2937,9 @@
                 }
     },
     {
-        "id":  "upper-crush-lycra",
-        "slug":  "upper-crush-lycra",
-        "name":  "Upper Crush Lycra",
+        "id":  "upper-crush-lycra-track-suit-crush-lycra",
+        "slug":  "upper-crush-lycra-track-suit-crush-lycra",
+        "name":  "UPPER CRUSH LYCRA-TRACK SUIT CRUSH LYCRA",
         "brand":  "Zebro",
         "category":  "Upper",
         "subCategory":  "Sportswear",
@@ -2989,9 +2989,9 @@
                 }
     },
     {
-        "id":  "upper-diamond-lycra",
-        "slug":  "upper-diamond-lycra",
-        "name":  "Upper Diamond Lycra",
+        "id":  "upper-dimond-lycra",
+        "slug":  "upper-dimond-lycra",
+        "name":  "Upper dimond lycra",
         "brand":  "Zebro",
         "category":  "Upper",
         "subCategory":  "Sportswear",
@@ -3038,7 +3038,7 @@
     {
         "id":  "upper-element",
         "slug":  "upper-element",
-        "name":  "Upper Element",
+        "name":  "Upper ELEMENT",
         "brand":  "Zebro",
         "category":  "Upper",
         "subCategory":  "Sportswear",
@@ -3091,7 +3091,7 @@
     {
         "id":  "upper-mackintosh",
         "slug":  "upper-mackintosh",
-        "name":  "Upper Mackintosh",
+        "name":  "UPPER MACKINTOSH",
         "brand":  "Zebro",
         "category":  "Upper",
         "subCategory":  "Sportswear",
@@ -3151,7 +3151,7 @@
     {
         "id":  "upper-ns-nexa",
         "slug":  "upper-ns-nexa",
-        "name":  "Upper NS Nexa",
+        "name":  "Upper NS NEXA",
         "brand":  "Zebro",
         "category":  "Upper",
         "subCategory":  "Sportswear",
@@ -3201,7 +3201,7 @@
     {
         "id":  "upper-rubicon",
         "slug":  "upper-rubicon",
-        "name":  "Upper Rubicon",
+        "name":  "Upper RUBICON",
         "brand":  "Zebro",
         "category":  "Upper",
         "subCategory":  "Sportswear",
