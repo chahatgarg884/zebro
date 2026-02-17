@@ -6311,6 +6311,88 @@ body {
     align-items: start;
 }
 
+.contact-brand-info {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    padding: 40px 0;
+}
+
+.brand-logo {
+    text-align: left;
+    margin-bottom: 8px;
+}
+
+.brand-logo-image {
+    max-width: 180px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.brand-logo-image:hover {
+    transform: scale(1.05);
+}
+
+.brand-content {
+    text-align: left;
+}
+
+.brand-content h3 {
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--background);
+    margin-bottom: 16px;
+}
+
+.brand-content p {
+    font-size: 15px;
+    color: var(--surface);
+    line-height: 1.7;
+    margin: 0;
+}
+
+.social-links {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    margin-top: 24px;
+    justify-content: flex-start;
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    background: var(--accent);
+    border: 2px solid var(--accent);
+    border-radius: 50%;
+    color: var(--background);
+    text-decoration: none;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+}
+
+.social-link:hover {
+    background: var(--accent-dark);
+    border-color: var(--accent-dark);
+    transform: translateY(-4px);
+    color: var(--background);
+    box-shadow: 0 8px 25px rgba(249, 115, 22, 0.4);
+}
+
+.social-link svg {
+    flex-shrink: 0;
+    width: 20px;
+    height: 20px;
+    stroke-width: 2;
+}
+
+.social-link span {
+    display: none;
+}
+
 .contact-info {
     display: grid;
     grid-template-columns: 1fr;
@@ -6535,6 +6617,40 @@ body {
         gap: 40px;
     }
 
+    .contact-brand-info {
+        padding: 20px 0;
+        gap: 24px;
+    }
+
+    .brand-logo-image {
+        max-width: 140px;
+    }
+
+    .brand-content h3 {
+        font-size: 24px;
+        margin-bottom: 12px;
+    }
+
+    .brand-content p {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    .social-links {
+        gap: 12px;
+        margin-top: 20px;
+    }
+
+    .social-link {
+        width: 40px;
+        height: 40px;
+    }
+
+    .social-link svg {
+        width: 18px;
+        height: 18px;
+    }
+
     .contact-info {
         grid-template-columns: 1fr;
         gap: 20px;
@@ -6548,7 +6664,6 @@ body {
     .form-row {
         grid-template-columns: 1fr;
         gap: 16px;
-        width: 100%;
     }
 
     .form-group {
