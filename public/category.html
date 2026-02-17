@@ -14,7 +14,7 @@
   <header class="header">
     <div class="container">
       <div class="logo-container">
-        <img src="asset/logo.png" alt="Sports Wear Logo" class="logo-image" />
+        <img src="asset/logo.png" alt="Sports Wear Logo" class="logo-image" onclick="window.location.href='index.html'" />
       </div>
       
       <nav class="nav">
@@ -362,7 +362,14 @@
             document.getElementById('categoryDescription').textContent = getCategoryDescription(selectedCategory);
             
             // Filter products by selected category
-            const filteredProducts = categoryProducts.filter(product => product.category === selectedCategory);
+            let filteredProducts;
+            if (selectedCategory === 'All Products') {
+                // Show all products
+                filteredProducts = categoryProducts;
+            } else {
+                // Filter by specific category
+                filteredProducts = categoryProducts.filter(product => product.category === selectedCategory);
+            }
             document.getElementById('productsCount').textContent = filteredProducts.length;
             
             // Update category-specific content
@@ -639,6 +646,7 @@
         // Get category description
         function getCategoryDescription(category) {
             const descriptions = {
+                'All Products': 'Complete collection of all ZEBRO sportswear products',
                 'Tee': 'T-Shirts, Polo shirts and more',
                 'Track Pant': 'Track pants, shorts, joggers and more',
                 'Track Suit': 'Complete training sets and coordinated outfits',
@@ -658,7 +666,14 @@
             productGrid.innerHTML = '';
             
             // Filter products by selected category
-            const filteredProducts = categoryProducts.filter(product => product.category === selectedCategory);
+            let filteredProducts;
+            if (selectedCategory === 'All Products') {
+                // Show all products
+                filteredProducts = categoryProducts;
+            } else {
+                // Filter by specific category
+                filteredProducts = categoryProducts.filter(product => product.category === selectedCategory);
+            }
             
             if (filteredProducts.length === 0) {
                 productGrid.innerHTML = '<p style="text-align: center; color: var(--text-secondary);">No products found in this category.</p>';
@@ -674,9 +689,11 @@
                 productImage.loading = 'lazy';
                 
                 productCard.innerHTML = `
-                    <div class="product-image-container">
-                        <!-- Image will be inserted here -->
-                    </div>
+                    <a href="product.html?id=${product.id}" class="product-link">
+                        <div class="product-image-container">
+                            <!-- Image will be inserted here -->
+                        </div>
+                    </a>
                     <h3>${product.name}</h3>
                     <a href="product.html?id=${product.id}" class="link">View Details</a>
                 `;

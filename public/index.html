@@ -14,7 +14,7 @@
   <header class="header">
     <div class="container">
       <div class="logo-container">
-        <img src="asset/logo.png" alt="Sports Wear Logo" class="logo-image" />
+        <img src="asset/logo.png" alt="Sports Wear Logo" class="logo-image" onclick="window.location.href='index.html'"/>
       </div>
       
       <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
@@ -33,7 +33,7 @@
       <div class="nav-actions">
         <div class="search-container">
           <input type="text" placeholder="Search products..." class="search-input" id="searchInput">
-          <button class="search-btn" onclick="searchProducts()">Search</button>
+          <a href="#featured"><button class="search-btn" onclick="searchProducts()">Search</button></a>
         </div>
       </div>
     </div>
@@ -612,9 +612,11 @@
                 productImage.loading = 'lazy';
                 
                 productCard.innerHTML = `
-                    <div class="product-image-container">
-                        <!-- Image will be inserted here -->
-                    </div>
+                    <a href="product.html?id=${product.id}" class="product-link">
+                        <div class="product-image-container">
+                            <!-- Image will be inserted here -->
+                        </div>
+                    </a>
                     <h3>${product.name}</h3>
                     <a href="product.html?id=${product.id}" class="link">View Details</a>
                 `;
@@ -633,8 +635,8 @@
                 const sectionTitle = document.querySelector('.featured h2').textContent;
                 viewMoreBtn.textContent = `See All ${sectionTitle} (${currentProducts.length} total)`;
                 viewMoreBtn.onclick = () => {
-                    // Store category data for the category page
-                    localStorage.setItem('selectedCategory', sectionTitle);
+                    // Store all products for the category page (show all products)
+                    localStorage.setItem('selectedCategory', 'All Products');
                     localStorage.setItem('categoryProducts', JSON.stringify(currentProducts));
                     // Open category page in same tab
                     window.location.href = 'category.html';

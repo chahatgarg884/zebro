@@ -24,7 +24,7 @@
   <header class="header">
     <div class="container">
       <div class="logo-container">
-        <img src="asset/logo.png" alt="Sports Wear Logo" class="logo-image" />
+        <img src="asset/logo.png" alt="Sports Wear Logo" class="logo-image" onclick="window.location.href='index.html'"/>
       </div>
       
       <nav class="nav">
@@ -45,7 +45,10 @@
     <div class="product-detail-container">
       <div class="product-images-section">
         <div class="main-image-container">
-          <img src="asset/products/mens-tennis/image1.jpg" alt="Product Main Image" class="main-product-image" id="mainProductImage" />
+          <div class="image-loading-placeholder" id="imageLoadingPlaceholder">
+            <div class="loading-spinner"></div>
+          </div>
+          <img src="" alt="Product Main Image" class="main-product-image lazy" id="mainProductImage" />
         </div>
         <div class="thumbnail-navigation">
           <button class="thumbnail-arrow" id="prevThumbnail" onclick="navigateThumbnails(-1)">‹</button>
@@ -277,6 +280,13 @@
                                 img.src = src;
                                 img.classList.remove('lazy');
                                 img.classList.add('loaded');
+                                
+                                // Hide loading placeholder if this is the main product image
+                                const loadingPlaceholder = document.getElementById('imageLoadingPlaceholder');
+                                if (loadingPlaceholder && img.id === 'mainProductImage') {
+                                    loadingPlaceholder.classList.add('hidden');
+                                }
+                                
                                 observer.unobserve(img);
                             }
                         }
@@ -285,6 +295,9 @@
                     rootMargin: '50px',
                     threshold: 0.1
                 });
+                
+                // Make observer globally available
+                window.imageObserver = imageObserver;
             }
         }
 
@@ -432,11 +445,30 @@
             document.getElementById('productName').textContent = currentProduct.name;
             document.getElementById('productCategory').textContent = currentProduct.category;
             
-            // Set main image
+            // Set main image with lazy loading
             const mainImage = document.getElementById('mainProductImage');
             const imageUrl = getProductImage(currentProduct);
-            mainImage.src = imageUrl;
+            const loadingPlaceholder = document.getElementById('imageLoadingPlaceholder');
+            
+            // Set data-src for lazy loading
+            mainImage.dataset.src = imageUrl;
             mainImage.alt = currentProduct.name;
+            
+            // Add to lazy loading observer
+            if (window.imageObserver) {
+                window.imageObserver.observe(mainImage);
+            } else {
+                // Fallback if observer not ready
+                mainImage.src = imageUrl;
+                mainImage.classList.add('loaded');
+                loadingPlaceholder.classList.add('hidden');
+            }
+            
+            // Handle image load
+            mainImage.onload = () => {
+                mainImage.classList.add('loaded');
+                loadingPlaceholder.classList.add('hidden');
+            };
             
             // Create thumbnails if multiple images
             createProductThumbnails();
@@ -572,7 +604,30 @@
         // Change main image when thumbnail is clicked
         function changeMainImage(imageSrc, thumbnailElement) {
             const mainImage = document.getElementById('mainProductImage');
-            mainImage.src = imageSrc;
+            const loadingPlaceholder = document.getElementById('imageLoadingPlaceholder');
+            
+            // Show loading placeholder
+            loadingPlaceholder.classList.remove('hidden');
+            mainImage.classList.remove('loaded');
+            
+            // Set new image with lazy loading
+            mainImage.dataset.src = imageSrc;
+            
+            // Add to observer
+            if (window.imageObserver) {
+                window.imageObserver.observe(mainImage);
+            } else {
+                // Fallback
+                mainImage.src = imageSrc;
+                mainImage.classList.add('loaded');
+                loadingPlaceholder.classList.add('hidden');
+            }
+            
+            // Handle image load
+            mainImage.onload = () => {
+                mainImage.classList.add('loaded');
+                loadingPlaceholder.classList.add('hidden');
+            };
             
             // Update active thumbnail
             document.querySelectorAll('.thumbnail').forEach(thumb => thumb.classList.remove('active'));
@@ -785,9 +840,11 @@
                 productImage.loading = 'lazy';
                 
                 productCard.innerHTML = `
-                    <div class="product-image-container">
-                        <!-- Image will be inserted here -->
-                    </div>
+                    <a href="product.html?id=${product.id}" class="product-link">
+                        <div class="product-image-container">
+                            <!-- Image will be inserted here -->
+                        </div>
+                    </a>
                     <h3>${product.name}</h3>
                     <a href="product.html?id=${product.id}" class="link">View Details</a>
                 `;
