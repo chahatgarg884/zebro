@@ -562,9 +562,8 @@
         
         // Process products and add folder paths
         const processedProducts = allProducts.map(product => {
-          // Determine folder path from product data or create a default one
-          const folderName = product.name.replace(/\s+/g, ' ').trim();
-          const folderPath = `extracted_images_0/${folderName}`;
+          // Use exact product name for folder path (preserve spaces)
+          const folderPath = `extracted_images_0/${product.name}`;
           
           return {
             ...product,

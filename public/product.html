@@ -398,9 +398,8 @@
                 
                 // Process products and add folder paths
                 allProducts = products.map(product => {
-                    // Determine folder path from product data or create a default one
-                    const folderName = product.name.replace(/\s+/g, ' ').trim();
-                    const folderPath = `extracted_images_0/${folderName}`;
+                    // Use exact product name for folder path (preserve spaces)
+                    const folderPath = `extracted_images_0/${product.name}`;
                     
                     return {
                         ...product,
@@ -859,7 +858,10 @@
                 if (firstImage.startsWith('/')) {
                     return firstImage;
                 } else if (product.folderPath) {
-                    return `${product.folderPath}/${firstImage}`;
+                    // URL encode the path to handle spaces properly
+                    const encodedPath = encodeURIComponent(product.folderPath);
+                    const encodedImage = encodeURIComponent(firstImage);
+                    return `${encodedPath}/${encodedImage}`;
                 } else {
                     return firstImage;
                 }
