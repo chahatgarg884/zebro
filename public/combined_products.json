@@ -1,0 +1,3260 @@
+﻿[
+    {
+        "id":  "jacket-bulletproof",
+        "slug":  "jacket-bulletproof",
+        "name":  "Jacket Bulletproof",
+        "brand":  "Zebro",
+        "category":  "Jacket",
+        "subCategory":  "Winter Wear",
+        "description":  "Premium winter jacket designed with a bold sporty look, offering warmth, durability, and everyday comfort.",
+        "material":  "Polyester Blend",
+        "fit":  "Regular Fit",
+        "gender":  "Men",
+        "sizes":  [
+                      "S",
+                      "M",
+                      "L",
+                      "XL",
+                      "XXL",
+                      "3XL",
+                      "4XL"
+                  ],
+        "colors":  [
+                       "Black",
+                       "Navy",
+                       "Grey",
+                       "Olive"
+                   ],
+        "features":  [
+                         "Heavy winter jacket",
+                         "Wind resistant outer layer",
+                         "Zipper closure",
+                         "Warm inner lining",
+                         "Suitable for outdoor and daily wear"
+                     ],
+        "care":  [
+                     "Machine wash cold",
+                     "Do not bleach",
+                     "Dry in shade",
+                     "Easy care"
+                 ],
+        "images":  [
+                       "page_2_img_2.webp",
+                       "page_3_img_3.webp",
+                       "page_4_img_4.webp",
+                       "page_5_img_5.webp",
+                       "page_6_img_6.webp",
+                       "page_7_img_7.webp"
+                   ],
+        "seo":  {
+                    "title":  "Jacket Bulletproof | Zebro Winter Jacket",
+                    "description":  "Zebro Jacket Bulletproof winter jacket with durable fabric and warm lining for cold weather comfort."
+                }
+    },
+    {
+        "id":  "jacket-lock-up-hooded",
+        "slug":  "jacket-lock-up-hooded",
+        "name":  "Jacket Lock-Up Hooded",
+        "brand":  "Zebro",
+        "category":  "Jacket",
+        "subCategory":  "Winter Wear",
+        "description":  "Stylish hooded winter jacket designed for warmth and comfort with a modern sporty appeal.",
+        "material":  "Polyester Blend",
+        "fit":  "Regular Fit",
+        "gender":  "Men",
+        "sizes":  [
+                      "S",
+                      "M",
+                      "L",
+                      "XL",
+                      "XXL",
+                      "3XL",
+                      "4XL"
+                  ],
+        "colors":  [
+                       "Black",
+                       "Navy",
+                       "Dark Grey",
+                       "Olive"
+                   ],
+        "features":  [
+                         "Attached hood for extra warmth",
+                         "Full zipper closure",
+                         "Wind resistant fabric",
+                         "Comfortable winter wear",
+                         "Suitable for casual and outdoor use"
+                     ],
+        "care":  [
+                     "Machine wash cold",
+                     "Do not bleach",
+                     "Dry in shade",
+                     "Easy care"
+                 ],
+        "images":  [
+                       "page_2_img_2.webp",
+                       "page_3_img_3.webp",
+                       "page_4_img_4.webp",
+                       "page_5_img_5.webp",
+                       "page_6_img_6.webp",
+                       "page_7_img_7.webp"
+                   ],
+        "seo":  {
+                    "title":  "Jacket Lock-Up Hooded | Zebro Hooded Jacket",
+                    "description":  "Zebro Jacket Lock-Up Hooded winter jacket with attached hood, warm fabric, and modern sporty design."
+                }
+    },
+    {
+        "id":  "jacket-quilted-nswr",
+        "slug":  "jacket-quilted-nswr",
+        "name":  "Jacket Quilted NSWR",
+        "brand":  "Zebro",
+        "category":  "Jacket",
+        "subCategory":  "Winter Wear",
+        "description":  "Quilted winter jacket designed to keep you warm in cold conditions while maintaining a sporty and trendy look.",
+        "material":  "NSWR Fabric",
+        "fit":  "Regular Fit",
+        "gender":  "Men",
+        "sizes":  [
+                      "S",
+                      "M",
+                      "L",
+                      "XL",
+                      "XXL",
+                      "3XL",
+                      "4XL"
+                  ],
+        "colors":  [
+                       "Airforce Blue",
+                       "Olive",
+                       "White",
+                       "Navy",
+                       "Light Grey",
+                       "Black",
+                       "Teal",
+                       "Dark Grey"
+                   ],
+        "features":  [
+                         "Quilted winter jacket",
+                         "Zipper bomber style",
+                         "Keeps warm in cold weather",
+                         "Sporty and trendy design",
+                         "Comfortable for daily and outdoor wear"
+                     ],
+        "care":  [
+                     "Machine wash cold",
+                     "Do not bleach",
+                     "Dry in shade",
+                     "Easy care"
+                 ],
+        "images":  [
+                       "page_2_img_2.webp",
+                       "page_3_img_3.webp",
+                       "page_4_img_4.webp",
+                       "page_5_img_5.webp",
+                       "page_6_img_6.webp",
+                       "page_7_img_7.webp",
+                       "page_8_img_8.webp",
+                       "page_9_img_9.webp",
+                       "page_10_img_10.webp",
+                       "page_11_img_11.webp",
+                       "page_12_img_12.webp",
+                       "page_13_img_13.webp",
+                       "page_14_img_14.webp",
+                       "page_15_img_15.webp",
+                       "page_16_img_16.webp",
+                       "page_17_img_17.webp",
+                       "page_18_img_18.webp",
+                       "page_19_img_19.webp",
+                       "page_20_img_20.webp"
+                   ],
+        "seo":  {
+                    "title":  "Jacket Quilted NSWR | Zebro Winter Sportswear",
+                    "description":  "Zebro Jacket Quilted NSWR winter jacket designed to keep you warm with a stylish sporty look."
+                }
+    },
+    {
+        "id":  "lower-alto-lycra",
+        "slug":  "lower-alto-lycra",
+        "name":  "Lower Alto Lycra",
+        "brand":  "Zebro",
+        "category":  "Lower",
+        "subCategory":  "Sportswear",
+        "description":  "Zebro Lower Alto Lycra is designed for effortless movement and everyday training, featuring sweat-wicking comfort, stretchable fabric, and a clean athletic finish.",
+        "material":  "Alto Lycra",
+        "fit":  "Regular Fit",
+        "gender":  "Men",
+        "sizes":  [
+                      "XS",
+                      "S",
+                      "M",
+                      "L",
+                      "XL",
+                      "XXL",
+                      "3XL",
+                      "4XL"
+                  ],
+        "colors":  [
+                       "Grey",
+                       "Black",
+                       "Airforce Blue",
+                       "Navy"
+                   ],
+        "features":  [
+                         "Sweat-wicking fabric",
+                         "Quick dry technology",
+                         "Breathable material",
+                         "Side pockets for essentials",
+                         "Reflective tape detailing",
+                         "Stretchable and comfortable for workouts"
+                     ],
+        "care":  [
+                     "Machine wash cold",
+                     "Do not bleach",
+                     "Dry in shade",
+                     "Easy care fabric"
+                 ],
+        "images":  [
+                       "page_2_img_2.webp",
+                       "page_3_img_3.webp",
+                       "page_4_img_4.webp",
+                       "page_5_img_5.webp",
+                       "page_6_img_6.webp",
+                       "page_7_img_7.webp",
+                       "page_8_img_8.webp",
+                       "page_9_img_9.webp",
+                       "page_10_img_10.webp",
+                       "page_11_img_11.webp",
+                       "page_12_img_12.webp",
+                       "page_13_img_13.webp"
+                   ],
+        "seo":  {
+                    "title":  "Lower Alto Lycra | Zebro Performance Sportswear",
+                    "description":  "Zebro Lower Alto Lycra with sweat-wicking, quick-dry fabric and reflective detailing for gym, training, and active wear."
+                }
+    },
+    {
+        "id":  "lower-ns-encounter",
+        "slug":  "lower-ns-encounter",
+        "name":  "Lower Encounter",
+        "brand":  "Zebro",
+        "category":  "Lower",
+        "subCategory":  "Sportswear",
+        "description":  "Zebro Lower N/S Encounter is designed for intense workouts and daily training, offering stretch, comfort, and a modern athletic fit.",
+        "material":  "Melange NS Lycra",
+        "fit":  "Regular Fit",
+        "gender":  "Men",
+        "sizes":  [
+                      "S",
+                      "M",
+                      "L",
+                      "XL",
+                      "XXL"
+                  ],
+        "colors":  [
+                       "Black",
+                       "Light Grey",
+                       "Dark Grey",
+                       "Navy"
+                   ],
+        "features":  [
+                         "Drawstring waistband",
+                         "Double pocket with zip",
+                         "Gold color branding",
+                         "Stretchable fabric",
+                         "Quick dry",
+                         "Easy care"
+                     ],
+        "care":  [
+                     "Machine wash cold",
+                     "Do not bleach",
+                     "Dry in shade"
+                 ],
+        "images":  [
+                       "page_2_img_2.webp",
+                       "page_3_img_3.webp",
+                       "page_4_img_4.webp",
+                       "page_5_img_5.webp",
+                       "page_6_img_6.webp",
+                       "page_7_img_7.webp",
+                       "page_8_img_8.webp",
+                       "page_9_img_9.webp"
+                   ],
+        "seo":  {
+                    "title":  "Lower N/S Encounter | Zebro Sportswear",
+                    "description":  "Zebro Lower N/S Encounter made with Melange NS Lycra, featuring zip pockets and stretchable fabric for training and workouts."
+                }
+    },
+    {
+        "id":  "lower-jupiter",
+        "slug":  "lower-jupiter",
+        "name":  "Lower Jupiter",
+        "brand":  "Zebro",
+        "category":  "Lower",
+        "subCategory":  "Sportswear",
+        "description":  "Zebro Lower Jupiter is a performance-driven sports lower designed with stretchable fabric and reflective detailing for workouts and training.",
+        "material":  "Stretchable Polyester Blend",
+        "fit":  "Slim Fit",
+        "gender":  "Men",
+        "sizes":  [
+                      "S",
+                      "M",
+                      "L",
+                      "XL",
+                      "XXL"
+                  ],
+        "colors":  [
+                       "Black",
+                       "Navy Blue"
+                   ],
+        "features":  [
+                         "Comfortable zipper pockets",
+                         "Neon color zipper detailing",
+                         "Rainbow reflective artwork",
+                         "Stretchable fabric",
+                         "Quick dry",
+                         "Easy care"
+                     ],
+        "care":  [
+                     "Machine wash cold",
+                     "Do not bleach",
+                     "Dry in shade"
+                 ],
+        "images":  [
+                       "page_2_img_2.webp",
+                       "page_3_img_3.webp",
+                       "page_4_img_4.webp",
+                       "page_5_img_5.webp"
+                   ],
+        "seo":  {
+                    "title":  "Lower Jupiter | Zebro Performance Sportswear",
+                    "description":  "Zebro Lower Jupiter with stretchable fabric, reflective artwork and zipper pockets for gym and active workouts."
+                }
+    },
+    {
+        "id":  "lower-ms-universe",
+        "slug":  "lower-ms-universe",
+        "name":  "Lower Ms Universe",
+        "brand":  "Zebro",
+        "category":  "Lower",
+        "subCategory":  "Sportswear",
+        "description":  "Zebro Lower Ms Universe is designed for women, combining stretch, comfort, and style for workouts, yoga, and active wear.",
+        "material":  "Stretchable Lycra Blend",
+        "fit":  "Slim Fit",
+        "gender":  "Women",
+        "sizes":  [
+                      "S",
+                      "M",
+                      "L",
+                      "XL"
+                  ],
+        "colors":  [
+                       "Dark Grey",
+                       "Light Grey"
+                   ],
+        "features":  [
+                         "Stretchable fabric",
+                         "Side pocket design",
+                         "Comfort waistband",
+                         "Quick dry",
+                         "Easy care",
+                         "Designed for active movement"
+                     ],
+        "care":  [
+                     "Machine wash cold",
+                     "Do not bleach",
+                     "Dry in shade"
+                 ],
+        "images":  [
+                       "page_2_img_2.webp",
+                       "page_3_img_3.webp",
+                       "page_4_img_4.webp",
+                       "page_5_img_5.webp",
+                       "page_6_img_6.webp",
+                       "page_7_img_7.webp",
+                       "page_8_img_8.webp"
+                   ],
+        "seo":  {
+                    "title":  "Lower Ms Universe | Zebro Women Sportswear",
+                    "description":  "Zebro Lower Ms Universe women sports lower with stretchable fabric and side pockets for workouts and yoga."
+                }
+    },
+    {
+        "id":  "shorts-5g",
+        "slug":  "shorts-5g",
+        "name":  "Shorts 5G",
+        "brand":  "Zebro",
+        "category":  "Shorts",
+        "subCategory":  "Sportswear",
+        "type":  "Performance",
+        "description":  "Modern performance shorts built for mobility, comfort, and everyday workouts.",
+        "material":  "Performance Polyester",
+        "fit":  "Regular Fit",
+        "gender":  "Men",
+        "sizes":  [
+                      "S",
+                      "M",
+                      "L",
+                      "XL",
+                      "XXL"
+                  ],
+        "colors":  [
+                       "Black",
+                       "Navy",
+                       "Grey"
+                   ],
+        "features":  [
+                         "Lightweight fabric",
+                         "Quick dry",
+                         "Breathable construction",
+                         "Elastic waistband"
+                     ],
+        "care":  [
+                     "Machine wash cold",
+                     "Do not bleach",
+                     "Dry in shade"
+                 ],
+        "images":  [
+                       "page_2_img_2.webp",
+                       "page_3_img_3.webp",
+                       "page_4_img_4.webp",
+                       "page_5_img_5.webp",
+                       "page_6_img_6.webp",
+                       "page_7_img_7.webp",
+                       "page_8_img_8.webp",
+                       "page_9_img_9.webp",
+                       "page_10_img_10.webp",
+                       "page_11_img_11.webp",
+                       "page_12_img_12.webp",
+                       "page_13_img_13.webp",
+                       "page_14_img_14.webp"
+                   ],
+        "seo":  {
+                    "title":  "Shorts 5G | Zebro Performance Shorts",
+                    "description":  "Zebro 5G performance shorts for gym and active wear."
+                }
+    },
+    {
+        "id":  "shorts-camo",
+        "slug":  "shorts-camo",
+        "name":  "Shorts Camo",
+        "brand":  "Zebro",
+        "category":  "Shorts",
+        "subCategory":  "Sportswear",
+        "type":  "Lifestyle",
+        "description":  "Zebro Shorts Camo feature a bold camouflage look with breathable comfort, suitable for training and casual wear.",
+        "material":  "Polyester Blend",
+        "fit":  "Regular Fit",
+        "gender":  "Men",
+        "sizes":  [
+                      "S",
+                      "M",
+                      "L",
+                      "XL",
+                      "XXL"
+                  ],
+        "colors":  [
+                       "Camo Green",
+                       "Camo Grey"
+                   ],
+        "features":  [
+                         "Camouflage design",
+                         "Breathable fabric",
+                         "Elastic waistband with drawstring",
+                         "Side pockets"
+                     ],
+        "care":  [
+                     "Machine wash cold",
+                     "Do not bleach",
+                     "Dry in shade"
+                 ],
+        "images":  [
+                       "page_2_img_2.webp",
+                       "page_3_img_3.webp",
+                       "page_4_img_4.webp",
+                       "page_5_img_5.webp",
+                       "page_6_img_6.webp",
+                       "page_7_img_7.webp"
+                   ],
+        "seo":  {
+                    "title":  "Shorts Camo | Zebro Sportswear",
+                    "description":  "Zebro camo shorts with breathable fabric for training and casual wear."
+                }
+    },
+    {
+        "id":  "shorts-gamma",
+        "slug":  "shorts-gamma",
+        "name":  "Shorts Gamma",
+        "brand":  "Zebro",
+        "category":  "Shorts",
+        "subCategory":  "Sportswear",
+        "type":  "Training",
+        "description":  "Durable training shorts designed for gym workouts and active routines.",
+        "material":  "Polyester Blend",
+        "fit":  "Regular Fit",
+        "gender":  "Men",
+        "sizes":  [
+                      "S",
+                      "M",
+                      "L",
+                      "XL",
+                      "XXL"
+                  ],
+        "colors":  [
+                       "Black",
+                       "Grey"
+                   ],
+        "features":  [
+                         "Breathable material",
+                         "Elastic waistband",
+                         "Side pockets"
+                     ],
+        "care":  [
+                     "Machine wash cold",
+                     "Do not bleach",
+                     "Dry in shade"
+                 ],
+        "images":  [
+                       "page_1_img_1.webp",
+                       "page_3_img_3.webp",
+                       "page_4_img_4.webp",
+                       "page_5_img_5.webp",
+                       "page_6_img_6.webp",
+                       "page_7_img_7.webp",
+                       "page_8_img_8.webp",
+                       "page_9_img_9.webp",
+                       "page_10_img_10.webp"
+                   ],
+        "seo":  {
+                    "title":  "Shorts Gamma | Zebro Training Shorts",
+                    "description":  "Zebro Gamma training shorts with breathable comfort."
+                }
+    },
+    {
+        "id":  "shorts-gamma",
+        "slug":  "shorts-gamma",
+        "name":  "Shorts GAMMA",
+        "brand":  "Zebro",
+        "category":  "Shorts",
+        "subCategory":  "Shorts",
+        "description":  "Premium Zebro GAMMA shorts designed with cutting-edge technology for athletes who demand excellence in performance and style.",
+        "material":  "GAMMA Performance Fabric",
+        "fit":  "Regular Fit",
+        "gender":  "Men",
+        "sizes":  [
+                      "S",
+                      "M",
+                      "L",
+                      "XL",
+                      "XXL",
+                      "3XL",
+                      "4XL"
+                  ],
+        "colors":  [
+                       "Black",
+                       "Navy Blue",
+                       "Charcoal",
+                       "Olive"
+                   ],
+        "features":  [
+                         "GAMMA compression technology",
+                         "Enhanced muscle support",
+                         "Moisture management system",
+                         "Anti-chafe seamless design",
+                         "Reinforced stitching",
+                         "Multiple storage pockets",
+                         "Reflective details for safety",
+                         "Quick recovery fabric"
+                     ],
+        "care":  [
+                     "Machine wash cold",
+                     "Do not use fabric softener",
+                     "Hang dry recommended",
+                     "Do not dry clean"
+                 ],
+        "images":  [
+                       "page_2_img_2.webp",
+                       "page_3_img_3.webp",
+                       "page_4_img_4.webp",
+                       "page_5_img_5.webp",
+                       "page_6_img_6.webp",
+                       "page_7_img_7.webp",
+                       "page_8_img_8.webp",
+                       "page_9_img_9.webp",
+                       "page_10_img_10.webp",
+                       "page_11_img_11.webp",
+                       "page_12_img_12.webp",
+                       "page_13_img_13.webp",
+                       "page_14_img_14.webp",
+                       "page_15_img_15.webp",
+                       "page_16_img_16.webp",
+                       "page_17_img_17.webp",
+                       "page_18_img_18.webp",
+                       "page_19_img_19.webp",
+                       "page_20_img_20.webp",
+                       "page_21_img_21.webp",
+                       "page_22_img_22.webp",
+                       "page_23_img_23.webp",
+                       "page_24_img_24.webp",
+                       "page_25_img_25.webp",
+                       "page_26_img_26.webp",
+                       "page_27_img_27.webp",
+                       "page_28_img_28.webp",
+                       "page_29_img_29.webp",
+                       "page_30_img_30.webp",
+                       "page_31_img_31.webp",
+                       "page_32_img_32.webp",
+                       "page_33_img_33.webp"
+                   ],
+        "seo":  {
+                    "title":  "Shorts GAMMA | Zebro Sportswear",
+                    "description":  "Zebro Shorts GAMMA with compression technology, muscle support and moisture management for serious athletic performance."
+                }
+    },
+    {
+        "id":  "shorts-jupiter",
+        "slug":  "shorts-jupiter",
+        "name":  "Shorts Jupiter",
+        "brand":  "Zebro",
+        "category":  "Shorts",
+        "subCategory":  "Sportswear",
+        "type":  "Performance",
+        "description":  "Performance-focused shorts with stretchable fabric and quick-dry comfort.",
+        "material":  "Stretchable Polyester Blend",
+        "fit":  "Regular Fit",
+        "gender":  "Men",
+        "sizes":  [
+                      "S",
+                      "M",
+                      "L",
+                      "XL",
+                      "XXL"
+                  ],
+        "colors":  [
+                       "Black",
+                       "Navy"
+                   ],
+        "features":  [
+                         "Stretchable fabric",
+                         "Quick dry",
+                         "Elastic waistband",
+                         "Side pockets"
+                     ],
+        "care":  [
+                     "Machine wash cold",
+                     "Do not bleach",
+                     "Dry in shade"
+                 ],
+        "images":  [
+                       "page_1_img_1.webp",
+                       "page_2_img_2.webp",
+                       "page_3_img_3.webp",
+                       "page_4_img_4.webp",
+                       "page_5_img_5.webp",
+                       "page_6_img_6.webp",
+                       "page_7_img_7.webp",
+                       "page_9_img_9.webp",
+                       "page_10_img_10.webp",
+                       "page_11_img_11.webp",
+                       "page_12_img_12.webp"
+                   ],
+        "seo":  {
+                    "title":  "Shorts Jupiter | Zebro Performance Shorts",
+                    "description":  "Zebro Jupiter shorts for high-performance training."
+                }
+    },
+    {
+        "id":  "shorts-micro-ns-lycra-177",
+        "slug":  "shorts-micro-ns-lycra-177",
+        "name":  "Shorts Micro NS Lycra 177",
+        "brand":  "Zebro",
+        "category":  "Shorts",
+        "subCategory":  "Sportswear",
+        "type":  "Training",
+        "description":  "Lightweight training shorts with Micro NS Lycra for maximum flexibility.",
+        "material":  "Micro NS Lycra",
+        "fit":  "Regular Fit",
+        "gender":  "Men",
+        "sizes":  [
+                      "S",
+                      "M",
+                      "L",
+                      "XL",
+                      "XXL"
+                  ],
+        "colors":  [
+                       "Black",
+                       "Navy"
+                   ],
+        "features":  [
+                         "Lightweight fabric",
+                         "Stretchable Lycra",
+                         "Quick dry",
+                         "Elastic waistband"
+                     ],
+        "care":  [
+                     "Machine wash cold",
+                     "Do not bleach",
+                     "Dry in shade"
+                 ],
+        "images":  [
+                       "page_2_img_2.webp",
+                       "page_3_img_3.webp",
+                       "page_4_img_4.webp",
+                       "page_5_img_5.webp"
+                   ],
+        "seo":  {
+                    "title":  "Shorts Micro NS Lycra 177 | Zebro Training Shorts",
+                    "description":  "Zebro Micro NS Lycra 177 shorts for lightweight training comfort."
+                }
+    },
+    {
+        "id":  "shorts-ns-cargo",
+        "slug":  "shorts-ns-cargo",
+        "name":  "Shorts NS Cargo",
+        "brand":  "Zebro",
+        "category":  "Shorts",
+        "subCategory":  "Sportswear",
+        "type":  "Cargo",
+        "description":  "Utility-focused cargo shorts with functional pockets for sports and casual use.",
+        "material":  "NS Fabric",
+        "fit":  "Regular Fit",
+        "gender":  "Men",
+        "sizes":  [
+                      "S",
+                      "M",
+                      "L",
+                      "XL",
+                      "XXL"
+                  ],
+        "colors":  [
+                       "Black",
+                       "Olive"
+                   ],
+        "features":  [
+                         "Cargo pockets",
+                         "Breathable fabric",
+                         "Elastic waistband"
+                     ],
+        "care":  [
+                     "Machine wash cold",
+                     "Do not bleach",
+                     "Dry in shade"
+                 ],
+        "images":  [
+                       "page_1_img_1.webp",
+                       "page_2_img_2.webp",
+                       "page_3_img_3.webp",
+                       "page_4_img_4.webp",
+                       "page_5_img_5.webp",
+                       "page_6_img_6.webp",
+                       "page_7_img_7.webp",
+                       "page_8_img_8.webp",
+                       "page_9_img_9.webp",
+                       "page_10_img_10.webp",
+                       "page_11_img_11.webp",
+                       "page_12_img_12.webp",
+                       "page_13_img_13.webp",
+                       "page_14_img_14.webp",
+                       "page_15_img_15.webp",
+                       "page_16_img_16.webp",
+                       "page_17_img_17.webp",
+                       "page_18_img_18.webp",
+                       "page_19_img_19.webp",
+                       "page_20_img_20.webp",
+                       "page_21_img_21.webp",
+                       "page_22_img_22.webp",
+                       "page_23_img_23.webp",
+                       "page_24_img_24.webp",
+                       "page_25_img_25.webp",
+                       "page_26_img_26.webp",
+                       "page_27_img_27.webp",
+                       "page_28_img_28.webp",
+                       "page_29_img_29.webp",
+                       "page_30_img_30.webp",
+                       "page_31_img_31.webp",
+                       "page_32_img_32.webp",
+                       "page_33_img_33.webp",
+                       "page_34_img_34.webp",
+                       "page_35_img_35.webp",
+                       "page_36_img_36.webp",
+                       "page_37_img_37.webp",
+                       "page_38_img_38.webp",
+                       "page_39_img_39.webp",
+                       "page_40_img_40.webp"
+                   ],
+        "seo":  {
+                    "title":  "Shorts NS Cargo | Zebro Utility Shorts",
+                    "description":  "Zebro NS Cargo shorts with functional pockets and breathable comfort."
+                }
+    },
+    {
+        "id":  "shorts-ns-border",
+        "slug":  "shorts-ns-border",
+        "name":  "Shorts Ns BORDER",
+        "brand":  "Zebro",
+        "category":  "Shorts",
+        "subCategory":  "Shorts",
+        "description":  "Stylish Zebro Ns BORDER shorts featuring distinctive border detailing and performance technology for modern athletes.",
+        "material":  "Ns Border Performance Fabric",
+        "fit":  "Modern Fit",
+        "gender":  "Men",
+        "sizes":  [
+                      "S",
+                      "M",
+                      "L",
+                      "XL",
+                      "XXL",
+                      "3XL"
+                  ],
+        "colors":  [
+                       "Black with White Border",
+                       "Navy with Red Border",
+                       "Grey with Black Border",
+                       "White with Navy Border"
+                   ],
+        "features":  [
+                         "Contrast border detailing",
+                         "Moisture-wicking technology",
+                         "Quick-dry fabric",
+                         "Modern athletic styling",
+                         "Side pockets",
+                         "Elastic waistband",
+                         "Reinforced seams",
+                         "Professional appearance"
+                     ],
+        "care":  [
+                     "Machine wash cold",
+                     "Do not bleach",
+                     "Tumble dry low",
+                     "Medium iron if needed"
+                 ],
+        "images":  [
+                       "page_2_img_2.webp",
+                       "page_3_img_3.webp",
+                       "page_4_img_4.webp",
+                       "page_5_img_5.webp",
+                       "page_6_img_6.webp",
+                       "page_7_img_7.webp",
+                       "page_8_img_8.webp",
+                       "page_9_img_9.webp",
+                       "page_10_img_10.webp",
+                       "page_11_img_11.webp",
+                       "page_12_img_12.webp",
+                       "page_13_img_13.webp",
+                       "page_14_img_14.webp"
+                   ],
+        "seo":  {
+                    "title":  "Shorts Ns BORDER | Zebro Sportswear",
+                    "description":  "Zebro Shorts Ns BORDER with contrast border detailing, moisture-wicking technology and modern athletic styling."
+                }
+    },
+    {
+        "id":  "shorts-ns-cargo",
+        "slug":  "shorts-ns-cargo",
+        "name":  "Shorts NS Cargo",
+        "brand":  "Zebro",
+        "category":  "Shorts",
+        "subCategory":  "Sportswear",
+        "type":  "Cargo",
+        "description":  "Utility-focused cargo shorts with functional pockets for sports and casual use.",
+        "material":  "NS Fabric",
+        "fit":  "Regular Fit",
+        "gender":  "Men",
+        "sizes":  [
+                      "S",
+                      "M",
+                      "L",
+                      "XL",
+                      "XXL"
+                  ],
+        "colors":  [
+                       "Black",
+                       "Olive"
+                   ],
+        "features":  [
+                         "Cargo pockets",
+                         "Breathable fabric",
+                         "Elastic waistband"
+                     ],
+        "care":  [
+                     "Machine wash cold",
+                     "Do not bleach",
+                     "Dry in shade"
+                 ],
+        "images":  [
+                       "page_1_img_1.webp",
+                       "page_2_img_2.webp",
+                       "page_3_img_3.webp",
+                       "page_4_img_4.webp",
+                       "page_5_img_5.webp",
+                       "page_6_img_6.webp",
+                       "page_7_img_7.webp",
+                       "page_8_img_8.webp",
+                       "page_9_img_9.webp",
+                       "page_10_img_10.webp",
+                       "page_11_img_11.webp",
+                       "page_12_img_12.webp",
+                       "page_13_img_13.webp",
+                       "page_14_img_14.webp",
+                       "page_15_img_15.webp",
+                       "page_16_img_16.webp",
+                       "page_17_img_17.webp",
+                       "page_18_img_18.webp",
+                       "page_19_img_19.webp",
+                       "page_20_img_20.webp",
+                       "page_21_img_21.webp",
+                       "page_22_img_22.webp",
+                       "page_23_img_23.webp",
+                       "page_24_img_24.webp",
+                       "page_25_img_25.webp",
+                       "page_26_img_26.webp",
+                       "page_27_img_27.webp",
+                       "page_28_img_28.webp"
+                   ],
+        "seo":  {
+                    "title":  "Shorts NS Cargo | Zebro Utility Shorts",
+                    "description":  "Zebro NS Cargo shorts with functional pockets and breathable comfort."
+                }
+    },
+    {
+        "id":  "tee-rn-marshmallow",
+        "slug":  "tee-rn-marshmallow",
+        "name":  "Tee R/N Marshmallow",
+        "brand":  "Zebro",
+        "category":  "Tee",
+        "subCategory":  "Sportswear",
+        "type":  "Training",
+        "description":  "Zebro Tee R/N Marshmallow is a lightweight, highly stretchable training t-shirt made with premium nylon fabric for superior comfort and performance.",
+        "material":  "Premium Nylon Fabric",
+        "fit":  "Regular Fit",
+        "gender":  "Men",
+        "sizes":  [
+                      "XS",
+                      "S",
+                      "M",
+                      "L",
+                      "XL",
+                      "XXL"
+                  ],
+        "colors":  [
+                       "Black",
+                       "Dark Grey"
+                   ],
+        "features":  [
+                         "Highly stretchable fabric",
+                         "Lightweight construction",
+                         "Quick dry technology",
+                         "Breathable material",
+                         "Soft hand feel",
+                         "Crew neck (Round Neck)"
+                     ],
+        "care":  [
+                     "Machine wash cold",
+                     "Do not bleach",
+                     "Dry in shade",
+                     "Easy care fabric"
+                 ],
+        "images":  [
+                       "page_1_img_1.webp",
+                       "page_2_img_2.webp",
+                       "page_3_img_3.webp",
+                       "page_4_img_4.webp",
+                       "page_5_img_5.webp",
+                       "page_6_img_6.webp",
+                       "page_7_img_7.webp",
+                       "page_8_img_8.webp",
+                       "page_9_img_9.webp",
+                       "page_10_img_10.webp",
+                       "page_11_img_11.webp",
+                       "page_12_img_12.webp",
+                       "page_13_img_13.webp",
+                       "page_14_img_14.webp",
+                       "page_15_img_15.webp",
+                       "page_16_img_16.webp",
+                       "page_17_img_17.webp",
+                       "page_18_img_18.webp",
+                       "page_19_img_19.webp",
+                       "page_20_img_20.webp",
+                       "page_21_img_21.webp",
+                       "page_22_img_22.webp",
+                       "page_23_img_23.webp",
+                       "page_24_img_24.webp",
+                       "page_25_img_25.webp",
+                       "page_26_img_26.webp",
+                       "page_27_img_27.webp",
+                       "page_28_img_28.webp",
+                       "page_29_img_29.webp",
+                       "page_30_img_30.webp",
+                       "page_31_img_31.webp",
+                       "page_32_img_32.webp",
+                       "page_33_img_33.webp",
+                       "page_34_img_34.webp",
+                       "page_35_img_35.webp",
+                       "page_36_img_36.webp",
+                       "page_37_img_37.webp",
+                       "page_38_img_38.webp",
+                       "page_39_img_39.webp",
+                       "page_40_img_40.webp",
+                       "page_41_img_41.webp",
+                       "page_42_img_42.webp",
+                       "page_43_img_43.webp",
+                       "page_44_img_44.webp",
+                       "page_45_img_45.webp",
+                       "page_46_img_46.webp",
+                       "page_47_img_47.webp",
+                       "page_48_img_48.webp",
+                       "page_49_img_49.webp",
+                       "page_50_img_50.webp"
+                   ],
+        "seo":  {
+                    "title":  "Tee R/N Marshmallow | Zebro Training T-Shirt",
+                    "description":  "Zebro Tee R/N Marshmallow training t-shirt made with premium nylon fabric, offering stretch, comfort and quick-dry performance."
+                }
+    },
+    {
+        "id":  "tee-polo-boat",
+        "slug":  "tee-polo-boat",
+        "name":  "Tee Polo Boat",
+        "brand":  "Zebro",
+        "category":  "Tee",
+        "subCategory":  "Sportswear",
+        "type":  "Polo",
+        "description":  "Zebro Tee Polo Boat is a classic collar polo t-shirt designed for sports and daily active wear, featuring advanced rapid-dry fabric and breathable mesh panels for all-day comfort.",
+        "material":  "Textured Rice Knit Fabric",
+        "fit":  "Regular Fit",
+        "gender":  "Men",
+        "sizes":  [
+                      "S",
+                      "M",
+                      "L",
+                      "XL",
+                      "XXL"
+                  ],
+        "colors":  [
+                       "Maroon",
+                       "Black",
+                       "Navy",
+                       "Firozi",
+                       "White"
+                   ],
+        "features":  [
+                         "Advanced rapid dry technology",
+                         "Anti-microbial fabric treatment",
+                         "Mesh panel for sweat ventilation",
+                         "Contrast collar design",
+                         "Keeps you cool and dry throughout the day"
+                     ],
+        "care":  [
+                     "Machine wash cold",
+                     "Do not bleach",
+                     "Dry in shade",
+                     "Easy care fabric"
+                 ],
+        "images":  [
+                       "page_1_img_1.webp",
+                       "page_3_img_3.webp",
+                       "page_4_img_4.webp",
+                       "page_5_img_5.webp",
+                       "page_6_img_6.webp",
+                       "page_7_img_7.webp",
+                       "page_8_img_8.webp",
+                       "page_9_img_9.webp",
+                       "page_10_img_10.webp",
+                       "page_11_img_11.webp",
+                       "page_12_img_12.webp",
+                       "page_13_img_13.webp",
+                       "page_14_img_14.webp",
+                       "page_15_img_15.webp",
+                       "page_16_img_16.webp",
+                       "page_17_img_17.webp",
+                       "page_18_img_18.webp",
+                       "page_19_img_19.webp"
+                   ],
+        "seo":  {
+                    "title":  "Tee Polo Boat | Zebro Polo Sports T-Shirt",
+                    "description":  "Zebro Tee Polo Boat with rapid-dry, anti-microbial fabric and mesh ventilation for sports and active wear."
+                }
+    },
+    {
+        "id":  "tee-polo-candy",
+        "slug":  "tee-polo-candy",
+        "name":  "Tee Polo Candy",
+        "brand":  "Zebro",
+        "category":  "Tee",
+        "subCategory":  "Sportswear",
+        "type":  "Polo",
+        "description":  "Zebro Tee Polo Candy is a premium sports polo designed for gym, training, and athleisure wear, offering comfort, breathability, and a clean modern look.",
+        "material":  "Soft Textured Polyester Knit",
+        "fit":  "Regular Fit",
+        "gender":  "Men",
+        "sizes":  [
+                      "S",
+                      "M",
+                      "L",
+                      "XL",
+                      "XXL"
+                  ],
+        "colors":  [
+                       "Grey",
+                       "Airforce Blue",
+                       "Navy",
+                       "Black"
+                   ],
+        "features":  [
+                         "Soft textured fabric",
+                         "Breathable and lightweight",
+                         "Chest zipper pocket",
+                         "Comfortable collar design",
+                         "Suitable for gym and athleisure"
+                     ],
+        "care":  [
+                     "Machine wash cold",
+                     "Do not bleach",
+                     "Dry in shade",
+                     "Easy care"
+                 ],
+        "images":  [
+                       "page_2_img_2.webp",
+                       "page_3_img_3.webp",
+                       "page_4_img_4.webp",
+                       "page_5_img_5.webp",
+                       "page_6_img_6.webp",
+                       "page_7_img_7.webp",
+                       "page_8_img_8.webp",
+                       "page_9_img_9.webp",
+                       "page_10_img_10.webp",
+                       "page_11_img_11.webp"
+                   ],
+        "seo":  {
+                    "title":  "Tee Polo Candy | Zebro Sports Polo T-Shirt",
+                    "description":  "Zebro Tee Polo Candy sports polo with breathable fabric and chest zipper pocket for gym and active wear."
+                }
+    },
+    {
+        "id":  "tee-polo-galaxy",
+        "slug":  "tee-polo-galaxy",
+        "name":  "Tee Polo Galaxy",
+        "brand":  "Zebro",
+        "category":  "Tee",
+        "subCategory":  "Sportswear",
+        "type":  "Polo",
+        "description":  "Zebro Tee Polo Galaxy is a high-performance sports polo designed for training and racket sports, featuring breathable fabric, sweat-wicking technology, and a modern athletic fit.",
+        "material":  "Performance Polyester Knit",
+        "fit":  "Regular Fit",
+        "gender":  "Men",
+        "sizes":  [
+                      "S",
+                      "M",
+                      "L",
+                      "XL",
+                      "XXL"
+                  ],
+        "colors":  [
+                       "Grey",
+                       "Navy",
+                       "Airforce Blue",
+                       "Black"
+                   ],
+        "features":  [
+                         "Anti-odour fabric treatment",
+                         "Sun protection (SPF 30)",
+                         "Sweat-wicking technology",
+                         "Breathable and ultra-soft fabric",
+                         "Contrast shoulder panel detailing",
+                         "Designed for tennis and training"
+                     ],
+        "care":  [
+                     "Machine wash cold",
+                     "Do not bleach",
+                     "Dry in shade",
+                     "Easy care fabric"
+                 ],
+        "images":  [
+                       "page_2_img_2.webp",
+                       "page_3_img_3.webp",
+                       "page_4_img_4.webp",
+                       "page_5_img_5.webp",
+                       "page_6_img_6.webp",
+                       "page_7_img_7.webp",
+                       "page_8_img_8.webp",
+                       "page_9_img_9.webp",
+                       "page_10_img_10.webp",
+                       "page_11_img_11.webp",
+                       "page_12_img_12.webp"
+                   ],
+        "seo":  {
+                    "title":  "Tee Polo Galaxy | Zebro Performance Polo T-Shirt",
+                    "description":  "Zebro Tee Polo Galaxy sports polo with sweat-wicking, anti-odour fabric and SPF protection for training and tennis."
+                }
+    },
+    {
+        "id":  "tee-polo-kit-kat",
+        "slug":  "tee-polo-kit-kat",
+        "name":  "Tee Polo Kit Kat",
+        "brand":  "Zebro",
+        "category":  "Tee",
+        "subCategory":  "Sportswear",
+        "type":  "Polo",
+        "description":  "Zebro Tee Polo Kit Kat is a premium sports polo crafted for performance sports like tennis and squash, featuring lightweight fabric, modern hexagon print design, and superior comfort.",
+        "material":  "Super Sarina Dryfit Fabric",
+        "fit":  "Regular Fit",
+        "gender":  "Men",
+        "sizes":  [
+                      "S",
+                      "M",
+                      "L",
+                      "XL",
+                      "XXL"
+                  ],
+        "colors":  [
+                       "Olive",
+                       "Black",
+                       "Navy",
+                       "White"
+                   ],
+        "features":  [
+                         "Lightweight performance fabric",
+                         "Superior sweat-wicking",
+                         "Hexagon graphic print design",
+                         "Breathable construction",
+                         "Comfort collar for sports movement",
+                         "Designed for tennis and squash"
+                     ],
+        "care":  [
+                     "Machine wash cold",
+                     "Do not bleach",
+                     "Dry in shade",
+                     "Easy care"
+                 ],
+        "images":  [
+                       "page_3_img_3.webp",
+                       "page_4_img_4.webp",
+                       "page_5_img_5.webp",
+                       "page_6_img_6.webp",
+                       "page_7_img_7.webp",
+                       "page_8_img_8.webp",
+                       "page_9_img_9.webp",
+                       "page_10_img_10.webp",
+                       "page_11_img_11.webp"
+                   ],
+        "seo":  {
+                    "title":  "Tee Polo Kit Kat | Zebro Sports Polo T-Shirt",
+                    "description":  "Zebro Tee Polo Kit Kat sports polo with Super Sarina Dryfit fabric and breathable design for tennis and training."
+                }
+    },
+    {
+        "id":  "tee-polo-mist",
+        "slug":  "tee-polo-mist",
+        "name":  "Tee Polo Mist",
+        "brand":  "Zebro",
+        "category":  "Tee",
+        "subCategory":  "Sportswear",
+        "type":  "Polo",
+        "description":  "Zebro Tee Polo Mist is a lightweight, highly stretchable polo t-shirt designed for high-performance sports and training, featuring quick-dry fabric and a stylish slub shading effect.",
+        "material":  "Stretchable Polyester Knit",
+        "fit":  "Regular Fit",
+        "gender":  "Men",
+        "sizes":  [
+                      "S",
+                      "M",
+                      "L",
+                      "XL",
+                      "XXL"
+                  ],
+        "colors":  [
+                       "Light Grey",
+                       "Scuba Blue"
+                   ],
+        "features":  [
+                         "Highly stretchable fabric",
+                         "Lightweight construction",
+                         "Quick dry technology",
+                         "Slub shading effect",
+                         "Breathable and comfortable",
+                         "Polo collar design"
+                     ],
+        "care":  [
+                     "Machine wash cold",
+                     "Do not bleach",
+                     "Dry in shade",
+                     "Easy care fabric"
+                 ],
+        "images":  [
+                       "page_2_img_2.webp",
+                       "page_3_img_3.webp",
+                       "page_4_img_4.webp",
+                       "page_5_img_5.webp",
+                       "page_6_img_6.webp",
+                       "page_7_img_7.webp",
+                       "page_8_img_8.webp",
+                       "page_9_img_9.webp",
+                       "page_10_img_10.webp",
+                       "page_11_img_11.webp",
+                       "page_12_img_12.webp",
+                       "page_13_img_13.webp",
+                       "page_14_img_14.webp",
+                       "page_15_img_15.webp",
+                       "page_16_img_16.webp",
+                       "page_17_img_17.webp",
+                       "page_18_img_18.webp",
+                       "page_19_img_19.webp",
+                       "page_20_img_20.webp",
+                       "page_21_img_21.webp",
+                       "page_22_img_22.webp",
+                       "page_23_img_23.webp",
+                       "page_24_img_24.webp",
+                       "page_25_img_25.webp",
+                       "page_26_img_26.webp",
+                       "page_27_img_27.webp",
+                       "page_28_img_28.webp",
+                       "page_29_img_29.webp",
+                       "page_30_img_30.webp",
+                       "page_31_img_31.webp",
+                       "page_32_img_32.webp",
+                       "page_33_img_33.webp",
+                       "page_34_img_34.webp",
+                       "page_35_img_35.webp",
+                       "page_36_img_36.webp",
+                       "page_37_img_37.webp",
+                       "page_38_img_38.webp",
+                       "page_39_img_39.webp",
+                       "page_40_img_40.webp",
+                       "page_41_img_41.webp",
+                       "page_42_img_42.webp",
+                       "page_43_img_43.webp",
+                       "page_44_img_44.webp",
+                       "page_45_img_45.webp",
+                       "page_46_img_46.webp",
+                       "page_47_img_47.webp",
+                       "page_48_img_48.webp",
+                       "page_49_img_49.webp",
+                       "page_50_img_50.webp",
+                       "page_51_img_51.webp",
+                       "page_52_img_52.webp",
+                       "page_53_img_53.webp",
+                       "page_54_img_54.webp",
+                       "page_55_img_55.webp",
+                       "page_56_img_56.webp"
+                   ],
+        "seo":  {
+                    "title":  "Tee Polo Mist | Zebro Sports Polo T-Shirt",
+                    "description":  "Zebro Tee Polo Mist lightweight polo with stretchable, quick-dry fabric and slub shading effect for sports and training."
+                }
+    },
+    {
+        "id":  "tee-polo-starbucks",
+        "slug":  "tee-polo-starbucks",
+        "name":  "Tee Polo Starbucks",
+        "brand":  "Zebro",
+        "category":  "Tee",
+        "subCategory":  "Sportswear",
+        "type":  "Polo",
+        "description":  "Zebro Tee Polo Starbucks is a premium performance polo featuring moisture management technology and modern printed design, ideal for sports like rugby, training, and active wear.",
+        "material":  "Performance Polyester Fabric",
+        "fit":  "Regular Fit",
+        "gender":  "Men",
+        "sizes":  [
+                      "S",
+                      "M",
+                      "L",
+                      "XL",
+                      "XXL"
+                  ],
+        "colors":  [
+                       "Black",
+                       "Olive",
+                       "White",
+                       "Navy"
+                   ],
+        "features":  [
+                         "Advanced moisture management technology",
+                         "Anti-microbial treatment",
+                         "Breathable fabric",
+                         "Modern all-over print design",
+                         "Quick dry performance",
+                         "Polo collar"
+                     ],
+        "care":  [
+                     "Machine wash cold",
+                     "Do not bleach",
+                     "Dry in shade",
+                     "Easy care"
+                 ],
+        "images":  [
+                       "page_2_img_2.webp",
+                       "page_3_img_3.webp",
+                       "page_4_img_4.webp",
+                       "page_5_img_5.webp",
+                       "page_6_img_6.webp",
+                       "page_7_img_7.webp",
+                       "page_8_img_8.webp",
+                       "page_9_img_9.webp"
+                   ],
+        "seo":  {
+                    "title":  "Tee Polo Starbucks | Zebro Performance Polo T-Shirt",
+                    "description":  "Zebro Tee Polo Starbucks polo t-shirt with moisture management and breathable fabric for sports and active wear."
+                }
+    },
+    {
+        "id":  "tee-rn-metallica",
+        "slug":  "tee-rn-metallica",
+        "name":  "Tee R/N Metallica",
+        "brand":  "Zebro",
+        "category":  "Tee",
+        "subCategory":  "Sportswear",
+        "type":  "Training",
+        "description":  "Zebro Tee R/N Metallica is a high-performance round neck t-shirt with textured metallic pattern, designed for intense training and sports activities.",
+        "material":  "Performance Polyester with Textured Finish",
+        "fit":  "Regular Fit",
+        "gender":  "Men",
+        "sizes":  [
+                      "XS",
+                      "S",
+                      "M",
+                      "L",
+                      "XL",
+                      "XXL",
+                      "4XS"
+                  ],
+        "colors":  [
+                       "Olive",
+                       "Black",
+                       "Navy"
+                   ],
+        "features":  [
+                         "Textured metallic pattern",
+                         "Quick dry fabric",
+                         "Breathable construction",
+                         "Lightweight feel",
+                         "Round neck design",
+                         "Ideal for training and sports"
+                     ],
+        "care":  [
+                     "Machine wash cold",
+                     "Do not bleach",
+                     "Dry in shade",
+                     "Easy care fabric"
+                 ],
+        "images":  [
+                       "page_2_img_2.webp",
+                       "page_3_img_3.webp",
+                       "page_4_img_4.webp",
+                       "page_5_img_5.webp",
+                       "page_6_img_6.webp",
+                       "page_7_img_7.webp",
+                       "page_8_img_8.webp",
+                       "page_9_img_9.webp",
+                       "page_10_img_10.webp",
+                       "page_11_img_11.webp",
+                       "page_12_img_12.webp",
+                       "page_13_img_13.webp",
+                       "page_14_img_14.webp",
+                       "page_15_img_15.webp",
+                       "page_16_img_16.webp",
+                       "page_17_img_17.webp",
+                       "page_18_img_18.webp",
+                       "page_19_img_19.webp",
+                       "page_20_img_20.webp",
+                       "page_21_img_21.webp",
+                       "page_22_img_22.webp",
+                       "page_23_img_23.webp",
+                       "page_24_img_24.webp",
+                       "page_25_img_25.webp",
+                       "page_26_img_26.webp",
+                       "page_27_img_27.webp",
+                       "page_28_img_28.webp",
+                       "page_29_img_29.webp",
+                       "page_30_img_30.webp",
+                       "page_31_img_31.webp",
+                       "page_32_img_32.webp",
+                       "page_33_img_33.webp",
+                       "page_34_img_34.webp",
+                       "page_35_img_35.webp",
+                       "page_36_img_36.webp",
+                       "page_37_img_37.webp",
+                       "page_38_img_38.webp",
+                       "page_39_img_39.webp",
+                       "page_40_img_40.webp",
+                       "page_41_img_41.webp",
+                       "page_42_img_42.webp",
+                       "page_43_img_43.webp",
+                       "page_44_img_44.webp",
+                       "page_45_img_45.webp",
+                       "page_46_img_46.webp"
+                   ],
+        "seo":  {
+                    "title":  "Tee R/N Metallica | Zebro Training T-Shirt",
+                    "description":  "Zebro Tee R/N Metallica round neck t-shirt with quick-dry fabric and textured design for training and active sports."
+                }
+    },
+    {
+        "id":  "tee-rn-mist",
+        "slug":  "tee-rn-mist",
+        "name":  "Tee R/N Mist",
+        "brand":  "Zebro",
+        "category":  "Tee",
+        "subCategory":  "Sportswear",
+        "type":  "Training",
+        "description":  "Zebro Tee R/N Mist is a lightweight round neck training t-shirt designed with quick-dry technology and breathable fabric for intense workouts and daily training.",
+        "material":  "Performance Polyester Knit",
+        "fit":  "Regular Fit",
+        "gender":  "Men",
+        "sizes":  [
+                      "S",
+                      "M",
+                      "L",
+                      "XL",
+                      "XXL"
+                  ],
+        "colors":  [
+                       "Scuba Blue",
+                       "Black"
+                   ],
+        "features":  [
+                         "Quick dry fabric",
+                         "Breathable and lightweight",
+                         "Stretchable material",
+                         "Round neck design",
+                         "Reflective back detailing",
+                         "Ideal for gym and training"
+                     ],
+        "care":  [
+                     "Machine wash cold",
+                     "Do not bleach",
+                     "Dry in shade",
+                     "Easy care fabric"
+                 ],
+        "images":  [
+                       "page_2_img_2.webp",
+                       "page_3_img_3.webp",
+                       "page_4_img_4.webp",
+                       "page_5_img_5.webp",
+                       "page_6_img_6.webp",
+                       "page_7_img_7.webp",
+                       "page_8_img_8.webp",
+                       "page_9_img_9.webp",
+                       "page_10_img_10.webp",
+                       "page_11_img_11.webp",
+                       "page_12_img_12.webp",
+                       "page_13_img_13.webp",
+                       "page_14_img_14.webp",
+                       "page_15_img_15.webp",
+                       "page_16_img_16.webp",
+                       "page_17_img_17.webp",
+                       "page_18_img_18.webp",
+                       "page_19_img_19.webp",
+                       "page_20_img_20.webp",
+                       "page_21_img_21.webp",
+                       "page_22_img_22.webp",
+                       "page_23_img_23.webp",
+                       "page_24_img_24.webp",
+                       "page_25_img_25.webp",
+                       "page_26_img_26.webp",
+                       "page_27_img_27.webp",
+                       "page_28_img_28.webp",
+                       "page_29_img_29.webp",
+                       "page_30_img_30.webp",
+                       "page_31_img_31.webp",
+                       "page_32_img_32.webp",
+                       "page_33_img_33.webp",
+                       "page_34_img_34.webp",
+                       "page_35_img_35.webp",
+                       "page_36_img_36.webp",
+                       "page_37_img_37.webp",
+                       "page_38_img_38.webp",
+                       "page_39_img_39.webp"
+                   ],
+        "seo":  {
+                    "title":  "Tee R/N Mist | Zebro Training T-Shirt",
+                    "description":  "Zebro Tee R/N Mist round neck training t-shirt with quick-dry, breathable fabric for workouts and active wear."
+                }
+    },
+    {
+        "id":  "tee-rn-nylon-dobby",
+        "slug":  "tee-rn-nylon-dobby",
+        "name":  "Tee R/N Nylon Dobby",
+        "brand":  "Zebro",
+        "category":  "Tee",
+        "subCategory":  "Sportswear",
+        "type":  "Performance",
+        "description":  "Zebro Tee R/N Nylon Dobby is a high-performance round neck t-shirt crafted with premium nylon dobby fabric, offering superior grip, stretch, and sweat-wicking comfort for advanced training.",
+        "material":  "Nylon Dobby Fabric",
+        "fit":  "Regular Fit",
+        "gender":  "Men",
+        "sizes":  [
+                      "4XS",
+                      "XS",
+                      "S",
+                      "M",
+                      "L",
+                      "XL",
+                      "XXL"
+                  ],
+        "colors":  [
+                       "Black",
+                       "Navy"
+                   ],
+        "features":  [
+                         "Premium nylon dobby fabric",
+                         "Sleeve binding for better grip",
+                         "Reflective artwork",
+                         "Quick dry technology",
+                         "Breathable construction",
+                         "Designed for performance training"
+                     ],
+        "care":  [
+                     "Machine wash cold",
+                     "Do not bleach",
+                     "Dry in shade",
+                     "Easy care"
+                 ],
+        "images":  [
+                       "page_2_img_2.webp",
+                       "page_3_img_3.webp",
+                       "page_4_img_4.webp",
+                       "page_5_img_5.webp",
+                       "page_6_img_6.webp",
+                       "page_7_img_7.webp",
+                       "page_8_img_8.webp",
+                       "page_9_img_9.webp",
+                       "page_10_img_10.webp",
+                       "page_11_img_11.webp",
+                       "page_12_img_12.webp",
+                       "page_13_img_13.webp",
+                       "page_14_img_14.webp",
+                       "page_15_img_15.webp",
+                       "page_16_img_16.webp",
+                       "page_17_img_17.webp",
+                       "page_18_img_18.webp",
+                       "page_19_img_19.webp",
+                       "page_20_img_20.webp",
+                       "page_21_img_21.webp",
+                       "page_22_img_22.webp",
+                       "page_23_img_23.webp",
+                       "page_24_img_24.webp",
+                       "page_25_img_25.webp",
+                       "page_26_img_26.webp",
+                       "page_27_img_27.webp",
+                       "page_28_img_28.webp",
+                       "page_29_img_29.webp",
+                       "page_30_img_30.webp",
+                       "page_31_img_31.webp",
+                       "page_32_img_32.webp",
+                       "page_33_img_33.webp",
+                       "page_34_img_34.webp",
+                       "page_35_img_35.webp",
+                       "page_36_img_36.webp",
+                       "page_37_img_37.webp",
+                       "page_38_img_38.webp",
+                       "page_39_img_39.webp",
+                       "page_40_img_40.webp",
+                       "page_41_img_41.webp",
+                       "page_42_img_42.webp",
+                       "page_43_img_43.webp",
+                       "page_44_img_44.webp",
+                       "page_45_img_45.webp",
+                       "page_46_img_46.webp",
+                       "page_47_img_47.webp",
+                       "page_48_img_48.webp",
+                       "page_49_img_49.webp"
+                   ],
+        "seo":  {
+                    "title":  "Tee R/N Nylon Dobby | Zebro Performance T-Shirt",
+                    "description":  "Zebro Tee R/N Nylon Dobby performance t-shirt with premium nylon fabric, reflective detailing, and quick-dry comfort."
+                }
+    },
+    {
+        "id":  "tee-rn-ola",
+        "slug":  "tee-rn-ola",
+        "name":  "Tee R/N OLA",
+        "brand":  "Zebro",
+        "category":  "Tee",
+        "subCategory":  "Sportswear",
+        "type":  "Training",
+        "description":  "Zebro Tee R/N OLA is a lightweight striped round-neck t-shirt designed for repetitive training and active sports, offering breathability, comfort, and a modern athletic look.",
+        "material":  "Performance Polyester Knit",
+        "fit":  "Regular Fit",
+        "gender":  "Men",
+        "sizes":  [
+                      "S",
+                      "M",
+                      "L",
+                      "XL",
+                      "XXL"
+                  ],
+        "colors":  [
+                       "Black",
+                       "Airforce Blue",
+                       "Grey",
+                       "Mint",
+                       "Sky",
+                       "Bottle Green"
+                   ],
+        "features":  [
+                         "Lightweight fabric",
+                         "Breathable construction",
+                         "Quick dry technology",
+                         "Striped texture design",
+                         "Reflective Zebro branding",
+                         "Round neck (R/N)",
+                         "Ideal for training and active sports"
+                     ],
+        "care":  [
+                     "Machine wash cold",
+                     "Do not bleach",
+                     "Dry in shade",
+                     "Easy care fabric"
+                 ],
+        "images":  [
+                       "page_1_img_1.webp",
+                       "page_2_img_2.webp",
+                       "page_3_img_3.webp",
+                       "page_4_img_4.webp",
+                       "page_5_img_5.webp",
+                       "page_6_img_6.webp",
+                       "page_7_img_7.webp",
+                       "page_8_img_8.webp",
+                       "page_9_img_9.webp",
+                       "page_10_img_10.webp",
+                       "page_11_img_11.webp",
+                       "page_12_img_12.webp",
+                       "page_13_img_13.webp",
+                       "page_14_img_14.webp",
+                       "page_15_img_15.webp",
+                       "page_16_img_16.webp",
+                       "page_17_img_17.webp",
+                       "page_18_img_18.webp",
+                       "page_19_img_19.webp",
+                       "page_20_img_20.webp",
+                       "page_21_img_21.webp",
+                       "page_22_img_22.webp",
+                       "page_23_img_23.webp"
+                   ],
+        "seo":  {
+                    "title":  "Tee R/N OLA | Zebro Training T-Shirt",
+                    "description":  "Zebro Tee R/N OLA striped round neck training t-shirt with breathable, quick-dry fabric for gym and sports activities."
+                }
+    },
+    {
+        "id":  "track-pant-007-ns",
+        "slug":  "track-pant-007-ns",
+        "name":  "Track Pant 007 NS",
+        "brand":  "Zebro",
+        "category":  "Track Pant",
+        "subCategory":  "Sportswear",
+        "type":  "Training",
+        "description":  "Zebro Track Pant 007 NS is a premium training track pant featuring breathable fabric, sweat-wicking technology, and utility pockets for intense workouts.",
+        "material":  "Performance Polyester",
+        "fit":  "Regular Fit",
+        "gender":  "Men",
+        "sizes":  [
+                      "S",
+                      "M",
+                      "L",
+                      "XL",
+                      "XXL",
+                      "3XL",
+                      "4XL",
+                      "5XL"
+                  ],
+        "colors":  [
+                       "Black",
+                       "Navy"
+                   ],
+        "features":  [
+                         "Breathable material",
+                         "Sweat-wicking fabric",
+                         "Cargo-style side pocket with 007 branding",
+                         "Elastic waistband",
+                         "Comfort against garment clinging"
+                     ],
+        "care":  [
+                     "Machine wash cold",
+                     "Do not bleach",
+                     "Dry in shade"
+                 ],
+        "images":  [
+                       "page_2_img_2.webp",
+                       "page_3_img_3.webp",
+                       "page_4_img_4.webp",
+                       "page_5_img_5.webp",
+                       "page_6_img_6.webp",
+                       "page_7_img_7.webp",
+                       "page_8_img_8.webp"
+                   ],
+        "seo":  {
+                    "title":  "Track Pant 007 NS | Zebro Training Track Pants",
+                    "description":  "Zebro Track Pant 007 NS with breathable fabric and sweat-wicking comfort for training and workouts."
+                }
+    },
+    {
+        "id":  "track-pant-camo",
+        "slug":  "track-pant-camo",
+        "name":  "Track Pant Camo",
+        "brand":  "Zebro",
+        "category":  "Track Pant",
+        "subCategory":  "Sportswear",
+        "type":  "Training",
+        "description":  "Zebro Track Pant Camo combines a modern camouflage design with breathable, ultra-soft fabric for training and active lifestyle use.",
+        "material":  "Camouflage Performance Polyester",
+        "fit":  "Regular Fit",
+        "gender":  "Men",
+        "sizes":  [
+                      "4XS",
+                      "XS",
+                      "S",
+                      "M",
+                      "L",
+                      "XL",
+                      "XXL",
+                      "3XL",
+                      "4XL",
+                      "5XL"
+                  ],
+        "colors":  [
+                       "Grey Camo",
+                       "Black Camo",
+                       "Navy Camo"
+                   ],
+        "features":  [
+                         "Camouflage pattern",
+                         "Ultra-soft fabric",
+                         "Breathable construction",
+                         "Zipper pocket for security",
+                         "Elastic waistband"
+                     ],
+        "care":  [
+                     "Machine wash cold",
+                     "Do not bleach",
+                     "Dry in shade"
+                 ],
+        "images":  [
+                       "page_1_img_1.webp",
+                       "page_2_img_2.webp",
+                       "page_3_img_3.webp",
+                       "page_4_img_4.webp",
+                       "page_5_img_5.webp",
+                       "page_6_img_6.webp",
+                       "page_7_img_7.webp",
+                       "page_8_img_8.webp"
+                   ],
+        "seo":  {
+                    "title":  "Track Pant Camo | Zebro Sports Track Pants",
+                    "description":  "Zebro Track Pant Camo with breathable fabric, zipper pocket, and modern camouflage design."
+                }
+    },
+    {
+        "id":  "track-pant-fitness-ns",
+        "slug":  "track-pant-fitness-ns",
+        "name":  "Track Pant Fitness NS",
+        "brand":  "Zebro",
+        "category":  "Track Pant",
+        "subCategory":  "Sportswear",
+        "type":  "Training",
+        "description":  "Zebro Track Pant Fitness NS is designed for daily workouts with breathable, durable fabric and multiple pockets for convenience.",
+        "material":  "Cotton-Feel Performance Fabric",
+        "fit":  "Regular Fit",
+        "gender":  "Men",
+        "sizes":  [
+                      "S",
+                      "M",
+                      "L",
+                      "XL",
+                      "XXL",
+                      "3XL",
+                      "4XL",
+                      "5XL"
+                  ],
+        "colors":  [
+                       "Navy",
+                       "Grey",
+                       "Black"
+                   ],
+        "features":  [
+                         "Breathable fabric",
+                         "Fade resistant material",
+                         "Durable construction",
+                         "Four side pockets",
+                         "Elastic waistband"
+                     ],
+        "care":  [
+                     "Machine wash cold",
+                     "Do not bleach",
+                     "Dry in shade"
+                 ],
+        "images":  [
+                       "page_2_img_2.webp",
+                       "page_3_img_3.webp",
+                       "page_4_img_4.webp",
+                       "page_5_img_5.webp",
+                       "page_6_img_6.webp",
+                       "page_7_img_7.webp",
+                       "page_8_img_8.webp",
+                       "page_9_img_9.webp",
+                       "page_10_img_10.webp"
+                   ],
+        "seo":  {
+                    "title":  "Track Pant Fitness NS | Zebro Workout Track Pants",
+                    "description":  "Zebro Track Pant Fitness NS with breathable, durable fabric for daily fitness routines."
+                }
+    },
+    {
+        "id":  "track-pant-g-wagon",
+        "slug":  "track-pant-g-wagon",
+        "name":  "Track Pant G Wagon",
+        "brand":  "Zebro",
+        "category":  "Track Pant",
+        "subCategory":  "Sportswear",
+        "type":  "Cargo",
+        "description":  "Zebro Track Pant G Wagon is a premium cargo-style track pant featuring six utility pockets, durable woven fabric, and a relaxed comfort fit for training and outdoor activities.",
+        "material":  "Khaki Woven Fabric",
+        "fit":  "Regular Fit",
+        "gender":  "Men",
+        "sizes":  [
+                      "M",
+                      "L",
+                      "XL",
+                      "XXL"
+                  ],
+        "colors":  [
+                       "Khaki",
+                       "Navy",
+                       "Dark Grey",
+                       "Olive",
+                       "Black"
+                   ],
+        "features":  [
+                         "Six utility pockets",
+                         "Side zipper pockets",
+                         "Thigh flap pockets",
+                         "Back flap pockets",
+                         "Breathable and fade-resistant fabric",
+                         "Embroidered logo"
+                     ],
+        "care":  [
+                     "Machine wash cold",
+                     "Do not bleach",
+                     "Dry in shade"
+                 ],
+        "images":  [
+                       "page_2_img_2.webp",
+                       "page_3_img_3.webp",
+                       "page_4_img_4.webp",
+                       "page_5_img_5.webp",
+                       "page_6_img_6.webp",
+                       "page_7_img_7.webp",
+                       "page_8_img_8.webp",
+                       "page_9_img_9.webp",
+                       "page_10_img_10.webp",
+                       "page_11_img_11.webp",
+                       "page_12_img_12.webp",
+                       "page_13_img_13.webp",
+                       "page_14_img_14.webp"
+                   ],
+        "seo":  {
+                    "title":  "Track Pant G Wagon | Zebro Cargo Track Pants",
+                    "description":  "Zebro Track Pant G Wagon cargo track pants with six pockets and durable woven fabric for training and outdoor use."
+                }
+    },
+    {
+        "id":  "track-pant-no-limits",
+        "slug":  "track-pant-no-limits",
+        "name":  "Track Pant No Limits",
+        "brand":  "Zebro",
+        "category":  "Track Pant",
+        "subCategory":  "Sportswear",
+        "type":  "Training",
+        "description":  "Zebro Track Pant No Limits is a comfort-fit training pant engineered with breathable, sweat-wicking fabric for gym, outdoor activities, and daily workouts.",
+        "material":  "Breathable Performance Fabric",
+        "fit":  "Comfort Fit",
+        "gender":  "Men",
+        "sizes":  [
+                      "S",
+                      "M",
+                      "L",
+                      "XL",
+                      "XXL",
+                      "3XL",
+                      "4XL",
+                      "5XL"
+                  ],
+        "colors":  [
+                       "Navy",
+                       "Olive",
+                       "Grey",
+                       "Black"
+                   ],
+        "features":  [
+                         "Breathable material",
+                         "Sweat-wicking fabric",
+                         "Fade resistant",
+                         "Durable construction",
+                         "Elastic waistband",
+                         "Suitable for gym, outdoor and travel"
+                     ],
+        "care":  [
+                     "Machine wash cold",
+                     "Do not bleach",
+                     "Dry in shade"
+                 ],
+        "images":  [
+                       "page_1_img_1.webp",
+                       "page_2_img_2.webp",
+                       "page_3_img_3.webp",
+                       "page_4_img_4.webp",
+                       "page_5_img_5.webp",
+                       "page_6_img_6.webp",
+                       "page_7_img_7.webp",
+                       "page_8_img_8.webp",
+                       "page_9_img_9.webp",
+                       "page_10_img_10.webp",
+                       "page_11_img_11.webp",
+                       "page_12_img_12.webp",
+                       "page_13_img_13.webp",
+                       "page_14_img_14.webp",
+                       "page_15_img_15.webp",
+                       "page_16_img_16.webp",
+                       "page_17_img_17.webp",
+                       "page_18_img_18.webp",
+                       "page_19_img_19.webp",
+                       "page_20_img_20.webp",
+                       "page_21_img_21.webp",
+                       "page_22_img_22.webp",
+                       "page_23_img_23.webp",
+                       "page_24_img_24.webp",
+                       "page_25_img_25.webp",
+                       "page_26_img_26.webp",
+                       "page_27_img_27.webp",
+                       "page_28_img_28.webp",
+                       "page_29_img_29.webp",
+                       "page_30_img_30.webp",
+                       "page_31_img_31.webp",
+                       "page_32_img_32.webp",
+                       "page_33_img_33.webp",
+                       "page_34_img_34.webp",
+                       "page_35_img_35.webp",
+                       "page_36_img_36.webp",
+                       "page_37_img_37.webp",
+                       "page_38_img_38.webp",
+                       "page_39_img_39.webp",
+                       "page_40_img_40.webp",
+                       "page_41_img_41.webp"
+                   ],
+        "seo":  {
+                    "title":  "Track Pant No Limits | Zebro Comfort Fit Track Pants",
+                    "description":  "Zebro Track Pant No Limits with breathable, sweat-wicking fabric for training and outdoor activities."
+                }
+    },
+    {
+        "id":  "track-pant-no-limits",
+        "slug":  "track-pant-no-limits",
+        "name":  "Track Pant NO LIMITS",
+        "brand":  "Zebro",
+        "category":  "Track Pant",
+        "subCategory":  "Track Pant",
+        "description":  "Unlimited performance Zebro NO LIMITS track pants designed for athletes who refuse to be bound by conventional limits.",
+        "material":  "NO LIMITS Performance Fabric",
+        "fit":  "Regular Fit",
+        "gender":  "Men",
+        "sizes":  [
+                      "S",
+                      "M",
+                      "L",
+                      "XL",
+                      "XXL",
+                      "3XL"
+                  ],
+        "colors":  [
+                       "Unlimited Black",
+                       "Infinity Blue",
+                       "Endless Grey",
+                       "Boundless Red"
+                   ],
+        "features":  [
+                         "NO LIMITS technology",
+                         "Unlimited mobility design",
+                         "Enhanced flexibility",
+                         "Moisture-wicking performance",
+                         "Quick-dry fabric",
+                         "Reinforced stress points",
+                         "Multiple pocket options",
+                         "Limitless performance"
+                     ],
+        "care":  [
+                     "Machine wash cold",
+                     "Do not bleach",
+                     "Tumble dry low",
+                     "Cool iron if needed"
+                 ],
+        "images":  [
+                       "page_2_img_2.webp",
+                       "page_3_img_3.webp",
+                       "page_4_img_4.webp",
+                       "page_5_img_5.webp",
+                       "page_6_img_6.webp",
+                       "page_7_img_7.webp",
+                       "page_8_img_8.webp",
+                       "page_9_img_9.webp",
+                       "page_10_img_10.webp"
+                   ],
+        "seo":  {
+                    "title":  "Track Pant NO LIMITS | Zebro Sportswear",
+                    "description":  "Zebro Track Pant NO LIMITS with unlimited mobility, enhanced flexibility and limitless performance for boundary-pushing athletes."
+                }
+    },
+    {
+        "id":  "track-pant-otp",
+        "slug":  "track-pant-otp",
+        "name":  "Track Pant OTP",
+        "brand":  "Zebro",
+        "category":  "Track Pant",
+        "subCategory":  "Sportswear",
+        "type":  "Performance",
+        "description":  "Zebro Track Pant OTP is a high-performance track pant built with superior stretch fabric, UV protection, and anti-microbial treatment for advanced training sessions.",
+        "material":  "Superior Stretch Performance Fabric",
+        "fit":  "Regular Fit",
+        "gender":  "Men",
+        "sizes":  [
+                      "S",
+                      "M",
+                      "L",
+                      "XL",
+                      "XXL",
+                      "3XL",
+                      "4XL",
+                      "5XL"
+                  ],
+        "colors":  [
+                       "Navy",
+                       "Cement",
+                       "Khaki",
+                       "Black",
+                       "Grey"
+                   ],
+        "features":  [
+                         "Superior stretch fabric",
+                         "UV protection",
+                         "Anti-microbial treatment",
+                         "Dynamic cooling technology",
+                         "Zipper pockets",
+                         "Designed for high performance training"
+                     ],
+        "care":  [
+                     "Machine wash cold",
+                     "Do not bleach",
+                     "Dry in shade"
+                 ],
+        "images":  [
+                       "page_2_img_2.webp",
+                       "page_3_img_3.webp",
+                       "page_4_img_4.webp",
+                       "page_5_img_5.webp",
+                       "page_6_img_6.webp",
+                       "page_7_img_7.webp",
+                       "page_8_img_8.webp",
+                       "page_9_img_9.webp"
+                   ],
+        "seo":  {
+                    "title":  "Track Pant OTP | Zebro Performance Track Pants",
+                    "description":  "Zebro Track Pant OTP with superior stretch, UV protection and cooling technology for high-performance workouts."
+                }
+    },
+    {
+        "id":  "track-pant-rubicon",
+        "slug":  "track-pant-rubicon",
+        "name":  "Track Pant Rubicon",
+        "brand":  "Zebro",
+        "category":  "Track Pant",
+        "subCategory":  "Sportswear",
+        "type":  "Cargo",
+        "description":  "Zebro Track Pant Rubicon is a utility-inspired cargo track pant featuring moisture-absorbing fabric, multiple pockets, and relaxed comfort for workouts and active routines.",
+        "material":  "Moisture-Absorbing Performance Fabric",
+        "fit":  "Regular Fit",
+        "gender":  "Men",
+        "sizes":  [
+                      "M",
+                      "L",
+                      "XL",
+                      "XXL"
+                  ],
+        "colors":  [
+                       "Olive",
+                       "Black",
+                       "Navy"
+                   ],
+        "features":  [
+                         "Cargo-style utility pockets",
+                         "Moisture-absorbing fabric",
+                         "Fly dry technology",
+                         "Elastic waistband with drawcord",
+                         "Designed for workout comfort"
+                     ],
+        "care":  [
+                     "Machine wash cold",
+                     "Do not bleach",
+                     "Dry in shade"
+                 ],
+        "images":  [
+                       "page_2_img_2.webp",
+                       "page_3_img_3.webp",
+                       "page_4_img_4.webp",
+                       "page_5_img_5.webp",
+                       "page_6_img_6.webp",
+                       "page_7_img_7.webp",
+                       "page_8_img_8.webp",
+                       "page_9_img_9.webp"
+                   ],
+        "seo":  {
+                    "title":  "Track Pant Rubicon | Zebro Cargo Track Pants",
+                    "description":  "Zebro Track Pant Rubicon cargo track pants with moisture-absorbing fabric and multiple utility pockets."
+                }
+    },
+    {
+        "id":  "track-pant-thar",
+        "slug":  "track-pant-thar",
+        "name":  "Track Pant Thar",
+        "brand":  "Zebro",
+        "category":  "Track Pant",
+        "subCategory":  "Sportswear",
+        "type":  "Cargo",
+        "description":  "Zebro Track Pant Thar is a stylish cargo track pant designed for training and lifestyle wear, featuring multiple utility pockets, ankle cuffs, and a premium stretchable waistband.",
+        "material":  "Premium Stretchable Performance Fabric",
+        "fit":  "Regular Fit",
+        "gender":  "Men",
+        "sizes":  [
+                      "M",
+                      "L",
+                      "XL",
+                      "XXL"
+                  ],
+        "colors":  [
+                       "Black",
+                       "Grey",
+                       "Airforce Blue",
+                       "Navy"
+                   ],
+        "features":  [
+                         "Stretchable premium waist elastic",
+                         "Cargo side pockets",
+                         "Stylish back pockets",
+                         "Side pocket with reflective print",
+                         "Ankle cuff finish",
+                         "Comfortable and stylish design"
+                     ],
+        "care":  [
+                     "Machine wash cold",
+                     "Do not bleach",
+                     "Dry in shade"
+                 ],
+        "images":  [
+                       "page_2_img_2.webp",
+                       "page_3_img_3.webp",
+                       "page_4_img_4.webp",
+                       "page_5_img_5.webp",
+                       "page_6_img_6.webp",
+                       "page_7_img_7.webp",
+                       "page_8_img_8.webp",
+                       "page_9_img_9.webp",
+                       "page_10_img_10.webp",
+                       "page_11_img_11.webp",
+                       "page_12_img_12.webp"
+                   ],
+        "seo":  {
+                    "title":  "Track Pant Thar | Zebro Cargo Track Pants",
+                    "description":  "Zebro Track Pant Thar cargo-style track pants with stretchable fabric, utility pockets, and ankle cuffs for training and lifestyle wear."
+                }
+    },
+    {
+        "id":  "track-pant-toe",
+        "slug":  "track-pant-toe",
+        "name":  "Track Pant TOE",
+        "brand":  "Zebro",
+        "category":  "Track Pant",
+        "subCategory":  "Sportswear",
+        "type":  "Performance",
+        "description":  "Zebro Track Pant TOE is a premium performance track pant made with nylon terry fabric, offering superior comfort, flexibility, and a clean athletic silhouette for high-intensity training.",
+        "material":  "Nylon Terry Fabric",
+        "fit":  "Regular Fit",
+        "gender":  "Men",
+        "sizes":  [
+                      "M",
+                      "L",
+                      "XL",
+                      "XXL"
+                  ],
+        "colors":  [
+                       "Grey",
+                       "Black",
+                       "Olive"
+                   ],
+        "features":  [
+                         "Soft nylon terry fabric",
+                         "Dual-tone drawcords",
+                         "Ironable printed artwork",
+                         "Lightweight and flexible",
+                         "Elastic waistband",
+                         "Designed for premium training comfort"
+                     ],
+        "care":  [
+                     "Machine wash cold",
+                     "Do not bleach",
+                     "Dry in shade"
+                 ],
+        "images":  [
+                       "page_2_img_2.webp",
+                       "page_3_img_3.webp",
+                       "page_4_img_4.webp",
+                       "page_5_img_5.webp",
+                       "page_6_img_6.webp",
+                       "page_7_img_7.webp",
+                       "page_8_img_8.webp",
+                       "page_9_img_9.webp",
+                       "page_10_img_10.webp",
+                       "page_11_img_11.webp",
+                       "page_12_img_12.webp",
+                       "page_13_img_13.webp",
+                       "page_14_img_14.webp",
+                       "page_15_img_15.webp",
+                       "page_16_img_16.webp",
+                       "page_17_img_17.webp",
+                       "page_18_img_18.webp",
+                       "page_19_img_19.webp",
+                       "page_20_img_20.webp",
+                       "page_21_img_21.webp",
+                       "page_22_img_22.webp",
+                       "page_23_img_23.webp",
+                       "page_24_img_24.webp",
+                       "page_25_img_25.webp",
+                       "page_26_img_26.webp",
+                       "page_27_img_27.webp",
+                       "page_28_img_28.webp",
+                       "page_29_img_29.webp",
+                       "page_30_img_30.webp",
+                       "page_31_img_31.webp",
+                       "page_32_img_32.webp",
+                       "page_33_img_33.webp",
+                       "page_34_img_34.webp",
+                       "page_35_img_35.webp",
+                       "page_36_img_36.webp",
+                       "page_37_img_37.webp",
+                       "page_38_img_38.webp",
+                       "page_39_img_39.webp",
+                       "page_40_img_40.webp",
+                       "page_41_img_41.webp",
+                       "page_42_img_42.webp",
+                       "page_43_img_43.webp",
+                       "page_44_img_44.webp",
+                       "page_45_img_45.webp",
+                       "page_46_img_46.webp",
+                       "page_47_img_47.webp",
+                       "page_48_img_48.webp",
+                       "page_49_img_49.webp",
+                       "page_50_img_50.webp",
+                       "page_51_img_51.webp",
+                       "page_52_img_52.webp",
+                       "page_53_img_53.webp",
+                       "page_54_img_54.webp",
+                       "page_55_img_55.webp",
+                       "page_56_img_56.webp",
+                       "page_57_img_57.webp",
+                       "page_58_img_58.webp",
+                       "page_59_img_59.webp",
+                       "page_60_img_60.webp"
+                   ],
+        "seo":  {
+                    "title":  "Track Pant TOE | Zebro Performance Track Pants",
+                    "description":  "Zebro Track Pant TOE performance pants with nylon terry fabric and premium comfort for workouts and training."
+                }
+    },
+    {
+        "id":  "track-pant-unstoppable",
+        "slug":  "track-pant-unstoppable",
+        "name":  "Track Pant Unstoppable",
+        "brand":  "Zebro",
+        "category":  "Track Pant",
+        "subCategory":  "Sportswear",
+        "type":  "Training",
+        "description":  "Zebro Track Pant Unstoppable is a moisture-wicking training track pant crafted for unmatched comfort, seamless design, and daily workout performance.",
+        "material":  "Moisture-Wicking Performance Fabric",
+        "fit":  "Regular Fit",
+        "gender":  "Men",
+        "sizes":  [
+                      "S",
+                      "M",
+                      "L",
+                      "XL",
+                      "XXL",
+                      "3XL",
+                      "4XL",
+                      "5XL"
+                  ],
+        "colors":  [
+                       "Airforce Blue",
+                       "Grey",
+                       "Black",
+                       "Navy"
+                   ],
+        "features":  [
+                         "Moisture-wicking fabric",
+                         "Unmatched comfort and seamless design",
+                         "Breathable construction",
+                         "Elastic waistband",
+                         "Side pockets",
+                         "Ideal for gym and training"
+                     ],
+        "care":  [
+                     "Machine wash cold",
+                     "Do not bleach",
+                     "Dry in shade"
+                 ],
+        "images":  [
+                       "page_2_img_2.webp",
+                       "page_3_img_3.webp",
+                       "page_4_img_4.webp",
+                       "page_5_img_5.webp",
+                       "page_6_img_6.webp",
+                       "page_7_img_7.webp",
+                       "page_8_img_8.webp",
+                       "page_9_img_9.webp",
+                       "page_10_img_10.webp",
+                       "page_11_img_11.webp",
+                       "page_12_img_12.webp",
+                       "page_13_img_13.webp"
+                   ],
+        "seo":  {
+                    "title":  "Track Pant Unstoppable | Zebro Training Track Pants",
+                    "description":  "Zebro Track Pant Unstoppable with moisture-wicking fabric and seamless comfort for intense workouts."
+                }
+    },
+    {
+        "id":  "track-suit-junior",
+        "slug":  "track-suit-junior",
+        "name":  "Track Suit Junior",
+        "brand":  "Zebro",
+        "category":  "Track Suit",
+        "subCategory":  "Sportswear",
+        "type":  "Training",
+        "description":  "Zebro Track Suit Junior is a lightweight and comfortable tracksuit designed for kids, suitable for sports, play, and daily wear.",
+        "material":  "Performance Polyester",
+        "fit":  "Regular Fit",
+        "gender":  "Kids",
+        "sizes":  [
+                      "4XS",
+                      "3XS",
+                      "2XS",
+                      "XS",
+                      "S"
+                  ],
+        "colors":  [
+                       "Navy",
+                       "Black"
+                   ],
+        "features":  [
+                         "Lightweight fabric",
+                         "Zipper jacket",
+                         "Comfortable for daily wear",
+                         "Easy movement design"
+                     ],
+        "care":  [
+                     "Machine wash cold",
+                     "Do not bleach",
+                     "Dry in shade"
+                 ],
+        "images":  [
+                       "page_2_img_2.webp",
+                       "page_3_img_3.webp",
+                       "page_4_img_4.webp",
+                       "page_5_img_5.webp"
+                   ]
+    },
+    {
+        "id":  "track-suit-melange-lycra-kids",
+        "slug":  "track-suit-melange-lycra-kids",
+        "name":  "Track Suit Melange Lycra",
+        "brand":  "Zebro",
+        "category":  "Track Suit",
+        "subCategory":  "Sportswear",
+        "type":  "Training",
+        "description":  "Zebro Track Suit Melange Lycra for kids features ultra-soft fabric, breathable comfort, sweat-wicking performance, and reflective branding.",
+        "material":  "Polyester Spandex Melange",
+        "fit":  "Regular Fit",
+        "gender":  "Kids",
+        "sizes":  [
+                      "4XS",
+                      "3XS",
+                      "2XS",
+                      "XS",
+                      "S"
+                  ],
+        "colors":  [
+                       "Dark Grey",
+                       "Medium Grey",
+                       "Navy"
+                   ],
+        "features":  [
+                         "Ultra-soft fabric",
+                         "Breathable material",
+                         "Sweat-wicking",
+                         "Chest zipper pocket",
+                         "Reflective back logo"
+                     ],
+        "care":  [
+                     "Machine wash cold",
+                     "Do not bleach",
+                     "Dry in shade"
+                 ],
+        "images":  [
+                       "page_2_img_2.webp",
+                       "page_3_img_3.webp",
+                       "page_4_img_4.webp",
+                       "page_5_img_5.webp",
+                       "page_6_img_6.webp",
+                       "page_7_img_7.webp",
+                       "page_8_img_8.webp"
+                   ]
+    },
+    {
+        "id":  "track-suit-micro-ns-cruiser",
+        "slug":  "track-suit-micro-ns-cruiser",
+        "name":  "Track Suit Micro NS Cruiser",
+        "brand":  "Zebro",
+        "category":  "Track Suit",
+        "subCategory":  "Sportswear",
+        "type":  "Training",
+        "description":  "Zebro Track Suit Micro NS Cruiser is a premium training tracksuit designed for comfort and performance, featuring micro NS fabric, reflective trims, and secure zipper pockets.",
+        "material":  "Micro NS Fabric",
+        "fit":  "Regular Fit",
+        "gender":  "Men",
+        "sizes":  [
+                      "S",
+                      "M",
+                      "L",
+                      "XL",
+                      "XXL",
+                      "3XL",
+                      "4XL"
+                  ],
+        "colors":  [
+                       "Navy",
+                       "Black",
+                       "Airforce Blue",
+                       "Grey"
+                   ],
+        "features":  [
+                         "Reflective back print",
+                         "Zipper pockets in jacket and pants",
+                         "Soft-touch fabric",
+                         "Breathable and comfortable",
+                         "Ideal for gym and training"
+                     ],
+        "care":  [
+                     "Machine wash cold",
+                     "Do not bleach",
+                     "Dry in shade"
+                 ],
+        "images":  [
+                       "page_2_img_2.webp",
+                       "page_3_img_3.webp",
+                       "page_4_img_4.webp",
+                       "page_5_img_5.webp",
+                       "page_6_img_6.webp",
+                       "page_7_img_7.webp",
+                       "page_8_img_8.webp",
+                       "page_9_img_9.webp",
+                       "page_10_img_10.webp",
+                       "page_11_img_11.webp",
+                       "page_12_img_12.webp"
+                   ]
+    },
+    {
+        "id":  "track-suit-micro-ns-spandex",
+        "slug":  "track-suit-micro-ns-spandex",
+        "name":  "Track Suit Micro NS Spandex",
+        "brand":  "Zebro",
+        "category":  "Track Suit",
+        "subCategory":  "Sportswear",
+        "type":  "Performance",
+        "description":  "Zebro Track Suit Micro NS Spandex is built with heavy-quality NS Lycra fabric, offering stretch, durability, reflective trims, and detachable hood for advanced training.",
+        "material":  "NS Lycra Fabric",
+        "fit":  "Regular Fit",
+        "gender":  "Men",
+        "sizes":  [
+                      "M",
+                      "L",
+                      "XL",
+                      "XXL"
+                  ],
+        "colors":  [
+                       "Airforce Blue",
+                       "Navy",
+                       "Grey",
+                       "Black"
+                   ],
+        "features":  [
+                         "Heavy quality NS Lycra fabric",
+                         "Reflective trims",
+                         "Detachable hood",
+                         "Zipper pockets",
+                         "Stretchable and durable"
+                     ],
+        "care":  [
+                     "Machine wash cold",
+                     "Do not bleach",
+                     "Dry in shade"
+                 ],
+        "images":  [
+                       "page_2_img_2.webp",
+                       "page_3_img_3.webp",
+                       "page_4_img_4.webp",
+                       "page_5_img_5.webp",
+                       "page_6_img_6.webp",
+                       "page_7_img_7.webp",
+                       "page_8_img_8.webp",
+                       "page_9_img_9.webp",
+                       "page_10_img_10.webp",
+                       "page_11_img_11.webp",
+                       "page_12_img_12.webp",
+                       "page_13_img_13.webp"
+                   ]
+    },
+    {
+        "id":  "track-suit-micro-ns-spandex",
+        "slug":  "track-suit-micro-ns-spandex",
+        "name":  "Track Suit Micro Ns Spandex",
+        "brand":  "Zebro",
+        "category":  "Track Suit",
+        "subCategory":  "Track Suit",
+        "description":  "Elite Zebro track suit featuring Micro NS Spandex technology for ultimate flexibility and performance during intense training.",
+        "material":  "Micro NS Spandex Blend",
+        "fit":  "Athletic Fit",
+        "gender":  "Men",
+        "sizes":  [
+                      "S",
+                      "M",
+                      "L",
+                      "XL",
+                      "XXL",
+                      "3XL"
+                  ],
+        "colors":  [
+                       "Black",
+                       "Navy Blue",
+                       "Grey",
+                       "Red"
+                   ],
+        "features":  [
+                         "Micro NS spandex technology",
+                         "4-way stretch fabric",
+                         "Moisture-wicking interior",
+                         "Quick-dry performance",
+                         "Zippered pockets",
+                         "Elastic cuffs and waist",
+                         "Reflective detailing",
+                         "Anti-microbial treatment"
+                     ],
+        "care":  [
+                     "Machine wash cold",
+                     "Do not use fabric softener",
+                     "Hang dry recommended",
+                     "Do not iron"
+                 ],
+        "images":  [
+                       "page_2_img_2.webp",
+                       "page_3_img_3.webp",
+                       "page_4_img_4.webp",
+                       "page_5_img_5.webp",
+                       "page_6_img_6.webp",
+                       "page_7_img_7.webp",
+                       "page_8_img_8.webp",
+                       "page_9_img_9.webp",
+                       "page_10_img_10.webp",
+                       "page_11_img_11.webp",
+                       "page_12_img_12.webp",
+                       "page_13_img_13.webp"
+                   ],
+        "seo":  {
+                    "title":  "Track Suit Micro Ns Spandex | Zebro Sportswear",
+                    "description":  "Zebro Track Suit Micro Ns Spandex with 4-way stretch, moisture-wicking and quick-dry technology for elite performance."
+                }
+    },
+    {
+        "id":  "track-suit-ns-spandex-white",
+        "slug":  "track-suit-ns-spandex-white",
+        "name":  "Track Suit NS Spandex White",
+        "brand":  "Zebro",
+        "category":  "Track Suit",
+        "subCategory":  "Sportswear",
+        "type":  "Spandex",
+        "gender":  "Men",
+        "description":  "Zebro Track Suit NS Spandex White is a premium white tracksuit designed with stretchable spandex fabric, offering comfort, durability, and a clean athletic look.",
+        "material":  "NS Spandex Fabric",
+        "fit":  "Regular Fit",
+        "sizes":  [
+                      "S",
+                      "M",
+                      "L",
+                      "XL",
+                      "XXL",
+                      "3XL",
+                      "4XL"
+                  ],
+        "colors":  [
+                       "White"
+                   ],
+        "features":  [
+                         "Stretchable spandex fabric",
+                         "Zipper pockets",
+                         "Breathable construction",
+                         "Clean white sporty design",
+                         "Comfortable for training and daily wear"
+                     ],
+        "care":  [
+                     "Machine wash cold",
+                     "Do not bleach",
+                     "Dry in shade"
+                 ],
+        "images":  [
+                       "page_2_img_2.webp",
+                       "page_3_img_3.webp",
+                       "page_4_img_4.webp"
+                   ],
+        "seo":  {
+                    "title":  "Track Suit NS Spandex White | Zebro Sportswear",
+                    "description":  "Zebro NS Spandex White track suit with stretchable fabric and zipper pockets for premium sportswear comfort."
+                }
+    },
+    {
+        "id":  "track-suit-poly-fresh-premium",
+        "slug":  "track-suit-poly-fresh-premium",
+        "name":  "Track Suit Poly Fresh Premium",
+        "brand":  "Zebro",
+        "category":  "Track Suit",
+        "subCategory":  "Sportswear",
+        "type":  "Poly Fabric",
+        "gender":  "Men",
+        "description":  "Zebro Track Suit Poly Fresh Premium is made with heavy-quality poly fabric, designed for intense workouts with reflective detailing and premium comfort.",
+        "material":  "Heavy Quality Poly Fabric",
+        "fit":  "Regular Fit",
+        "sizes":  [
+                      "XS",
+                      "S",
+                      "M",
+                      "L",
+                      "XL",
+                      "XXL",
+                      "3XL",
+                      "4XL"
+                  ],
+        "colors":  [
+                       "Black",
+                       "Navy"
+                   ],
+        "features":  [
+                         "Reflective collar detailing",
+                         "Zipper pockets",
+                         "Elastic waistband",
+                         "Breathable premium fabric",
+                         "Durable construction"
+                     ],
+        "care":  [
+                     "Machine wash cold",
+                     "Do not bleach",
+                     "Dry in shade"
+                 ],
+        "images":  [
+                       "page_2_img_2.webp",
+                       "page_3_img_3.webp",
+                       "page_4_img_4.webp",
+                       "page_5_img_5.webp",
+                       "page_6_img_6.webp",
+                       "page_7_img_7.webp"
+                   ],
+        "seo":  {
+                    "title":  "Track Suit Poly Fresh Premium | Zebro Track Suit",
+                    "description":  "Zebro Poly Fresh Premium track suit with heavy poly fabric, reflective details and zipper pockets for training and fitness."
+                }
+    },
+    {
+        "id":  "track-suit-poly-web",
+        "slug":  "track-suit-poly-web",
+        "name":  "Track Suit Poly Web",
+        "brand":  "Zebro",
+        "category":  "Track Suit",
+        "subCategory":  "Sportswear",
+        "type":  "Poly Fabric",
+        "gender":  "Men",
+        "description":  "Zebro Track Suit Poly Web features ultra-soft poly web fabric with breathable comfort, making it ideal for gym workouts and daily active wear.",
+        "material":  "Poly Web Fabric",
+        "fit":  "Regular Fit",
+        "sizes":  [
+                      "S",
+                      "M",
+                      "L",
+                      "XL",
+                      "XXL",
+                      "3XL",
+                      "4XL"
+                  ],
+        "colors":  [
+                       "Black",
+                       "Airforce Blue",
+                       "Navy",
+                       "Grey"
+                   ],
+        "features":  [
+                         "Ultra-soft fabric",
+                         "Breathable construction",
+                         "Zipper pockets",
+                         "Printed logo",
+                         "Lightweight comfort"
+                     ],
+        "care":  [
+                     "Machine wash cold",
+                     "Do not bleach",
+                     "Dry in shade"
+                 ],
+        "images":  [
+                       "page_2_img_2.webp",
+                       "page_3_img_3.webp",
+                       "page_4_img_4.webp",
+                       "page_5_img_5.webp",
+                       "page_6_img_6.webp",
+                       "page_7_img_7.webp",
+                       "page_8_img_8.webp",
+                       "page_9_img_9.webp",
+                       "page_10_img_10.webp"
+                   ],
+        "seo":  {
+                    "title":  "Track Suit Poly Web | Zebro Sports Track Suit",
+                    "description":  "Zebro Poly Web track suit with breathable fabric and zipper pockets for gym and active lifestyle wear."
+                }
+    },
+    {
+        "id":  "track-suit-super-spandex",
+        "slug":  "track-suit-super-spandex",
+        "name":  "Track Suit Super Spandex",
+        "brand":  "Zebro",
+        "category":  "Track Suit",
+        "subCategory":  "Sportswear",
+        "type":  "Super Spandex",
+        "gender":  "Men",
+        "description":  "Zebro Track Suit Super Spandex delivers superior stretch and flexibility with smart pocket design and neon branding for high-performance training.",
+        "material":  "Super Spandex Fabric",
+        "fit":  "Athletic Fit",
+        "sizes":  [
+                      "S",
+                      "M",
+                      "L",
+                      "XL",
+                      "XXL",
+                      "3XL",
+                      "4XL"
+                  ],
+        "colors":  [
+                       "Black",
+                       "Grey",
+                       "Navy"
+                   ],
+        "features":  [
+                         "Smart chest pocket",
+                         "Zipper pockets",
+                         "Neon green branding",
+                         "Highly stretchable fabric",
+                         "Moisture-wicking comfort"
+                     ],
+        "care":  [
+                     "Machine wash cold",
+                     "Do not bleach",
+                     "Dry in shade"
+                 ],
+        "images":  [
+                       "page_2_img_2.webp",
+                       "page_3_img_3.webp",
+                       "page_4_img_4.webp",
+                       "page_5_img_5.webp",
+                       "page_6_img_6.webp",
+                       "page_7_img_7.webp",
+                       "page_8_img_8.webp",
+                       "page_9_img_9.webp",
+                       "page_10_img_10.webp"
+                   ],
+        "seo":  {
+                    "title":  "Track Suit Super Spandex | Zebro Performance Sportswear",
+                    "description":  "Zebro Super Spandex track suit with stretchable fabric, smart pockets and neon branding for advanced training."
+                }
+    },
+    {
+        "id":  "track-suit-titan",
+        "slug":  "track-suit-titan",
+        "name":  "Track Suit Titan",
+        "brand":  "Zebro",
+        "category":  "Track Suit",
+        "subCategory":  "Sportswear",
+        "type":  "Premium Poly",
+        "gender":  "Men",
+        "description":  "Zebro Track Suit Titan is a premium sports tracksuit featuring a detachable hood, reflective detailing, and breathable fabric for outdoor and training use.",
+        "material":  "Premium Poly Fabric",
+        "fit":  "Regular Fit",
+        "sizes":  [
+                      "S",
+                      "M",
+                      "L",
+                      "XL",
+                      "XXL",
+                      "3XL",
+                      "4XL"
+                  ],
+        "colors":  [
+                       "Black",
+                       "Navy",
+                       "Dark Grey"
+                   ],
+        "features":  [
+                         "Detachable hood",
+                         "Reflective detailing",
+                         "Zipper pockets",
+                         "Breathable fabric",
+                         "Premium embroidered branding"
+                     ],
+        "care":  [
+                     "Machine wash cold",
+                     "Do not bleach",
+                     "Dry in shade"
+                 ],
+        "images":  [
+                       "page_2_img_2.webp",
+                       "page_3_img_3.webp",
+                       "page_4_img_4.webp",
+                       "page_5_img_5.webp",
+                       "page_6_img_6.webp",
+                       "page_7_img_7.webp",
+                       "page_8_img_8.webp",
+                       "page_9_img_9.webp"
+                   ],
+        "seo":  {
+                    "title":  "Track Suit Titan | Zebro Premium Track Suit",
+                    "description":  "Zebro Track Suit Titan with detachable hood, reflective panels and breathable fabric for premium sportswear performance."
+                }
+    },
+    {
+        "id":  "upper-crush-lycra",
+        "slug":  "upper-crush-lycra",
+        "name":  "Upper Crush Lycra",
+        "brand":  "Zebro",
+        "category":  "Upper",
+        "subCategory":  "Sportswear",
+        "type":  "Performance Jacket",
+        "description":  "Zebro Upper Crush Lycra is a high-stretch performance jacket built with lycra fabric for superior flexibility, comfort, and training performance.",
+        "material":  "Crush Lycra Fabric",
+        "fit":  "Athletic Fit",
+        "gender":  "Men",
+        "sizes":  [
+                      "M",
+                      "L",
+                      "XL",
+                      "XXL"
+                  ],
+        "colors":  [
+                       "Black",
+                       "Navy",
+                       "Grey"
+                   ],
+        "features":  [
+                         "High stretch lycra fabric",
+                         "Slim athletic fit",
+                         "Zipper pockets",
+                         "Breathable construction",
+                         "Lightweight feel"
+                     ],
+        "care":  [
+                     "Machine wash cold",
+                     "Do not bleach",
+                     "Dry in shade"
+                 ],
+        "images":  [
+                       "page_2_img_2.webp",
+                       "page_3_img_3.webp",
+                       "page_4_img_4.webp",
+                       "page_5_img_5.webp",
+                       "page_6_img_6.webp",
+                       "page_7_img_7.webp",
+                       "page_8_img_8.webp",
+                       "page_9_img_9.webp",
+                       "page_10_img_10.webp",
+                       "page_12_img_12.webp"
+                   ],
+        "seo":  {
+                    "title":  "Upper Crush Lycra Performance Jacket | Zebro",
+                    "description":  "Zebro Upper Crush Lycra jacket with stretchable fabric and athletic fit for high-performance training."
+                }
+    },
+    {
+        "id":  "upper-diamond-lycra",
+        "slug":  "upper-diamond-lycra",
+        "name":  "Upper Diamond Lycra",
+        "brand":  "Zebro",
+        "category":  "Upper",
+        "subCategory":  "Sportswear",
+        "type":  "Performance Jacket",
+        "description":  "Zebro Upper Diamond Lycra features premium lycra fabric with a textured diamond pattern, offering flexibility, comfort, and modern athletic styling.",
+        "material":  "Diamond Lycra Fabric",
+        "fit":  "Athletic Fit",
+        "gender":  "Men",
+        "sizes":  [
+                      "M",
+                      "L",
+                      "XL",
+                      "XXL"
+                  ],
+        "colors":  [
+                       "Black",
+                       "Navy",
+                       "Dark Grey"
+                   ],
+        "features":  [
+                         "Textured diamond pattern",
+                         "Stretchable lycra fabric",
+                         "Zipper pockets",
+                         "Breathable design",
+                         "Modern sporty look"
+                     ],
+        "care":  [
+                     "Machine wash cold",
+                     "Do not bleach",
+                     "Dry in shade"
+                 ],
+        "images":  [
+                       "page_2_img_2.webp",
+                       "page_3_img_3.webp",
+                       "page_4_img_4.webp",
+                       "page_5_img_5.webp",
+                       "page_6_img_6.webp"
+                   ],
+        "seo":  {
+                    "title":  "Upper Diamond Lycra Sports Jacket | Zebro",
+                    "description":  "Zebro Upper Diamond Lycra jacket with premium stretch fabric and textured design for training and active wear."
+                }
+    },
+    {
+        "id":  "upper-element",
+        "slug":  "upper-element",
+        "name":  "Upper Element",
+        "brand":  "Zebro",
+        "category":  "Upper",
+        "subCategory":  "Sportswear",
+        "type":  "Training Jacket",
+        "description":  "Zebro Upper Element is a lightweight training jacket designed for daily workouts, offering breathable comfort and a clean athletic silhouette.",
+        "material":  "Performance Polyester Fabric",
+        "fit":  "Regular Fit",
+        "gender":  "Men",
+        "sizes":  [
+                      "S",
+                      "M",
+                      "L",
+                      "XL",
+                      "XXL"
+                  ],
+        "colors":  [
+                       "Black",
+                       "Grey",
+                       "Navy"
+                   ],
+        "features":  [
+                         "Lightweight fabric",
+                         "Breathable construction",
+                         "Zipper pockets",
+                         "Minimal sporty design",
+                         "Comfort fit"
+                     ],
+        "care":  [
+                     "Machine wash cold",
+                     "Do not bleach",
+                     "Dry in shade"
+                 ],
+        "images":  [
+                       "page_1_img_1.webp",
+                       "page_2_img_2.webp",
+                       "page_3_img_3.webp",
+                       "page_4_img_4.webp",
+                       "page_5_img_5.webp",
+                       "page_6_img_6.webp",
+                       "page_7_img_7.webp",
+                       "page_8_img_8.webp",
+                       "page_9_img_9.webp",
+                       "page_10_img_10.webp"
+                   ],
+        "seo":  {
+                    "title":  "Upper Element Training Jacket | Zebro Sportswear",
+                    "description":  "Zebro Upper Element lightweight training jacket with breathable fabric for gym and workouts."
+                }
+    },
+    {
+        "id":  "upper-mackintosh",
+        "slug":  "upper-mackintosh",
+        "name":  "Upper Mackintosh",
+        "brand":  "Zebro",
+        "category":  "Upper",
+        "subCategory":  "Sportswear",
+        "type":  "Winter Jacket",
+        "description":  "Zebro Upper Mackintosh is a winter-ready sports jacket designed with insulated fabric, protective hood, and durable construction for cold weather training.",
+        "material":  "Insulated Polyester Fabric",
+        "fit":  "Regular Fit",
+        "gender":  "Men",
+        "sizes":  [
+                      "M",
+                      "L",
+                      "XL",
+                      "XXL"
+                  ],
+        "colors":  [
+                       "Black",
+                       "Navy",
+                       "Olive"
+                   ],
+        "features":  [
+                         "Insulated warm fabric",
+                         "Attached hood",
+                         "Zipper pockets",
+                         "Wind protection",
+                         "Winter training wear"
+                     ],
+        "care":  [
+                     "Machine wash cold",
+                     "Do not bleach",
+                     "Dry in shade"
+                 ],
+        "images":  [
+                       "page_2_img_2.webp",
+                       "page_3_img_3.webp",
+                       "page_4_img_4.webp",
+                       "page_5_img_5.webp",
+                       "page_6_img_6.webp",
+                       "page_7_img_7.webp",
+                       "page_8_img_8.webp",
+                       "page_9_img_9.webp",
+                       "page_10_img_10.webp",
+                       "page_11_img_11.webp",
+                       "page_12_img_12.webp",
+                       "page_13_img_13.webp",
+                       "page_14_img_14.webp",
+                       "page_15_img_15.webp",
+                       "page_16_img_16.webp",
+                       "page_17_img_17.webp",
+                       "page_18_img_18.webp",
+                       "page_19_img_19.webp"
+                   ],
+        "seo":  {
+                    "title":  "Upper Mackintosh Winter Sports Jacket | Zebro",
+                    "description":  "Zebro Upper Mackintosh insulated sports jacket with hood for winter training and outdoor wear."
+                }
+    },
+    {
+        "id":  "upper-ns-nexa",
+        "slug":  "upper-ns-nexa",
+        "name":  "Upper NS Nexa",
+        "brand":  "Zebro",
+        "category":  "Upper",
+        "subCategory":  "Sportswear",
+        "type":  "Performance Jacket",
+        "description":  "Zebro Upper NS Nexa is a premium performance jacket crafted with NS fabric, offering breathability, stretch, and a modern athletic look.",
+        "material":  "NS Performance Fabric",
+        "fit":  "Athletic Fit",
+        "gender":  "Men",
+        "sizes":  [
+                      "M",
+                      "L",
+                      "XL",
+                      "XXL"
+                  ],
+        "colors":  [
+                       "Black",
+                       "Grey",
+                       "Navy"
+                   ],
+        "features":  [
+                         "Premium NS fabric",
+                         "Stretchable material",
+                         "Zipper pockets",
+                         "Breathable construction",
+                         "Modern sporty design"
+                     ],
+        "care":  [
+                     "Machine wash cold",
+                     "Do not bleach",
+                     "Dry in shade"
+                 ],
+        "images":  [
+                       "page_2_img_2.webp",
+                       "page_3_img_3.webp",
+                       "page_4_img_4.webp",
+                       "page_5_img_5.webp",
+                       "page_6_img_6.webp",
+                       "page_7_img_7.webp",
+                       "page_8_img_8.webp",
+                       "page_9_img_9.webp"
+                   ],
+        "seo":  {
+                    "title":  "Upper NS Nexa Performance Jacket | Zebro",
+                    "description":  "Zebro Upper NS Nexa performance jacket with breathable NS fabric and athletic fit for training."
+                }
+    },
+    {
+        "id":  "upper-rubicon",
+        "slug":  "upper-rubicon",
+        "name":  "Upper Rubicon",
+        "brand":  "Zebro",
+        "category":  "Upper",
+        "subCategory":  "Sportswear",
+        "type":  "Training Jacket",
+        "description":  "Zebro Upper Rubicon is a premium training jacket designed with breathable fabric, reflective detailing, and multiple zipper pockets for workouts and outdoor training.",
+        "material":  "Polyester-Spandex Blend",
+        "fit":  "Regular Fit",
+        "gender":  "Men",
+        "sizes":  [
+                      "S",
+                      "M",
+                      "L",
+                      "XL",
+                      "XXL",
+                      "3XL",
+                      "4XL"
+                  ],
+        "colors":  [
+                       "Black",
+                       "Olive",
+                       "Grey",
+                       "Navy"
+                   ],
+        "features":  [
+                         "Covered zipper",
+                         "Side zip pockets",
+                         "Chest zip pocket",
+                         "Reflective back strip",
+                         "Quick dry fabric",
+                         "Breathable construction"
+                     ],
+        "care":  [
+                     "Machine wash cold",
+                     "Do not bleach",
+                     "Dry in shade"
+                 ],
+        "images":  [
+                       "page_2_img_2.webp",
+                       "page_3_img_3.webp",
+                       "page_4_img_4.webp",
+                       "page_5_img_5.webp",
+                       "page_6_img_6.webp",
+                       "page_7_img_7.webp",
+                       "page_8_img_8.webp",
+                       "page_9_img_9.webp",
+                       "page_10_img_10.webp",
+                       "page_11_img_11.webp",
+                       "page_12_img_12.webp",
+                       "page_13_img_13.webp"
+                   ],
+        "seo":  {
+                    "title":  "Upper Rubicon Training Jacket | Zebro Sportswear",
+                    "description":  "Zebro Upper Rubicon menâ€™s training jacket with breathable fabric, reflective detailing and zip pockets."
+                }
+    }
+]

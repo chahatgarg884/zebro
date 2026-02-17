@@ -84,7 +84,7 @@
         </div>
         
         <div class="product-actions">
-          <button class="explore-btn" onclick="window.close()">Close & Return to Products</button>
+          <button class="explore-btn" onclick="window.location.href='#relatedProducts'">See Related Products</button>
           <button class="explore-btn secondary" onclick="window.open('index.html#featured', '_blank')">Browse More Products</button>
         </div>
       </div>
@@ -385,54 +385,35 @@
             }
         }
 
-        // Load all products from the individual product JSON files
+        // Load all products from the combined products JSON file
         async function loadAllProducts() {
             try {
-                allProducts = [];
-                
-                // Get all folders in extracted_images_0
-                const folders = await getFolderList();
-                
-                // Fetch product.json from each folder
-                for (const folder of folders) {
-                    try {
-                        const productResponse = await fetch(`extracted_images_0/${folder}/product.json`);
-                        if (productResponse.ok) {
-                            const product = await productResponse.json();
-                            // Add folder path to product for image references
-                            product.folderPath = `extracted_images_0/${folder}`;
-                            allProducts.push(product);
-                        }
-                    } catch (error) {
-                        console.warn(`Failed to load product from ${folder}:`, error);
-                    }
+                // Fetch from combined products file
+                const response = await fetch('combined_products.json');
+                if (!response.ok) {
+                    throw new Error('Failed to load combined products data');
                 }
+                
+                const products = await response.json();
+                
+                // Process products and add folder paths
+                allProducts = products.map(product => {
+                    // Determine folder path from product data or create a default one
+                    const folderName = product.name.replace(/\s+/g, ' ').trim();
+                    const folderPath = `extracted_images_0/${folderName}`;
+                    
+                    return {
+                        ...product,
+                        folderPath: folderPath
+                    };
+                });
+                
             } catch (error) {
                 console.error('Error loading products:', error);
                 allProducts = [];
             }
         }
 
-        // Helper function to get folder list
-        async function getFolderList() {
-            return [
-                "Jacket Bulletproof", "Jacket LOCK-UP HOODED", "Jacket QUILTED NSWR",
-                "Lower Alto Lycra", "Lower Encounter", "Lower JUPITER", "Lower Ms.UNIVERSE",
-                "SHORTS 5G", "SHORTS CAMO", "SHORTS DUAL CORE", "Shorts GAMMA", "Shorts JUPITER",
-                "Shorts Micro NS LYCRA 177", "Shorts NS  EMBOSS", "Shorts NS Cargo", "Shorts Ns BORDER",
-                "TEE POLO CANDY", "TEE POLO KIT KAT", "TEE POLO MIST", "TEE POLO STARBUCKS",
-                "TRACK PANT TOE", "Tee  RN  MARSHMALLOW", "Tee Polo BOAT", "Tee Polo Galaxy",
-                "Tee RN  METALLICA", "Tee RN MIST", "Tee RN NYLON DOBBY", "Tee RN OLA",
-                "Track Pant 007 Ns", "Track Pant Camo", "Track Pant FITNESS NS", "Track Pant G WAGON",
-                "Track Pant GAMMA", "Track Pant NO LIMITS", "Track Pant OTP", "Track Pant RUBICON",
-                "Track Pant THAR", "Track Pant UNSTOPPABLE", "Track Suit Melange kids",
-                "Track Suit Micro Ns spandex", "Track Suit NS SPANDEX WHITE", "Track Suit poly fresh premium",
-                "Track suit JUNIOR PDF", "Track suit Micro Ns CRUISER", "Track suit Poly Web",
-                "Track suit SUPER SPANDEX", "Track suit TITAN", "Track suit micro NS ENCOUNTER",
-                "UPPER CRUSH LYCRA-TRACK SUIT CRUSH LYCRA", "UPPER MACKINTOSH", "Upper ELEMENT",
-                "Upper NS NEXA", "Upper RUBICON", "Upper dimond lycra"
-            ];
-        }
 
         // Render product details
         function renderProductDetails() {
