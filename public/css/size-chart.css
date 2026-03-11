@@ -1,0 +1,991 @@
+
+
+/* Base Styles */
+body {
+    background: #f8f9fa;
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.size-chart-wrapper {
+    background: #f8f9fa;
+    min-height: calc(100vh - 200px);
+    padding-bottom: 40px;
+}
+
+.size-chart-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px 60px;
+}
+
+.size-chart-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.size-chart-header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #000;
+    letter-spacing: -1px;
+}
+
+.size-chart-header p {
+    color: #6b7280;
+    margin-top: 10px;
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.size-chart-card {
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+    border: 1px solid #e5e7eb;
+    padding: 40px;
+    margin-bottom: 40px;
+}
+
+.size-tabs {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #f3f4f6;
+    padding-bottom: 20px;
+}
+
+.size-tab {
+    padding: 12px 24px;
+    border-radius: 12px;
+    background: #f9fafb;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    color: #374151;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.size-tab:hover {
+    background: #f3f4f6;
+    transform: translateY(-2px);
+}
+
+.size-tab.active {
+    background: linear-gradient(135deg, #dcb639 0%, #e5c658 100%);
+    color: #000;
+    border-color: #dcb639;
+    box-shadow: 0 4px 15px rgba(220, 182, 57, 0.3);
+}
+
+.size-section-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+    color: #000;
+}
+
+.size-section-sub {
+    color: #6b7280;
+    font-size: 1rem;
+    margin-bottom: 30px;
+}
+
+.size-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.size-table th {
+    background: linear-gradient(135deg, #f9fafb 0%, #f3f4f6 100%);
+    padding: 18px;
+    text-align: left;
+    font-size: 14px;
+    font-weight: 700;
+    color: #000;
+    border-bottom: 2px solid #dcb639;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.size-table td {
+    padding: 16px 18px;
+    text-align: left;
+    font-size: 14px;
+    color: #374151;
+    border-bottom: 1px solid #e5e7eb;
+    font-weight: 500;
+}
+
+.size-table tr:hover td {
+    background: #f9fafb;
+    color: #000;
+}
+
+.size-table tr:last-child td {
+    border-bottom: none;
+}
+
+.size-table td:first-child {
+    font-weight: 700;
+    color: #dcb639;
+    font-size: 15px;
+}
+
+.size-tips {
+    margin-top: 40px;
+    background: linear-gradient(135deg, #fefce8 0%, #fef3c7 100%);
+    border: 2px solid #fbbf24;
+    border-radius: 16px;
+    padding: 30px;
+    box-shadow: 0 8px 25px rgba(251, 191, 36, 0.15);
+}
+
+.size-tips h3 {
+    margin-top: 0;
+    font-size: 1.3rem;
+    color: #92400e;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.size-tips p {
+    font-size: 14px;
+    margin: 12px 0;
+    color: #78350f;
+    line-height: 1.6;
+}
+
+.size-tips strong {
+    color: #92400e;
+    font-weight: 600;
+}
+
+/* Responsive Design */
+
+/* Large Tablets and Small Desktops */
+@media (max-width: 1024px) {
+    .size-chart-container {
+        padding: 30px 20px 50px;
+    }
+
+    .size-chart-header h1 {
+        font-size: 2.8rem;
+    }
+
+    .size-chart-header p {
+        font-size: 1rem;
+        max-width: 550px;
+    }
+
+    .size-chart-card {
+        padding: 35px;
+    }
+
+    .size-tabs {
+        gap: 10px;
+        margin-bottom: 25px;
+    }
+
+    .size-tab {
+        padding: 14px 24px;
+        font-size: 13px;
+    }
+
+    .size-section-title {
+        font-size: 1.7rem;
+    }
+
+    .size-table th,
+    .size-table td {
+        padding: 15px 16px;
+        font-size: 13px;
+    }
+
+    .size-tips {
+        padding: 25px;
+    }
+}
+
+/* Tablets */
+@media (max-width: 768px) {
+    .size-chart-container {
+        padding: 25px 15px 40px;
+    }
+
+    .size-chart-header {
+        margin-bottom: 40px;
+    }
+
+    .size-chart-header h1 {
+        font-size: 2.2rem;
+        letter-spacing: -0.8px;
+    }
+
+    .size-chart-header p {
+        font-size: 1rem;
+        max-width: 500px;
+    }
+
+    .size-chart-card {
+        padding: 25px;
+        border-radius: 16px;
+    }
+
+    .size-tabs {
+        gap: 8px;
+        margin-bottom: 20px;
+        padding-bottom: 16px;
+    }
+
+    .size-tab {
+        padding: 10px 16px;
+        font-size: 12px;
+        border-radius: 8px;
+    }
+
+    .size-section-title {
+        font-size: 1.5rem;
+        margin-bottom: 6px;
+    }
+
+    .size-section-sub {
+        font-size: 0.9rem;
+        margin-bottom: 20px;
+    }
+
+    .size-table {
+        border-radius: 12px;
+    }
+
+    .size-table th,
+    .size-table td {
+        padding: 12px 14px;
+        font-size: 12px;
+    }
+
+    .size-table th {
+        letter-spacing: 0.3px;
+    }
+
+    .size-table td:first-child {
+        font-size: 13px;
+    }
+
+    .size-tips {
+        margin-top: 30px;
+        padding: 20px;
+        border-radius: 12px;
+    }
+
+    .size-tips h3 {
+        font-size: 1.1rem;
+        margin-bottom: 16px;
+    }
+
+    .size-tips p {
+        font-size: 13px;
+        margin: 10px 0;
+    }
+}
+
+/* Mobile Phones */
+@media (max-width: 480px) {
+    .size-chart-container {
+        padding: 20px 12px 30px;
+    }
+
+    .size-chart-header {
+        margin-bottom: 30px;
+    }
+
+    .size-chart-header h1 {
+        font-size: 1.8rem;
+        letter-spacing: -0.5px;
+    }
+
+    .size-chart-header p {
+        font-size: 0.9rem;
+        max-width: 100%;
+        padding: 0 10px;
+    }
+
+    .size-chart-card {
+        padding: 20px;
+        border-radius: 12px;
+        margin-bottom: 30px;
+    }
+
+    .size-tabs {
+        gap: 6px;
+        margin-bottom: 16px;
+        padding-bottom: 12px;
+    }
+
+    .size-tab {
+        padding: 8px 12px;
+        font-size: 11px;
+        border-radius: 6px;
+        font-weight: 500;
+    }
+
+    .size-section-title {
+        font-size: 1.3rem;
+        margin-bottom: 4px;
+    }
+
+    .size-section-sub {
+        font-size: 0.85rem;
+        margin-bottom: 16px;
+    }
+
+    .size-table {
+        border-radius: 8px;
+        font-size: 11px;
+    }
+
+    .size-table th,
+    .size-table td {
+        padding: 8px 10px;
+        font-size: 11px;
+    }
+
+    .size-table th {
+        letter-spacing: 0.2px;
+        padding: 10px 8px;
+    }
+
+    .size-table td:first-child {
+        font-size: 12px;
+    }
+
+    .size-tips {
+        margin-top: 25px;
+        padding: 16px;
+        border-radius: 8px;
+    }
+
+    .size-tips h3 {
+        font-size: 1rem;
+        margin-bottom: 12px;
+    }
+
+    .size-tips p {
+        font-size: 12px;
+        margin: 8px 0;
+        line-height: 1.5;
+    }
+}
+
+/* Small Mobile Phones */
+@media (max-width: 425px) {
+    .size-chart-container {
+        padding: 15px 8px 25px;
+    }
+
+    .size-chart-header {
+        margin-bottom: 25px;
+    }
+
+    .size-chart-header h1 {
+        font-size: 1.5rem;
+        letter-spacing: -0.3px;
+    }
+
+    .size-chart-header p {
+        font-size: 0.8rem;
+        max-width: 100%;
+        padding: 0 5px;
+        line-height: 1.4;
+    }
+
+    .size-chart-icon {
+        width: 35px;
+        height: 35px;
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    .size-chart-card {
+        padding: 12px;
+        border-radius: 8px;
+        margin-bottom: 25px;
+    }
+
+    .size-tabs {
+        gap: 3px;
+        margin-bottom: 12px;
+        padding-bottom: 10px;
+    }
+
+    .size-tab {
+        padding: 5px 8px;
+        font-size: 9px;
+        border-radius: 3px;
+        font-weight: 500;
+        text-transform: uppercase;
+        letter-spacing: 0.3px;
+    }
+
+    .size-section-title {
+        font-size: 1.1rem;
+        margin-bottom: 3px;
+        letter-spacing: -0.2px;
+    }
+
+    .size-section-sub {
+        font-size: 0.75rem;
+        margin-bottom: 12px;
+        line-height: 1.3;
+    }
+
+    /* Table wrapper - no horizontal scroll needed */
+    .size-table-wrapper {
+        overflow-x: visible;
+        margin: 0;
+        padding: 0;
+    }
+
+    .size-table {
+        width: 100%;
+        border-radius: 6px;
+        font-size: 9px;
+        table-layout: fixed;
+    }
+
+    .size-table th,
+    .size-table td {
+        padding: 3px 2px;
+        font-size: 8px;
+        white-space: nowrap;
+        text-align: center;
+    }
+
+    .size-table th {
+        padding: 4px 2px;
+        letter-spacing: 0;
+        font-size: 7px;
+        text-align: center;
+        line-height: 1.1;
+        font-weight: 600;
+    }
+
+    .size-table th::after {
+        content: attr(data-unit);
+        display: block;
+        font-size: 6px;
+        color: #666;
+        font-weight: 400;
+        margin-top: 1px;
+    }
+
+    .size-table td:first-child {
+        font-size: 9px;
+        font-weight: 700;
+        text-align: left;
+        padding: 3px 4px;
+    }
+
+    .size-table td:not(:first-child) {
+        font-size: 8px;
+        padding: 3px 1px;
+    }
+
+    .size-tips {
+        margin-top: 20px;
+        padding: 10px;
+        border-radius: 6px;
+    }
+
+    .size-tips h3 {
+        font-size: 0.85rem;
+        margin-bottom: 10px;
+    }
+
+    .size-tips p {
+        font-size: 10px;
+        margin: 6px 0;
+        line-height: 1.4;
+    }
+}
+
+/* Extra Small Mobile Phones */
+@media (max-width: 375px) {
+    .size-chart-container {
+        padding: 12px 6px 20px;
+    }
+
+    .size-chart-header h1 {
+        font-size: 1.3rem;
+    }
+
+    .size-chart-header p {
+        font-size: 0.75rem;
+    }
+
+    .size-chart-icon {
+        width: 30px;
+        height: 30px;
+        font-size: 12px;
+    }
+
+    .size-chart-card {
+        padding: 10px;
+    }
+
+    .size-tabs {
+        gap: 2px;
+        margin-bottom: 10px;
+    }
+
+    .size-tab {
+        padding: 4px 6px;
+        font-size: 8px;
+        border-radius: 2px;
+    }
+
+    .size-section-title {
+        font-size: 1rem;
+    }
+
+    .size-section-sub {
+        font-size: 0.7rem;
+    }
+
+    .size-table {
+        width: 100%;
+        min-width: 0;
+        font-size: 7px;
+    }
+
+    .size-table th,
+    .size-table td {
+        padding: 2px 1px;
+        font-size: 6px;
+        text-align: center;
+        white-space: nowrap;
+    }
+
+    .size-table th {
+        padding: 3px 1px;
+        font-size: 5px;
+        line-height: 1.0;
+        font-weight: 600;
+    }
+
+    .size-table th::after {
+        content: attr(data-unit);
+        display: block;
+        font-size: 4px;
+        color: #666;
+        font-weight: 400;
+        margin-top: 1px;
+    }
+
+    .size-table td:first-child {
+        font-size: 7px;
+        font-weight: 700;
+        text-align: left;
+        padding: 2px 2px;
+    }
+
+    .size-table td:not(:first-child) {
+        font-size: 6px;
+        padding: 2px 1px;
+    }
+
+    .size-tips {
+        padding: 8px;
+    }
+
+    .size-tips h3 {
+        font-size: 0.8rem;
+    }
+
+    .size-tips p {
+        font-size: 9px;
+        margin: 4px 0;
+        line-height: 1.3;
+    }
+}
+
+/* Ultra Small Mobile Phones */
+@media (max-width: 320px) {
+    .size-chart-container {
+        padding: 10px 4px 15px;
+    }
+
+    .size-chart-header h1 {
+        font-size: 1.2rem;
+    }
+
+    .size-chart-header p {
+        font-size: 0.7rem;
+    }
+
+    .size-chart-icon {
+        width: 28px;
+        height: 28px;
+        font-size: 11px;
+    }
+
+    .size-chart-card {
+        padding: 8px;
+    }
+
+    .size-tabs {
+        gap: 1px;
+        margin-bottom: 8px;
+    }
+
+    .size-tab {
+        padding: 3px 5px;
+        font-size: 7px;
+        border-radius: 2px;
+    }
+
+    .size-section-title {
+        font-size: 0.9rem;
+    }
+
+    .size-section-sub {
+        font-size: 0.65rem;
+    }
+
+    .size-table {
+        width: 100%;
+        min-width: 0;
+        font-size: 6px;
+        table-layout: fixed;
+    }
+
+    .size-table th,
+    .size-table td {
+        padding: 1px 0.5px;
+        font-size: 5px;
+        text-align: center;
+        white-space: nowrap;
+    }
+
+    .size-table th {
+        padding: 2px 0.5px;
+        font-size: 4px;
+        line-height: 0.9;
+        font-weight: 600;
+    }
+
+    .size-table th::after {
+        content: attr(data-unit);
+        display: block;
+        font-size: 3px;
+        color: #666;
+        font-weight: 400;
+        margin-top: 0.5px;
+    }
+
+    .size-table td:first-child {
+        font-size: 6px;
+        font-weight: 700;
+        text-align: left;
+        padding: 1px 1px;
+    }
+
+    .size-table td:not(:first-child) {
+        font-size: 5px;
+        padding: 1px 0.5px;
+    }
+
+    .size-tips {
+        padding: 6px;
+    }
+
+    .size-tips h3 {
+        font-size: 0.7rem;
+    }
+
+    .size-tips p {
+        font-size: 8px;
+        margin: 3px 0;
+        line-height: 1.2;
+    }
+}
+
+/* Extra Large Screens */
+@media (min-width: 1400px) {
+    .size-chart-container {
+        max-width: 1400px;
+        padding: 50px 30px 80px;
+    }
+
+    .size-chart-header h1 {
+        font-size: 3.5rem;
+    }
+
+    .size-chart-header p {
+        font-size: 1.3rem;
+        max-width: 750px;
+    }
+
+    .size-chart-icon {
+        width: 80px;
+        height: 80px;
+        font-size: 32px;
+    }
+
+    .size-chart-card {
+        padding: 60px;
+    }
+
+    .size-tab {
+        padding: 18px 36px;
+        font-size: 16px;
+    }
+
+    .size-section-title {
+        font-size: 2.2rem;
+    }
+
+    .size-section-sub {
+        font-size: 1.2rem;
+    }
+
+    .size-table th,
+    .size-table td {
+        padding: 22px 24px;
+        font-size: 16px;
+    }
+
+    .size-table td:first-child {
+        font-size: 17px;
+    }
+
+    .size-tips {
+        padding: 50px;
+    }
+
+    .size-tips h3 {
+        font-size: 1.8rem;
+    }
+
+    .size-tips p {
+        font-size: 16px;
+    }
+}
+
+/* Footer specific fixes for size chart page */
+.size-chart-wrapper+.footer {
+    background: #000;
+    color: #fff;
+    margin-top: 0;
+    padding: 40px 0 20px;
+    position: relative;
+}
+
+.size-chart-wrapper+.footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.size-chart-wrapper+.footer .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 30px;
+}
+
+.size-chart-wrapper+.footer .footer-section {
+    flex: 1;
+    max-width: 300px;
+}
+
+.size-chart-wrapper+.footer .footer-section:first-child {
+    max-width: 400px;
+}
+
+.size-chart-wrapper+.footer .footer-logo {
+    height: 40px;
+    margin-bottom: 15px;
+}
+
+.size-chart-wrapper+.footer .footer-section p {
+    color: #999;
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.size-chart-wrapper+.footer .footer-section h3 {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.size-chart-wrapper+.footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.size-chart-wrapper+.footer li {
+    margin-bottom: 8px;
+}
+
+.size-chart-wrapper+.footer a {
+    color: #999;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.size-chart-wrapper+.footer a:hover {
+    color: #fff;
+}
+
+.size-chart-wrapper+.footer .footer-bottom {
+    border-top: 1px solid #333;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.size-chart-wrapper+.footer .footer-bottom p {
+    margin: 0;
+    font-size: 13px;
+    color: #666;
+}
+
+@media (max-width: 768px) {
+    .size-chart-wrapper+.footer .footer-content {
+        flex-direction: column;
+        gap: 30px;
+        text-align: center;
+    }
+
+    .size-chart-wrapper+.footer .footer-section {
+        max-width: 100%;
+    }
+
+    .size-chart-wrapper+.footer .footer-section:first-child {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .size-chart-wrapper+.footer {
+        padding: 30px 0 15px;
+    }
+
+    .size-chart-wrapper+.footer .footer-content {
+        gap: 25px;
+    }
+}
+
+/* WhatsApp Floating Button Styles */
+.whatsapp-float {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 4px 20px rgba(37, 211, 102, 0.3);
+    transition: all 0.3s ease;
+    z-index: 1000;
+    overflow: hidden;
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 30px rgba(37, 211, 102, 0.4);
+}
+
+.whatsapp-float:active {
+    transform: scale(1.05);
+}
+
+.whatsapp-float svg {
+    width: 28px;
+    height: 28px;
+    transition: transform 0.3s ease;
+}
+
+.whatsapp-float:hover svg {
+    transform: rotate(10deg) scale(1.1);
+}
+
+.whatsapp-tooltip {
+    position: absolute;
+    right: 70px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #000;
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-size: 14px;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+
+.whatsapp-float:hover .whatsapp-tooltip {
+    opacity: 1;
+}
+
+@media (max-width: 480px) {
+    .size-chart-header h1 {
+        font-size: 1.8rem;
+    }
+
+    .size-chart-card {
+        padding: 20px;
+    }
+
+    .size-tabs {
+        gap: 6px;
+    }
+
+    .size-tab {
+        padding: 8px 12px;
+        font-size: 12px;
+    }
+
+    .size-table th,
+    .size-table td {
+        padding: 10px;
+        font-size: 9px;
+    }
+
+    .whatsapp-float {
+        width: 50px;
+        height: 50px;
+        bottom: 20px;
+        right: 20px;
+    }
+
+    .whatsapp-float svg {
+        width: 24px;
+        height: 24px;
+    }
+
+    .whatsapp-tooltip {
+        display: none;
+    }
+}

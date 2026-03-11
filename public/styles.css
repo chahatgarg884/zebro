@@ -1,5 +1,53 @@
 
- /* NEW WHOLESALE ENQUIRY DESIGN */
+ /* SCROLL ANIMATIONS */
+.scroll-animate {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.scroll-animate.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.scroll-animate.slide-left {
+    opacity: 0;
+    transform: translateX(-50px);
+}
+
+.scroll-animate.slide-left.fade-in {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.scroll-animate.slide-right {
+    opacity: 0;
+    transform: translateX(50px);
+}
+
+.scroll-animate.slide-right.fade-in {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.scroll-animate.scale-up {
+    opacity: 0;
+    transform: scale(0.8);
+}
+
+.scroll-animate.scale-up.fade-in {
+    opacity: 1;
+    transform: scale(1);
+}
+
+/* Staggered animations */
+.scroll-animate.stagger-1 { transition-delay: 0.1s; }
+.scroll-animate.stagger-2 { transition-delay: 0.2s; }
+.scroll-animate.stagger-3 { transition-delay: 0.3s; }
+.scroll-animate.stagger-4 { transition-delay: 0.4s; }
+
+/* NEW WHOLESALE ENQUIRY DESIGN */
 
  .form-actions {
      display: flex;
@@ -480,6 +528,7 @@
      width: 100% !important;
      gap: 0 !important;
      position: relative !important;
+     margin-left: 20px;
  }
 
  .thumbnail-arrow {
@@ -1957,7 +2006,7 @@
  .mobile-nav {
      display: none;
      position: fixed;
-     top: 70px;
+     top: 100px;
      left: 0;
      right: 0;
      background: white;
@@ -1986,11 +2035,52 @@
      color: var(--accent);
  }
 
- @media (max-width: 768px) {
-     .mobile-nav {
-         display: block;
-     }
- }
+ @media (max-width: 845px) {
+    .mobile-nav {
+        display: block;
+    }
+}
+
+@media (max-width: 800px) {
+    .mobile-nav {
+        top: 100px;
+        padding: 15px;
+        max-height: calc(100vh - 60px);
+        overflow-y: auto;
+    }
+    
+    .mobile-nav-link {
+        padding: 12px 15px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    .mobile-nav {
+        display: block;
+        top: 100px;
+        padding: 12px;
+        max-height: calc(100vh - 50px);
+    }
+    
+    .mobile-nav-link {
+        padding: 10px 12px;
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 480px) {
+    .mobile-nav {
+        top: 100px;
+        padding: 10px;
+        max-height: calc(100vh - 40px);
+    }
+    
+    .mobile-nav-link {
+        padding: 8px 10px;
+        font-size: 12px;
+    }
+}
 
  /* Mobile Menu Button */
  .mobile-menu-btn {
@@ -4854,7 +4944,56 @@
      }
  }
 
- /* NEW WHOLESALE ENQUIRY DESIGN */
+ /* SCROLL ANIMATIONS */
+.scroll-animate {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.scroll-animate.fade-in {
+    margin-top: 10px;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.scroll-animate.slide-left {
+    opacity: 0;
+    transform: translateX(-50px);
+}
+
+.scroll-animate.slide-left.fade-in {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.scroll-animate.slide-right {
+    opacity: 0;
+    transform: translateX(50px);
+}
+
+.scroll-animate.slide-right.fade-in {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.scroll-animate.scale-up {
+    opacity: 0;
+    transform: scale(0.8);
+}
+
+.scroll-animate.scale-up.fade-in {
+    opacity: 1;
+    transform: scale(1);
+}
+
+/* Staggered animations */
+.scroll-animate.stagger-1 { transition-delay: 0.1s; }
+.scroll-animate.stagger-2 { transition-delay: 0.2s; }
+.scroll-animate.stagger-3 { transition-delay: 0.3s; }
+.scroll-animate.stagger-4 { transition-delay: 0.4s; }
+
+/* NEW WHOLESALE ENQUIRY DESIGN */
  .wholesale-enquiry-new {
      padding: 100px 0;
      background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);

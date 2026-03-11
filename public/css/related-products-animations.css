@@ -1,0 +1,39 @@
+/* RELATED PRODUCTS ANIMATIONS */
+.related-products h2 {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.related-products h2.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.related-products .product-grid {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+    transition-delay: 0.1s;
+}
+
+.related-products .product-grid.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.related-products .product-card {
+    opacity: 0;
+    transform: scale(0.8);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.related-products .product-card:nth-child(1) { transition-delay: 0.2s; }
+.related-products .product-card:nth-child(2) { transition-delay: 0.3s; }
+.related-products .product-card:nth-child(3) { transition-delay: 0.4s; }
+.related-products .product-card:nth-child(4) { transition-delay: 0.5s; }
+
+.related-products .product-card.fade-in {
+    opacity: 1;
+    transform: scale(1);
+}

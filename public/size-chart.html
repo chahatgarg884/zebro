@@ -6,9 +6,212 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ZEBRO Size Guide</title>
     <link rel="stylesheet" href="styles.css">
+<script src="js/scroll-animations.js" defer></script>
+<script src="js/index.js" defer></script>
 
     <style>
         /* Size Chart Specific Styles */
+        
+        /* Header and Navigation Styles */
+        .header {
+            background: #fff;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            transition: all 0.3s ease;
+        }
+
+        .header .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 1rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo-image {
+            height: 40px;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .logo-image:hover {
+            transform: scale(1.05);
+        }
+
+        .nav {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        .nav-link {
+            text-decoration: none;
+            color: #1a1a1a;
+            font-weight: 600;
+            font-size: 0.95rem;
+            position: relative;
+            transition: color 0.3s ease;
+        }
+
+        .nav-link:hover {
+            color: #dcb639;
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: #dcb639;
+            transition: width 0.3s ease;
+        }
+
+        .nav-link:hover::after {
+            width: 100%;
+        }
+
+        .nav-actions {
+            display: flex;
+            align-items: center;
+        }
+
+        .search-container {
+            display: flex;
+            align-items: center;
+            background: #f8fafc;
+            border-radius: 25px;
+            padding: 0.5rem 1rem;
+            border: 1px solid #e5e7eb;
+            transition: all 0.3s ease;
+        }
+
+        .search-container:focus-within {
+            border-color: #dcb639;
+            box-shadow: 0 0 0 3px rgba(220, 182, 57, 0.1);
+        }
+
+        .search-input {
+            border: none;
+            background: none;
+            outline: none;
+            padding: 0.25rem;
+            font-size: 0.9rem;
+            width: 200px;
+            color: #1a1a1a;
+        }
+
+        .search-input::placeholder {
+            color: #6b7280;
+        }
+
+        .search-btn {
+            background: #dcb639;
+            color: #fff;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            font-weight: 600;
+            font-size: 0.85rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+
+        .search-btn:hover {
+            background: #b8941f;
+            transform: translateY(-1px);
+        }
+
+        /* Mobile Menu Button */
+        .mobile-menu-btn {
+            display: none;
+            flex-direction: column;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 0.5rem;
+        }
+
+        .mobile-menu-btn span {
+            width: 25px;
+            height: 3px;
+            background: #1a1a1a;
+            margin: 3px 0;
+            transition: 0.3s;
+            border-radius: 2px;
+        }
+
+        /* Mobile Menu */
+        .mobile-nav {
+            display: none;
+            position: fixed;
+            top: 70px;
+            left: 0;
+            right: 0;
+            background: white;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            z-index: 999;
+            flex-direction: column;
+            padding: 1rem;
+            gap: 0.5rem;
+            transform: translateX(-100%);
+            transition: transform 0.3s ease;
+        }
+
+        .mobile-nav.active {
+            display: flex;
+            transform: translateX(0);
+        }
+
+        .mobile-nav-link {
+            text-decoration: none;
+            color: #1a1a1a;
+            font-weight: 600;
+            padding: 0.75rem 1rem;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+
+        .mobile-nav-link:hover {
+            background: #f8fafc;
+            color: #dcb639;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .nav {
+                display: none;
+            }
+            
+            .nav-actions {
+                display: none;
+            }
+            
+            .mobile-menu-btn {
+                display: flex;
+            }
+            
+            .mobile-nav.active {
+                display: flex;
+            }
+
+            .header .container {
+                padding: 1rem;
+            }
+        }
+
         body {
             background: #f8f9fa;
             margin: 0;
@@ -24,7 +227,7 @@
 
         .size-chart-container {
             max-width: 1200px;
-            margin: 0 auto;
+            margin: 100px auto 0;
             padding: 40px 20px 60px;
         }
 
@@ -790,115 +993,7 @@
             }
         }
 
-        /* Footer specific fixes for size chart page */
-        .size-chart-wrapper+.footer {
-            background: #000;
-            color: #fff;
-            margin-top: 0;
-            padding: 40px 0 20px;
-            position: relative;
-        }
-
-        .size-chart-wrapper+.footer .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-
-        .size-chart-wrapper+.footer .footer-content {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-            margin-bottom: 30px;
-        }
-
-        .size-chart-wrapper+.footer .footer-section {
-            flex: 1;
-            max-width: 300px;
-        }
-
-        .size-chart-wrapper+.footer .footer-section:first-child {
-            max-width: 400px;
-        }
-
-        .size-chart-wrapper+.footer .footer-logo {
-            height: 40px;
-            margin-bottom: 15px;
-        }
-
-        .size-chart-wrapper+.footer .footer-section p {
-            color: #999;
-            font-size: 14px;
-            line-height: 1.5;
-            margin: 0;
-        }
-
-        .size-chart-wrapper+.footer .footer-section h3 {
-            color: #fff;
-            font-size: 16px;
-            font-weight: 600;
-            margin-bottom: 15px;
-        }
-
-        .size-chart-wrapper+.footer ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-
-        .size-chart-wrapper+.footer li {
-            margin-bottom: 8px;
-        }
-
-        .size-chart-wrapper+.footer a {
-            color: #999;
-            text-decoration: none;
-            font-size: 14px;
-            transition: color 0.3s ease;
-        }
-
-        .size-chart-wrapper+.footer a:hover {
-            color: #fff;
-        }
-
-        .size-chart-wrapper+.footer .footer-bottom {
-            border-top: 1px solid #333;
-            padding-top: 20px;
-            text-align: center;
-        }
-
-        .size-chart-wrapper+.footer .footer-bottom p {
-            margin: 0;
-            font-size: 13px;
-            color: #666;
-        }
-
-        @media (max-width: 768px) {
-            .size-chart-wrapper+.footer .footer-content {
-                flex-direction: column;
-                gap: 30px;
-                text-align: center;
-            }
-
-            .size-chart-wrapper+.footer .footer-section {
-                max-width: 100%;
-            }
-
-            .size-chart-wrapper+.footer .footer-section:first-child {
-                max-width: 100%;
-            }
-        }
-
-        @media (max-width: 480px) {
-            .size-chart-wrapper+.footer {
-                padding: 30px 0 15px;
-            }
-
-            .size-chart-wrapper+.footer .footer-content {
-                gap: 25px;
-            }
-        }
-
+        
         /* WhatsApp Floating Button Styles */
         .whatsapp-float {
             position: fixed;
@@ -914,7 +1009,7 @@
             cursor: pointer;
             box-shadow: 0 4px 20px rgba(37, 211, 102, 0.3);
             transition: all 0.3s ease;
-            z-index: 1000;
+            z-index: 9999;
             overflow: hidden;
         }
 
@@ -1003,10 +1098,10 @@
 <body>
 
     <!-- HEADER -->
-    <header class="header">
+    <header class="header" style="z-index: 0;">
         <div class="container">
             <div class="logo-container">
-                <img src="asset/logo.png" alt="ZEBRO Sportswear" class="logo-image"
+                <img src="asset/logo.png" alt="Sports Wear Logo" class="logo-image"
                     onclick="window.location.href='index.html'" />
             </div>
 
@@ -1017,20 +1112,28 @@
             </button>
 
             <nav class="nav" id="mainNav">
-                <a href="index.html" class="nav-link">Home</a>
-                <a href="category.html" class="nav-link">Products</a>
-                <a href="wholesale.html" class="nav-link">Wholesale</a>
-                <a href="wholesale.html#enquiry-form" class="nav-link">Contact</a>
+                <a href="wholesale.html#retail-ready" class="nav-link">Why ZEBRO</a>
+                <a href="#featured" class="nav-link">Collection</a>
+                <a href="size-chart.html" class="nav-link">Size Guide</a>
+                <a href="wholesale.html#enquiry-form" class="nav-link">Partner With Us</a>
             </nav>
+
+            <div class="nav-actions">
+                <div class="search-container">
+                    <input type="text" placeholder="Search products..." class="search-input" id="searchInput">
+                    <a href="index.html#featured"><button class="search-btn" onclick="searchProducts()">Search</button></a>
+                </div>
+            </div>
         </div>
     </header>
 
     <!-- MOBILE MENU -->
     <nav class="mobile-nav" id="mobileNav">
-        <a href="index.html" class="mobile-nav-link">Home</a>
-        <a href="category.html" class="mobile-nav-link">Products</a>
-        <a href="wholesale.html" class="mobile-nav-link">Wholesale</a>
-        <a href="wholesale.html#enquiry-form" class="mobile-nav-link">Contact</a>
+        <a href="wholesale.html" class="mobile-nav-link">Retail Partnership</a>
+        <a href="wholesale.html#retail-ready" class="mobile-nav-link">Why ZEBRO</a>
+        <a href="index.html#featured" class="mobile-nav-link">Collection</a>
+        <a href="size-chart.html" class="mobile-nav-link">Size Guide</a>
+        <a href="wholesale.html#enquiry-form" class="mobile-nav-link">Partner With Us</a>
     </nav>
 
     <div class="size-chart-wrapper">
@@ -1137,37 +1240,11 @@
     </div>
 
     <!-- FOOTER -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <img src="asset/logo.png" alt="ZEBRO Sportswear" class="footer-logo">
-                    <p>Premium sportswear manufacturing for teams and businesses worldwide.</p>
-                </div>
-
-                <div class="footer-section">
-                    <h3>Quick Links</h3>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="category.html">Products</a></li>
-                        <li><a href="size-chart.html">Size Guide</a></li>
-                        <li><a href="wholesale.html">Wholesale</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-section">
-                    <h3>Contact</h3>
-                    <p>Email: info@zebrosportswear.com</p>
-                    <p>Phone: +91 98765 43210</p>
-                    <p>Location: India</p>
-                </div>
-            </div>
-
-            <div class="footer-bottom">
-                <p>&copy; 2026 ZEBRO Sportswear. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
+    <footer class="footer" style="background-color: #000;">
+    <div class="container">
+      <p style="color: #fff;">© 2026 ZEBRO. All rights reserved.</p>
+    </div>
+  </footer>
 
     <!-- WhatsApp Floating Button -->
     <div class="whatsapp-float" onclick="openWhatsApp()">
@@ -1193,6 +1270,43 @@
                 document.body.style.overflow = 'auto';
             }
         }
+
+        // Search products function
+        function searchProducts() {
+            const searchInput = document.getElementById('searchInput');
+            const searchTerm = searchInput.value.trim().toLowerCase();
+            
+            if (searchTerm) {
+                // Redirect to index page with search parameter
+                window.location.href = `index.html?search=${encodeURIComponent(searchTerm)}#featured`;
+            } else {
+                // If no search term, just go to featured section
+                window.location.href = 'index.html#featured';
+            }
+        }
+
+        // Handle Enter key in search input
+        document.addEventListener('DOMContentLoaded', function() {
+            const searchInput = document.getElementById('searchInput');
+            if (searchInput) {
+                searchInput.addEventListener('keypress', function(e) {
+                    if (e.key === 'Enter') {
+                        searchProducts();
+                    }
+                });
+            }
+        });
+
+        // Close mobile menu when clicking on links
+        document.querySelectorAll('.mobile-nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                const nav = document.getElementById('mobileNav');
+                const menuBtn = document.querySelector('.mobile-menu-btn');
+                nav.classList.remove('active');
+                menuBtn.classList.remove('active');
+                document.body.style.overflow = 'auto';
+            });
+        });
 
         // WhatsApp functionality
         function openWhatsApp() {

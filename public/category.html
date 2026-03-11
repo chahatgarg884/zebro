@@ -7,6 +7,83 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="css/category.css">
+  <script src="js/scroll-animations.js" defer></script>
+  <script src="js/category.js" defer></script>
+  <script src="js/index.js" defer></script>
+  <style>
+    /* WhatsApp Floating Button Styles */
+    .whatsapp-float {
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        width: 60px;
+        height: 60px;
+        background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        box-shadow: 0 4px 20px rgba(37, 211, 102, 0.3);
+        transition: all 0.3s ease;
+        z-index: 9999;
+        overflow: hidden;
+    }
+
+    .whatsapp-float:hover {
+        transform: scale(1.1);
+        box-shadow: 0 6px 30px rgba(37, 211, 102, 0.4);
+    }
+
+    .whatsapp-float:active {
+        transform: scale(1.05);
+    }
+
+    .whatsapp-float svg {
+        width: 28px;
+        height: 28px;
+        transition: transform 0.3s ease;
+    }
+
+    .whatsapp-float:hover svg {
+        transform: rotate(10deg) scale(1.1);
+    }
+
+    .whatsapp-tooltip {
+        position: absolute;
+        right: 70px;
+        top: 50%;
+        transform: translateY(-50%);
+        background: #000;
+        color: #fff;
+        padding: 8px 12px;
+        border-radius: 6px;
+        font-size: 14px;
+        white-space: nowrap;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.3s ease;
+    }
+
+    .whatsapp-float:hover .whatsapp-tooltip {
+        opacity: 1;
+    }
+
+    @media (max-width: 768px) {
+        .whatsapp-float {
+            width: 50px;
+            height: 50px;
+            bottom: 20px;
+            right: 20px;
+        }
+
+        .whatsapp-float svg {
+            width: 24px;
+            height: 24px;
+        }
+    }
+  </style>
 </head>
 <body>
 
@@ -14,33 +91,42 @@
   <header class="header">
     <div class="container">
       <div class="logo-container">
-        <img src="asset/logo.png" alt="Sports Wear Logo" class="logo-image" onclick="window.location.href='index.html'" />
+        <img src="asset/logo.png" alt="Sports Wear Logo" class="logo-image" onclick="window.location.href='index.html'"/>
       </div>
       
-      <nav class="nav">
-        <a href="index.html" class="nav-link">← Back to Home</a>
-        <a href="size-chart.html" class="mobile-nav-link">Size Guide</a>
-        <a href="#contact" class="nav-link">Contact</a>
-      </nav>
-
       <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
         <span></span>
         <span></span>
         <span></span>
       </button>
+      
+      <nav class="nav" id="mainNav">
+        <a href="wholesale.html#retail-ready" class="nav-link">Why ZEBRO</a>
+        <a href="index.html#featured" class="nav-link">Collection</a>
+        <a href="size-chart.html" class="nav-link">Size Guide</a>
+        <a href="wholesale.html#enquiry-form" class="nav-link">Partner With Us</a>
+      </nav>
+
+      <div class="nav-actions">
+        <div class="search-container">
+          <input type="text" placeholder="Search products..." class="search-input" id="searchInput">
+          <a href="index.html#featured"><button class="search-btn" onclick="searchProducts()">Search</button></a>
+        </div>
+      </div>
     </div>
   </header>
 
   <!-- MOBILE MENU -->
   <nav class="mobile-nav" id="mobileNav">
-    <a href="index.html" class="mobile-nav-link">← Back to Home</a>
+    <a href="wholesale.html#retail-ready" class="mobile-nav-link">Why ZEBRO</a>
+    <a href="index.html#featured" class="mobile-nav-link">Collection</a>
     <a href="size-chart.html" class="mobile-nav-link">Size Guide</a>
-    <a href="#contact" class="mobile-nav-link">Contact</a>
+    <a href="wholesale.html#enquiry-form" class="mobile-nav-link">Partner With Us</a>
   </nav>
 
   <!-- CATEGORY HERO -->
   <section class="category-hero">
-    <div class="container">
+    <div class="container scroll-animate">
       <h1 id="categoryTitle">Category Products</h1>
       <p id="categoryDescription">Browse our complete collection</p>
     </div>
@@ -49,24 +135,24 @@
   <!-- CATEGORY LIFESTYLE SECTION -->
   <section class="category-lifestyle">
     <div class="container">
-      <div class="lifestyle-grid">
-        <div class="lifestyle-images">
-          <div class="lifestyle-main">
+      <div class="lifestyle-grid scroll-animate">
+        <div class="lifestyle-images scroll-animate slide-left stagger-1">
+          <div class="lifestyle-main scroll-animate scale-up stagger-1">
             <img id="lifestyleImage1" src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&h=600&fit=crop" alt="Lifestyle Image 1" class="lifestyle-img">
           </div>
-          <div class="lifestyle-secondary">
+          <div class="lifestyle-secondary scroll-animate scale-up stagger-2">
             <img id="lifestyleImage2" src="https://images.unsplash.com/photo-1551698618-1d58bc4df5d1?w=400&h=300&fit=crop" alt="Lifestyle Image 2" class="lifestyle-img">
             <img id="lifestyleImage3" src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=400&h=300&fit=crop" alt="Lifestyle Image 3" class="lifestyle-img">
           </div>
         </div>
-        <div class="category-info">
-          <div class="flat-lay-container">
+        <div class="category-info scroll-animate slide-right stagger-3">
+          <div class="flat-lay-container scroll-animate scale-up stagger-4">
             <img id="flatLayImage" src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=600&h=400&fit=crop" alt="Flat Lay Product" class="flat-lay-img">
           </div>
-          <div class="category-details">
+          <div class="category-details scroll-animate slide-left stagger-4">
             <h3>Product Specifications</h3>
             <div class="category-specs">
-              <div class="spec-section">
+              <div class="spec-section scroll-animate scale-up stagger-1">
                 <h4>Fabric Composition</h4>
                 <ul id="fabricComposition" class="spec-list">
                   <li>Premium polyester blend</li>
@@ -74,7 +160,7 @@
                   <li>Four-way stretch fabric</li>
                 </ul>
               </div>
-              <div class="spec-section">
+              <div class="spec-section scroll-animate scale-up stagger-2">
                 <h4>Key Benefits</h4>
                 <ul id="keyBenefits" class="spec-list">
                   <li>Enhanced durability for long-term use</li>
@@ -92,7 +178,7 @@
   <!-- PRODUCTS SECTION -->
   <section class="category-products">
     <div class="container">
-      <div class="products-header">
+      <div class="products-header scroll-animate">
         <div class="products-count">
           <span id="productsCount">0</span> products found
         </div>
@@ -131,23 +217,23 @@
   <!-- CONTACT SECTION -->
   <section class="contact" id="contact">
     <div class="container">
-      <div class="contact-header">
+      <div class="contact-header scroll-animate">
         <h2>Get in Touch</h2>
         <p>Have questions about our sportswear collection? We're here to help!</p>
       </div>
       
       <div class="contact-content">
-        <div class="contact-brand-info">
+        <div class="contact-brand-info scroll-animate slide-left stagger-1">
           <div class="brand-logo">
             <img src="asset/logo.png" alt="ZEBRO Sportswear" class="brand-logo-image" />
           </div>
           
-          <div class="brand-content">
+          <div class="brand-content scroll-animate slide-left stagger-2">
             <h3>ZEBRO Sportswear</h3>
             <p>Brand-built performance wear designed for retail success and customer satisfaction. We deliver premium quality sportswear that combines innovative design with exceptional comfort, helping retailers thrive and customers perform their best.</p>
           </div>
           
-          <div class="social-links">
+          <div class="social-links scroll-animate slide-left stagger-3">
             <a href="mailto:info@headstrongcommerce.com" class="social-link email-link" target="_blank">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
@@ -174,7 +260,7 @@
           </div>
         </div>
         
-        <form class="contact-form" onsubmit="handleContactSubmit(event)">
+        <form class="contact-form scroll-animate slide-right stagger-2" onsubmit="handleContactSubmit(event)">
           <div class="form-row">
             <div class="form-group">
               <label for="name">Full Name *</label>
@@ -219,637 +305,6 @@
       <p>© 2026 ZEBRO. All rights reserved.</p>
     </div>
   </footer>
-
-  <script>
-        // Global data storage
-        let categoryProducts = [];
-        let selectedCategory = '';
-
-        // Image lazy loading with Intersection Observer
-        let imageObserver;
-        
-        function setupImageObserver() {
-            if ('IntersectionObserver' in window) {
-                imageObserver = new IntersectionObserver((entries, observer) => {
-                    entries.forEach(entry => {
-                        if (entry.isIntersecting) {
-                            const img = entry.target;
-                            const src = img.dataset.src;
-                            if (src) {
-                                img.src = src;
-                                img.classList.remove('lazy');
-                                img.classList.add('loaded');
-                                observer.unobserve(img);
-                            }
-                        }
-                    });
-                }, {
-                    rootMargin: '50px',
-                    threshold: 0.1
-                });
-            }
-        }
-
-        // Create lazy loaded image element
-        function createLazyImage(src, alt, className = '') {
-            const img = document.createElement('img');
-            img.dataset.src = src;
-            img.alt = alt;
-            img.className = `lazy ${className}`;
-            
-            // Add placeholder
-            img.src = 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgZmlsbD0iI2Y3ZjdmNyIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTQiIGZpbGw9IiM5OTkiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGR5PSIuM2VtIj5Mb2FkaW5nLi4uPC90ZXh0Pjwvc3ZnPg==';
-            
-            if (imageObserver) {
-                imageObserver.observe(img);
-            } else {
-                // Fallback for browsers without IntersectionObserver
-                img.src = src;
-                img.classList.add('loaded');
-            }
-            
-            return img;
-        }
-
-        // Handle contact form submission
-        function handleContactSubmit(event) {
-            event.preventDefault();
-            
-            const formData = new FormData(event.target);
-            const data = Object.fromEntries(formData);
-            
-            // Create mailto link with form data
-            const subject = encodeURIComponent(`${data.subject}`);
-            const body = encodeURIComponent(
-                `Name: ${data.name}\n` +
-                `Email: ${data.email}\n` +
-                `Phone: ${data.phone || 'Not provided'}\n` +
-                `Subject: ${data.subject}\n\n` +
-                `Message:\n${data.message}`
-            );
-            
-            window.location.href = `mailto:info@headstrongcommerce.com?subject=${subject}&body=${body}`;
-            event.target.reset();
-        }
-        
-        // Fetch products and build categories
-        async function loadProducts() {
-            try {
-                // Fetch from combined products file
-                const response = await fetch('combined_products.json');
-                if (!response.ok) {
-                    throw new Error('Failed to load combined products data');
-                }
-                
-                const allProducts = await response.json();
-                
-                // Process products and add folder paths
-                productsData = allProducts.map(product => {
-                    // Use exact product name for folder path (preserve spaces)
-                    const folderPath = `extracted_images_0/${product.name}`;
-                    
-                    return {
-                        ...product,
-                        folderPath: folderPath
-                    };
-                });
-                
-                // Store all products for category page
-                localStorage.setItem('categoryProducts', JSON.stringify(productsData));
-                categoryProducts = productsData;
-                
-            } catch (error) {
-                console.error('Error loading products:', error);
-            }
-        }
-
-
-        // Initialize category page
-        document.addEventListener('DOMContentLoaded', function() {
-            setupImageObserver();
-            // Load products first
-            loadProducts();
-            
-            // Load category data from localStorage
-            selectedCategory = localStorage.getItem('selectedCategory') || 'Products';
-            const storedProducts = localStorage.getItem('categoryProducts');
-            
-            if (storedProducts) {
-                categoryProducts = JSON.parse(storedProducts);
-            }
-            
-            // Update page title and description
-            document.getElementById('categoryTitle').textContent = selectedCategory;
-            document.getElementById('categoryDescription').textContent = getCategoryDescription(selectedCategory);
-            
-            // Filter products by selected category
-            let filteredProducts;
-            if (selectedCategory === 'All Products') {
-                // Show all products
-                filteredProducts = categoryProducts;
-            } else {
-                // Filter by specific category
-                filteredProducts = categoryProducts.filter(product => product.category === selectedCategory);
-            }
-            document.getElementById('productsCount').textContent = filteredProducts.length;
-            
-            // Update category-specific content
-            updateCategoryContent(selectedCategory);
-            
-            // Render products
-            renderCategoryProducts();
-        });
-
-        // Update category-specific content
-        function updateCategoryContent(category) {
-            // Filter products by category
-            const productsInCategory = categoryProducts.filter(product => product.category === category);
-            
-            if (productsInCategory.length === 0) {
-                console.warn(`No products found for category: ${category}. Using fallback data.`);
-                // Use fallback data if no products found
-                useFallbackData(category);
-                return;
-            }
-            
-            // Select a random product from the filtered list
-            const randomProduct = productsInCategory[Math.floor(Math.random() * productsInCategory.length)];
-            
-            // Update images using the random product's images
-            if (randomProduct.images && randomProduct.images.length > 0) {
-                const productPath = randomProduct.folderPath || '';
-                document.getElementById('lifestyleImage1').src = `${productPath}/${randomProduct.images[0]}`;
-                document.getElementById('lifestyleImage2').src = randomProduct.images[1] ? `${productPath}/${randomProduct.images[1]}` : `${productPath}/${randomProduct.images[0]}`;
-                document.getElementById('lifestyleImage3').src = randomProduct.images[2] ? `${productPath}/${randomProduct.images[2]}` : `${productPath}/${randomProduct.images[0]}`;
-                document.getElementById('flatLayImage').src = randomProduct.images[3] ? `${productPath}/${randomProduct.images[3]}` : `${productPath}/${randomProduct.images[0]}`;
-            } else {
-                // Fallback to placeholder images if no product images
-                useFallbackImages();
-            }
-            
-            // Extract fabric composition and key benefits from product data
-            const fabricComposition = extractFabricComposition(randomProduct, category);
-            const keyBenefits = extractKeyBenefits(randomProduct, category);
-            
-            updateSpecLists(fabricComposition, keyBenefits);
-        }
-        
-        // Extract fabric composition from product data
-        function extractFabricComposition(product, category) {
-            // Check if product has custom fabric composition
-            if (product.fabricComposition && Array.isArray(product.fabricComposition) && product.fabricComposition.length > 0) {
-                return product.fabricComposition;
-            }
-            
-            // Try to extract from description
-            if (product.description) {
-                const fabricKeywords = ['polyester', 'cotton', 'spandex', 'nylon', 'mesh', 'fabric', 'material', 'blend', 'stretch'];
-                const sentences = product.description.split('.');
-                
-                for (let sentence of sentences) {
-                    if (fabricKeywords.some(keyword => sentence.toLowerCase().includes(keyword))) {
-                        // Clean up and return the sentence as fabric info
-                        const cleaned = sentence.trim();
-                        if (cleaned.length > 10 && cleaned.length < 100) {
-                            return [cleaned];
-                        }
-                    }
-                }
-            }
-            
-            // Try to extract from features
-            if (product.features && Array.isArray(product.features)) {
-                const fabricKeywords = ['polyester', 'cotton', 'spandex', 'nylon', 'mesh', 'fabric', 'material', 'blend', 'stretch'];
-                const fabricFeatures = product.features.filter(feature => 
-                    fabricKeywords.some(keyword => feature.toLowerCase().includes(keyword))
-                );
-                if (fabricFeatures.length > 0) {
-                    return fabricFeatures.slice(0, 3);
-                }
-            }
-            
-            // Use category defaults
-            return getDefaultFabricComposition(category);
-        }
-        
-        // Extract key benefits from product data
-        function extractKeyBenefits(product, category) {
-            // Check if product has custom key benefits
-            if (product.keyBenefits && Array.isArray(product.keyBenefits) && product.keyBenefits.length > 0) {
-                return product.keyBenefits;
-            }
-            
-            // Extract from features
-            if (product.features && Array.isArray(product.features) && product.features.length > 0) {
-                // Filter out fabric-related features and keep benefits
-                const benefitKeywords = ['durable', 'comfortable', 'breathable', 'lightweight', 'quick-dry', 'moisture', 'performance', 'quality', 'design'];
-                const benefits = product.features.filter(feature => 
-                    benefitKeywords.some(keyword => feature.toLowerCase().includes(keyword))
-                );
-                
-                if (benefits.length > 0) {
-                    return benefits.slice(0, 4);
-                }
-                
-                // If no specific benefits found, use first few features
-                return product.features.slice(0, 4);
-            }
-            
-            // Extract from description
-            if (product.description) {
-                const benefitKeywords = ['durable', 'comfortable', 'breathable', 'lightweight', 'quick-dry', 'moisture', 'performance', 'quality', 'design'];
-                const sentences = product.description.split('.');
-                
-                const benefitSentences = sentences.filter(sentence => 
-                    benefitKeywords.some(keyword => sentence.toLowerCase().includes(keyword))
-                );
-                
-                if (benefitSentences.length > 0) {
-                    return benefitSentences.slice(0, 4).map(s => s.trim());
-                }
-            }
-            
-            // Use category defaults
-            return getDefaultKeyBenefits(category);
-        }
-        
-        // Use fallback data for category
-        function useFallbackData(category) {
-            const fabricComposition = getDefaultFabricComposition(category);
-            const keyBenefits = getDefaultKeyBenefits(category);
-            
-            // Use fallback images
-            useFallbackImages();
-            
-            // Update spec lists with defaults
-            updateSpecLists(fabricComposition, keyBenefits);
-        }
-        
-        // Use fallback images
-        function useFallbackImages() {
-            document.getElementById('lifestyleImage1').src = 'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&h=600&fit=crop';
-            document.getElementById('lifestyleImage2').src = 'https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=600&h=400&fit=crop';
-            document.getElementById('lifestyleImage3').src = 'https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=400&h=300&fit=crop';
-            document.getElementById('flatLayImage').src = 'https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=600&h=400&fit=crop';
-        }
-        
-        // Get default fabric composition by category
-        function getDefaultFabricComposition(category) {
-            const defaults = {
-                'Tee': [
-                    '65% Polyester, 35% Cotton blend',
-                    'Moisture-wicking polyester fibers',
-                    'Reinforced stitching at stress points',
-                    'Anti-pilling finish'
-                ],
-                'Track Pant': [
-                    '80% Polyester, 20% Spandex blend',
-                    'Four-way stretch technology',
-                    'Brushed interior for comfort',
-                    'Quick-dry fabric treatment'
-                ],
-                'Track Suit': [
-                    '100% Premium polyester mesh',
-                    'Breathable mesh panels',
-                    'Water-resistant outer layer',
-                    'Thermal lining for warmth'
-                ],
-                'Shorts': [
-                    '85% Polyester, 15% Spandex blend',
-                    'Lightweight breathable fabric',
-                    'Quick-dry technology',
-                    'Reinforced seams'
-                ],
-                'Jacket': [
-                    '70% Polyester, 30% Nylon blend',
-                    'Wind-resistant outer shell',
-                    'Insulated lining',
-                    'Water-repellent coating'
-                ],
-                'Upper': [
-                    '70% Polyester, 30% Nylon blend',
-                    'Wind-resistant outer shell',
-                    'Insulated lining',
-                    'Water-repellent coating'
-                ],
-                'Accessories': [
-                    'High-density synthetic materials',
-                    'UV-resistant coatings',
-                    'Reinforced stress points',
-                    'Quick-dry synthetic fabrics'
-                ],
-                'Footwear': [
-                    'Engineered mesh upper',
-                    'TPU sole construction',
-                    'EVA foam midsole',
-                    'Rubber outsole with traction'
-                ],
-                'Training': [
-                    'Industrial-grade synthetic materials',
-                    'Reinforced steel components',
-                    'Anti-slip rubber grips',
-                    'Weather-resistant coatings'
-                ]
-            };
-            return defaults[category] || defaults['Tee'];
-        }
-        
-        // Get default key benefits by category
-        function getDefaultKeyBenefits(category) {
-            const defaults = {
-                'Tee': [
-                    'Enhanced durability for frequent wear',
-                    'Superior breathability during activity',
-                    'Retail-ready premium finish',
-                    'Color-fast technology for lasting appearance'
-                ],
-                'Track Pant': [
-                    'Maximum flexibility and range of motion',
-                    'Superior moisture management',
-                    'Retail-ready quality construction',
-                    'Durable for high-intensity training'
-                ],
-                'Track Suit': [
-                    'Complete coordinated outfit system',
-                    'All-weather versatility and comfort',
-                    'Retail-ready presentation',
-                    'Built for team and individual use'
-                ],
-                'Shorts': [
-                    'Lightweight comfort for training',
-                    'Quick-dry moisture management',
-                    'Retail-ready athletic styling',
-                    'Durable for repeated washing'
-                ],
-                'Jacket': [
-                    'Weather protection for outdoor use',
-                    'Insulated warmth for cold conditions',
-                    'Retail-ready professional appearance',
-                    'Durable construction for daily wear'
-                ],
-                'Upper': [
-                    'Weather protection for outdoor use',
-                    'Insulated warmth for cold conditions',
-                    'Retail-ready professional appearance',
-                    'Durable construction for daily wear'
-                ],
-                'Accessories': [
-                    'Enhanced durability for outdoor use',
-                    'Weather-resistant performance',
-                    'Retail-ready branding options',
-                    'Ergonomic design for comfort'
-                ],
-                'Footwear': [
-                    'Superior cushioning and support',
-                    'Enhanced durability for daily training',
-                    'Retail-ready premium aesthetics',
-                    'Advanced traction technology'
-                ],
-                'Training': [
-                    'Professional-grade durability',
-                    'Enhanced safety features',
-                    'Retail-ready packaging and display',
-                    'Ergonomic design for efficiency'
-                ]
-            };
-            return defaults[category] || defaults['Tee'];
-        }
-
-        // Helper function to update spec lists
-        function updateSpecLists(fabricComposition, keyBenefits) {
-            const fabricList = document.getElementById('fabricComposition');
-            fabricList.innerHTML = fabricComposition.map(item => `<li>${item}</li>`).join('');
-            
-            const benefitsList = document.getElementById('keyBenefits');
-            benefitsList.innerHTML = keyBenefits.map(item => `<li>${item}</li>`).join('');
-        }
-
-        // Get category description
-        function getCategoryDescription(category) {
-            const descriptions = {
-                'All Products': 'Complete collection of all ZEBRO sportswear products',
-                'Tee': 'T-Shirts, Polo shirts and more',
-                'Track Pant': 'Track pants, shorts, joggers and more',
-                'Track Suit': 'Complete training sets and coordinated outfits',
-                'Shorts': 'Training shorts and athletic wear',
-                'Jacket': 'Jackets, hoodies and outerwear',
-                'Upper': 'Jackets, hoodies and upper body wear',
-                'Accessories': 'Caps, bags, water bottles and training gear',
-                'Footwear': 'Running shoes, trainers and athletic footwear',
-                'Training': 'Training equipment and fitness accessories'
-            };
-            return descriptions[category] || 'Premium sportswear and athletic gear';
-        }
-
-        // Render category products
-        function renderCategoryProducts() {
-            const productGrid = document.getElementById('categoryProductGrid');
-            productGrid.innerHTML = '';
-            
-            // Filter products by selected category
-            let filteredProducts;
-            if (selectedCategory === 'All Products') {
-                // Show all products
-                filteredProducts = categoryProducts;
-            } else {
-                // Filter by specific category
-                filteredProducts = categoryProducts.filter(product => product.category === selectedCategory);
-            }
-            
-            if (filteredProducts.length === 0) {
-                productGrid.innerHTML = '<p style="text-align: center; color: var(--text-secondary);">No products found in this category.</p>';
-                return;
-            }
-            
-            filteredProducts.forEach(product => {
-                const productCard = document.createElement('div');
-                productCard.className = 'product-card';
-                
-                // Create lazy loaded image
-                const productImage = createLazyImage(getProductImage(product), product.name);
-                productImage.loading = 'lazy';
-                
-                productCard.innerHTML = `
-                    <a href="product.html?id=${product.id}" class="product-link">
-                        <div class="product-image-container">
-                            <!-- Image will be inserted here -->
-                        </div>
-                    </a>
-                    <h3>${product.name}</h3>
-                    <a href="product.html?id=${product.id}" class="link">View Details</a>
-                `;
-                
-                // Insert the lazy image into the container
-                const imageContainer = productCard.querySelector('.product-image-container');
-                imageContainer.appendChild(productImage);
-                
-                productGrid.appendChild(productCard);
-            });
-        }
-
-        // View individual product
-        function viewProduct(productId) {
-            const product = categoryProducts.find(p => p.id === productId);
-            if (!product) return;
-            
-            showProductModal(product);
-        }
-
-        // Show product modal
-        function showProductModal(product) {
-            const modal = document.getElementById('productModal');
-            const modalImage = document.getElementById('modalProductImage');
-            const modalName = document.getElementById('modalProductName');
-            const modalCategory = document.getElementById('modalProductCategory');
-            const modalDescription = document.getElementById('modalProductDescription');
-            const modalFeatures = document.getElementById('modalProductFeatures');
-            const modalCare = document.getElementById('modalProductCare');
-            const thumbnails = document.getElementById('productThumbnails');
-            
-            // Set basic product info
-            modalImage.src = getProductImage(product);
-            modalImage.alt = product.name;
-            modalName.textContent = product.name;
-            modalCategory.textContent = product.category;
-            
-            // Set description
-            if (product.description) {
-                modalDescription.innerHTML = `<p>${product.description}</p>`;
-            } else {
-                modalDescription.innerHTML = '<p>Discover this premium sportswear product designed for athletes who demand excellence in performance and style.</p>';
-            }
-            
-            // Set features
-            if (product.features && product.features.length > 0) {
-                modalFeatures.innerHTML = `
-                    <h4>Features</h4>
-                    <ul>
-                        ${product.features.map(feature => `<li>${feature}</li>`).join('')}
-                    </ul>
-                `;
-            } else {
-                modalFeatures.innerHTML = `
-                    <h4>Features</h4>
-                    <ul>
-                        <li>Premium quality materials</li>
-                        <li>Advanced moisture-wicking technology</li>
-                        <li>Ergonomic design for maximum comfort</li>
-                        <li>Durable construction for long-lasting performance</li>
-                    </ul>
-                `;
-            }
-            
-            // Set care instructions
-            if (product.care) {
-                modalCare.innerHTML = `
-                    <h4>Care Instructions</h4>
-                    <p>${product.care}</p>
-                `;
-            } else {
-                modalCare.innerHTML = `
-                    <h4>Care Instructions</h4>
-                    <p>Machine wash cold with like colors. Tumble dry low. Do not bleach. Iron on low heat if needed.</p>
-                `;
-            }
-            
-            // Create thumbnails
-            if (product.images && product.images.length > 1) {
-                thumbnails.innerHTML = product.images.map((img, index) => 
-                    `<img src="${product.folderPath}/${img}" alt="${product.name} - Image ${index + 1}" 
-                     onclick="changeMainImage('${product.folderPath}/${img}')" 
-                     class="${index === 0 ? 'active' : ''}">`
-                ).join('');
-            } else {
-                thumbnails.innerHTML = '';
-            }
-            
-            // Show modal
-            modal.style.display = 'flex';
-            document.body.style.overflow = 'hidden';
-        }
-
-        // Close product modal
-        function closeProductModal() {
-            const modal = document.getElementById('productModal');
-            modal.style.display = 'none';
-            document.body.style.overflow = 'auto';
-        }
-
-        // Change main image in modal
-        function changeMainImage(imageSrc) {
-            const modalImage = document.getElementById('modalProductImage');
-            const thumbnails = document.querySelectorAll('.product-thumbnails img');
-            
-            modalImage.src = imageSrc;
-            
-            // Update active thumbnail
-            thumbnails.forEach(thumb => thumb.classList.remove('active'));
-            event.target.classList.add('active');
-        }
-
-        // Helper function to get product image
-        function getProductImage(product) {
-            if (product.images && product.images.length > 0) {
-                const firstImage = product.images[0];
-                if (firstImage.startsWith('/')) {
-                    return firstImage;
-                } else if (product.folderPath) {
-                    // URL encode the path to handle spaces properly
-                    const encodedPath = encodeURIComponent(product.folderPath);
-                    const encodedImage = encodeURIComponent(firstImage);
-                    return `${encodedPath}/${encodedImage}`;
-                } else {
-                    return firstImage;
-                }
-            }
-            return `https://images.unsplash.com/photo-${Math.floor(Math.random() * 1000000000)}?w=400&h=300&fit=crop`;
-        }
-
-        // Mobile menu toggle
-        function toggleMobileMenu() {
-            const nav = document.getElementById('mobileNav');
-            const menuBtn = document.querySelector('.mobile-menu-btn');
-            
-            nav.classList.toggle('active');
-            menuBtn.classList.toggle('active');
-            
-            // Prevent body scroll when menu is open
-            if (nav.classList.contains('active')) {
-                document.body.style.overflow = 'hidden';
-            } else {
-                document.body.style.overflow = 'auto';
-            }
-        }
-
-        // Header scroll effect
-        window.addEventListener('scroll', function() {
-            const header = document.querySelector('.header');
-            if (window.scrollY > 50) {
-                header.classList.add('scrolled');
-            } else {
-                header.classList.remove('scrolled');
-            }
-        });
-
-        // Smooth scrolling for anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                }
-            });
-        });
-
-        // WhatsApp functionality
-        function openWhatsApp() {
-            const phoneNumber = '919876543210'; // Replace with actual WhatsApp number
-            const message = encodeURIComponent('Hi! I\'m interested in ZEBRO Sportswear products.');
-            window.open(`https://wa.me/${phoneNumber}?text=${message}`, '_blank');
-        }
-  </script>
-
   <!-- WhatsApp Floating Button -->
   <div class="whatsapp-float" onclick="openWhatsApp()">
     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -858,63 +313,5 @@
     <span class="whatsapp-tooltip">Chat on WhatsApp</span>
   </div>
 
-  <style>
-    .whatsapp-float {
-      position: fixed;
-      bottom: 30px;
-      right: 30px;
-      width: 60px;
-      height: 60px;
-      background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      cursor: pointer;
-      box-shadow: 0 4px 20px rgba(37, 211, 102, 0.3);
-      transition: all 0.3s ease;
-      z-index: 1000;
-      overflow: hidden;
-    }
-    
-    .whatsapp-float:hover {
-      transform: scale(1.1);
-      box-shadow: 0 6px 30px rgba(37, 211, 102, 0.4);
-    }
-    
-    .whatsapp-float:active {
-      transform: scale(1.05);
-    }
-    
-    .whatsapp-float svg {
-      width: 28px;
-      height: 28px;
-      transition: transform 0.3s ease;
-    }
-    
-    .whatsapp-float:hover svg {
-      transform: rotate(10deg) scale(1.1);
-    }
-    
-    .whatsapp-tooltip {
-      position: absolute;
-      right: 70px;
-      top: 50%;
-      transform: translateY(-50%);
-      background: rgba(0, 0, 0, 0.8);
-      color: white;
-      padding: 8px 12px;
-      border-radius: 6px;
-      font-size: 14px;
-      white-space: nowrap;
-      opacity: 0;
-      pointer-events: none;
-      transition: opacity 0.3s ease;
-    }
-    
-    .whatsapp-float:hover .whatsapp-tooltip {
-      opacity: 1;
-    }
-  </style>
-</body>
+  </body>
 </html>

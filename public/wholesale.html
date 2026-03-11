@@ -10,6 +10,84 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="css/wholesale.css">
+  <script src="js/scroll-animations.js" defer></script>
+  <script src="js/wholesale-contact-animations.js" defer></script>
+  <script src="js/wholesale.js" defer></script>
+  <script src="js/index.js" defer></script>
+  <style>
+    /* WhatsApp Floating Button Styles */
+    .whatsapp-float {
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        width: 60px;
+        height: 60px;
+        background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        box-shadow: 0 4px 20px rgba(37, 211, 102, 0.3);
+        transition: all 0.3s ease;
+        z-index: 9999;
+        overflow: hidden;
+    }
+
+    .whatsapp-float:hover {
+        transform: scale(1.1);
+        box-shadow: 0 6px 30px rgba(37, 211, 102, 0.4);
+    }
+
+    .whatsapp-float:active {
+        transform: scale(1.05);
+    }
+
+    .whatsapp-float svg {
+        width: 28px;
+        height: 28px;
+        transition: transform 0.3s ease;
+    }
+
+    .whatsapp-float:hover svg {
+        transform: rotate(10deg) scale(1.1);
+    }
+
+    .whatsapp-tooltip {
+        position: absolute;
+        right: 70px;
+        top: 50%;
+        transform: translateY(-50%);
+        background: #000;
+        color: #fff;
+        padding: 8px 12px;
+        border-radius: 6px;
+        font-size: 14px;
+        white-space: nowrap;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.3s ease;
+    }
+
+    .whatsapp-float:hover .whatsapp-tooltip {
+        opacity: 1;
+    }
+
+    @media (max-width: 768px) {
+        .whatsapp-float {
+            width: 50px;
+            height: 50px;
+            bottom: 20px;
+            right: 20px;
+        }
+
+        .whatsapp-float svg {
+            width: 24px;
+            height: 24px;
+        }
+    }
+  </style>
 </head>
 
 <body>
@@ -18,37 +96,46 @@
   <header class="header">
     <div class="container">
       <div class="logo-container">
-        <img src="asset/logo.png" alt="ZEBRO Logo" class="logo-image" onclick="window.location.href='index.html'" />
+        <img src="asset/logo.png" alt="Sports Wear Logo" class="logo-image" onclick="window.location.href='index.html'"/>
       </div>
-
-      <nav class="nav">
-        <a href="index.html" class="nav-link">← Back to Home</a>
-        <a href="size-chart.html" class="nav-link">Size Guide</a>
-        <a href="#contact" class="nav-link">Contact</a>
-      </nav>
-
+      
       <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
         <span></span>
         <span></span>
         <span></span>
       </button>
+      
+      <nav class="nav" id="mainNav">
+        <a href="wholesale.html#retail-ready" class="nav-link">Why ZEBRO</a>
+        <a href="index.html#featured" class="nav-link">Collection</a>
+        <a href="size-chart.html" class="nav-link">Size Guide</a>
+        <a href="wholesale.html#enquiry-form" class="nav-link">Partner With Us</a>
+      </nav>
+
+      <div class="nav-actions">
+        <div class="search-container">
+          <input type="text" placeholder="Search products..." class="search-input" id="searchInput">
+          <a href="index.html#featured"><button class="search-btn" onclick="searchProducts()">Search</button></a>
+        </div>
+      </div>
     </div>
   </header>
 
   <!-- MOBILE MENU -->
   <nav class="mobile-nav" id="mobileNav">
-    <a href="index.html" class="mobile-nav-link">← Back to Home</a>
+    <a href="wholesale.html#retail-ready" class="mobile-nav-link">Why ZEBRO</a>
+    <a href="index.html#featured" class="mobile-nav-link">Collection</a>
     <a href="size-chart.html" class="mobile-nav-link">Size Guide</a>
-    <a href="#contact" class="mobile-nav-link">Contact</a>
+    <a href="wholesale.html#enquiry-form" class="mobile-nav-link">Partner With Us</a>
   </nav>
 
   <!-- HERO SECTION -->
   <section class="wholesale-hero">
     <div class="container">
-      <div class="wholesale-hero-content">
+      <div class="wholesale-hero-content scroll-animate slide-left">
         <h1>ZEBRO Sportswear <span class="hero-subtagline"></span>Built to Move. Designed to Sell.</span></h1>
-        <p>The sportswear brand retailers trust for consistent sell-through and customer satisfaction.</p>
-        <div class="hero-buttons">
+        <p class="scroll-animate slide-left stagger-1">The sportswear brand retailers trust for consistent sell-through and customer satisfaction.</p>
+        <div class="hero-buttons scroll-animate slide-left stagger-2">
           <a href="#enquiry-form" class="btn btn-primary">Start Wholesale Enquiry</a>
           <a href="#categories" class="btn btn-secondary">View Product Categories</a>
         </div>
@@ -59,124 +146,145 @@
   <!-- WHY ZEBRO IS RETAIL-READY -->
   <section class="retail-ready" id="retail-ready">
     <div class="container">
-      <div class="section-header">
-        <h2>� Why Retailers Choose ZEBRO</h2>
+      <div class="section-header scroll-animate">
+        <h2>Why Retailers Choose ZEBRO</h2>
         <p>Brand-built sportswear designed for retail success and customer loyalty</p>
       </div>
 
-      <div class="retail-ready-grid">
-        <div class="retail-card">
-          <div class="retail-header">
-            <div class="retail-icon">🤸</div>
-            <h3>High Stretch Fabric</h3>
-          </div>
-          <div class="retail-content">
-            <p>Performance fabric engineered for maximum flexibility during workouts and sports.</p>
-            <div class="retail-testimonial">
-              <div class="testimonial-content">
-                <p>"Engineered for athletes who demand peak performance."</p>
-                <div class="testimonial-author">
-                  <strong>@performance_gear</strong>
-                  <a href="https://www.instagram.com/reel/DJrJ3DZOLA1/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank" class="testimonial-link">View on Instagram →</a>
+      <div class="retail-experience">
+        <!-- Side-by-Side Hero and Features -->
+        <div class="hero-features-container">
+          <!-- Hero Visual Section -->
+          <div class="hero-visual scroll-animate slide-up">
+            <div class="visual-container">
+              <div class="central-graphic">
+                <div class="z-circle">
+                  <span class="z-letter">Z</span>
+                </div>
+                <div class="orbit orbit-1">
+                  <div class="orbit-item item-1">🤸</div>
+                  <div class="orbit-item item-2">💨</div>
+                  <div class="orbit-item item-3">🏃</div>
+                </div>
+                <div class="orbit orbit-2">
+                  <div class="orbit-item item-4">🎯</div>
+                  <div class="orbit-item item-5">⚡</div>
+                  <div class="orbit-item item-6">💪</div>
+                </div>
+              </div>
+              <div class="floating-stats">
+                <div class="stat-bubble stat-1">
+                  <span class="stat-num">94%</span>
+                  <span class="stat-text">Satisfaction</span>
+                </div>
+                <div class="stat-bubble stat-2">
+                  <span class="stat-num">50K+</span>
+                  <span class="stat-text">Units Sold</span>
+                </div>
+                <div class="stat-bubble stat-3">
+                  <span class="stat-num">4.9★</span>
+                  <span class="stat-text">Rating</span>
                 </div>
               </div>
             </div>
-            <div class="retail-features">
-              <div class="feature-item">
-                <span class="feature-icon">✔</span>
-                <span>4-Way Stretch</span>
-              </div>
-              <div class="feature-item">
-                <span class="feature-icon">✔</span>
-                <span>Shape Retention</span>
-              </div>
-            </div>
           </div>
-        </div>
 
-        <div class="retail-card">
-          <div class="retail-header">
-            <div class="retail-icon">💨</div>
-            <h3>Breathable Quick-Dry</h3>
-          </div>
-          <div class="retail-content">
-            <p>Keeps body cool and dry during intense training sessions.</p>
-            <div class="retail-testimonial">
-              <div class="testimonial-content">
-                <p>"Stay comfortable during your toughest workouts."</p>
-                <div class="testimonial-author">
-                  <strong>@sport_performance</strong>
-                  <a href="https://www.instagram.com/reel/DI30ppftazA/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank" class="testimonial-link">View on Instagram →</a>
+          <!-- Feature Stream -->
+          <div class="feature-stream">
+            <div class="stream-item scroll-animate slide-left stagger-1">
+              <a href="https://www.instagram.com/reel/DJrJ3DZOLA1/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank" class="card-link">
+                <div class="stream-visual">
+                  <div class="icon-circle">
+                    <span class="feature-emoji">🤸</span>
+                    <div class="pulse-ring"></div>
+                  </div>
+                  <div class="connection-line"></div>
+                  <div class="insta-link">
+                    <span class="source">📷</span>
+                  </div>
                 </div>
-              </div>
+                <div class="stream-content">
+                  <h3>High Stretch Fabric</h3>
+                  <p class="feature-desc">Maximum flexibility for peak performance</p>
+                  <div class="feature-highlights">
+                    <span class="highlight-tag">4-Way Stretch</span>
+                    <span class="highlight-tag">Shape Retention</span>
+                  </div>
+                  <div class="insta-reference">@performance_gear</div>
+                </div>
+              </a>
             </div>
-            <div class="retail-features">
-              <div class="feature-item">
-                <span class="feature-icon">✔</span>
-                <span>Moisture Control</span>
-              </div>
-              <div class="feature-item">
-                <span class="feature-icon">✔</span>
-                <span>Quick-Dry Technology</span>
-              </div>
-            </div>
-          </div>
-        </div>
 
-        <div class="retail-card">
-          <div class="retail-header">
-            <div class="retail-icon">🏃</div>
-            <h3>Lightweight Comfort</h3>
-          </div>
-          <div class="retail-content">
-            <p>Ultra-light sportswear designed for long hours of activity.</p>
-            <div class="retail-testimonial">
-              <div class="testimonial-content">
-                <p>"Perfect for extended training sessions."</p>
-                <div class="testimonial-author">
-                  <strong>@fitness_athlete</strong>
-                  <a href="https://www.instagram.com/reel/DHYYZFPsvnb/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank" class="testimonial-link">View on Instagram →</a>
+            <div class="stream-item scroll-animate slide-left stagger-2">
+              <a href="https://www.instagram.com/reel/DI30ppftazA/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank" class="card-link">
+                <div class="stream-visual">
+                  <div class="icon-circle">
+                    <span class="feature-emoji">💨</span>
+                    <div class="pulse-ring"></div>
+                  </div>
+                  <div class="connection-line"></div>
+                  <div class="insta-link">
+                    <span class="source">📷</span>
+                  </div>
                 </div>
-              </div>
+                <div class="stream-content">
+                  <h3>Breathable Quick-Dry</h3>
+                  <p class="feature-desc">Stay cool and dry during intense workouts</p>
+                  <div class="feature-highlights">
+                    <span class="highlight-tag">Moisture Control</span>
+                    <span class="highlight-tag">Quick-Dry</span>
+                  </div>
+                  <div class="insta-reference">@sport_performance</div>
+                </div>
+              </a>
             </div>
-            <div class="retail-features">
-              <div class="feature-item">
-                <span class="feature-icon">✔</span>
-                <span>Sweat Wicking</span>
-              </div>
-              <div class="feature-item">
-                <span class="feature-icon">✔</span>
-                <span>Feather-Light Feel</span>
-              </div>
-            </div>
-          </div>
-        </div>
 
-        <div class="retail-card">
-          <div class="retail-header">
-            <div class="retail-icon">🎯</div>
-            <h3>Modern Athletic Style</h3>
-          </div>
-          <div class="retail-content">
-            <p>Stylish sportswear designed for both performance and everyday wear.</p>
-            <div class="retail-testimonial">
-              <div class="testimonial-content">
-                <p>"Look good while performing your best."</p>
-                <div class="testimonial-author">
-                  <strong>@athletic_style</strong>
-                  <a href="https://www.instagram.com/reel/DJjbguENpqD/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank" class="testimonial-link">View on Instagram →</a>
+            <div class="stream-item scroll-animate slide-left stagger-3">
+              <a href="https://www.instagram.com/reel/DHYYZFPsvnb/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank" class="card-link">
+                <div class="stream-visual">
+                  <div class="icon-circle">
+                    <span class="feature-emoji">🏃</span>
+                    <div class="pulse-ring"></div>
+                  </div>
+                  <div class="connection-line"></div>
+                  <div class="insta-link">
+                    <span class="source">📷</span>
+                  </div>
                 </div>
-              </div>
+                <div class="stream-content">
+                  <h3>Lightweight Comfort</h3>
+                  <p class="feature-desc">Feather-light feel for all-day wear</p>
+                  <div class="feature-highlights">
+                    <span class="highlight-tag">Feather-Light</span>
+                    <span class="highlight-tag">All-Day Wear</span>
+                  </div>
+                  <div class="insta-reference">@fitness_athlete</div>
+                </div>
+              </a>
             </div>
-            <div class="retail-features">
-              <div class="feature-item">
-                <span class="feature-icon">✔</span>
-                <span>Trend-Driven Designs</span>
-              </div>
-              <div class="feature-item">
-                <span class="feature-icon">✔</span>
-                <span>Retail-Ready Collection</span>
-              </div>
+
+            <div class="stream-item scroll-animate slide-left stagger-4">
+              <a href="https://www.instagram.com/reel/DJjbguENpqD/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank" class="card-link">
+                <div class="stream-visual">
+                  <div class="icon-circle">
+                    <span class="feature-emoji">🎯</span>
+                    <div class="pulse-ring"></div>
+                  </div>
+                  <div class="connection-line"></div>
+                  <div class="insta-link">
+                    <span class="source">📷</span>
+                  </div>
+                </div>
+                <div class="stream-content">
+                  <h3>Modern Athletic Style</h3>
+                  <p class="feature-desc">Trend-driven designs for retail appeal</p>
+                  <div class="feature-highlights">
+                    <span class="highlight-tag">Trend-Driven</span>
+                    <span class="highlight-tag">Retail-Ready</span>
+                  </div>
+                  <div class="insta-reference">@athletic_style</div>
+                </div>
+              </a>
             </div>
           </div>
         </div>
@@ -184,16 +292,15 @@
     </div>
   </section>
 
-
   <!-- PRODUCT CATEGORIES -->
   <section class="product-categories" id="categories">
     <div class="container">
-      <div class="section-header">
+      <div class="section-header scroll-animate">
         <h2 style="color: aliceblue;">🎯 Brand Collection</h2>
         <p style="color: aliceblue;">Customer-favorite sportswear categories that drive retail success</p>
       </div>
       <div class="categories-grid">
-        <div class="category-card" onclick="goToCategory('Tee')"
+        <div class="category-card scroll-animate scale-up stagger-1" onclick="goToCategory('Tee')"
           style="background-image: url('https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=400&h=300&fit=crop'); background-size: cover; background-position: center;">
           <div class="card-overlay">
             <h3>T-Shirts</h3>
@@ -201,7 +308,7 @@
           </div>
         </div>
 
-        <div class="category-card" onclick="goToCategory('Track Pant')"
+        <div class="category-card scroll-animate scale-up stagger-2" onclick="goToCategory('Track Pant')"
           style="background-image: url('https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=400&h=300&fit=crop'); background-size: cover; background-position: center;">
           <div class="card-overlay">
             <h3>Track Pants</h3>
@@ -209,7 +316,7 @@
           </div>
         </div>
 
-        <div class="category-card" onclick="goToCategory('Track Suit')"
+        <div class="category-card scroll-animate scale-up stagger-3" onclick="goToCategory('Track Suit')"
           style="background-image: url('https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&h=300&fit=crop'); background-size: cover; background-position: center;">
           <div class="card-overlay">
             <h3>Track Suits</h3>
@@ -217,7 +324,7 @@
           </div>
         </div>
 
-        <div class="category-card" onclick="goToCategory('Shorts')"
+        <div class="category-card scroll-animate scale-up stagger-4" onclick="goToCategory('Shorts')"
           style="background-image: url('https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=400&h=300&fit=crop'); background-size: cover; background-position: center;">
           <div class="card-overlay">
             <h3>Shorts</h3>
@@ -225,7 +332,7 @@
           </div>
         </div>
 
-        <div class="category-card" onclick="goToCategory('Jacket')"
+        <div class="category-card scroll-animate scale-up stagger-1" onclick="goToCategory('Jacket')"
           style="background-image: url('https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=400&h=300&fit=crop'); background-size: cover; background-position: center;">
           <div class="card-overlay">
             <h3>Jackets</h3>
@@ -233,7 +340,7 @@
           </div>
         </div>
 
-        <div class="category-card" onclick="goToCategory('Upper')"
+        <div class="category-card scroll-animate scale-up stagger-2" onclick="goToCategory('Upper')"
           style="background-image: url('https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=400&h=300&fit=crop'); background-size: cover; background-position: center;">
           <div class="card-overlay">
             <h3>Upper Wear</h3>
@@ -248,7 +355,7 @@
   <!-- CONTAINER SHIPPING -->
   <section class="container-shipping">
     <div class="container">
-      <div class="section-header">
+      <div class="section-header scroll-animate">
         <h2>Logistics & Shipping</h2>
         <p>Container-level shipping and distribution capabilities</p>
       </div>
@@ -635,8 +742,8 @@
                 </div>
 
                 <div class="form-navigation">
-                  <button type="button" class="back-btn-small" onclick="previousStep()" style="display: none;">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <button type="button" class="back-btn" onclick="previousStep()" style="background-color:#dcb639;">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                       <line x1="19" y1="12" x2="5" y2="12" />
                       <polyline points="12,19 5,12 12,5" />
                     </svg>
@@ -673,386 +780,6 @@
     <span class="whatsapp-tooltip">Chat on WhatsApp</span>
   </div>
 
-  <script>
-    // Mobile menu toggle
-    function toggleMobileMenu() {
-      const nav = document.getElementById('mobileNav');
-      const menuBtn = document.querySelector('.mobile-menu-btn');
-
-      nav.classList.toggle('active');
-      menuBtn.classList.toggle('active');
-
-      // Prevent body scroll when menu is open
-      if (nav.classList.contains('active')) {
-        document.body.style.overflow = 'hidden';
-      } else {
-        document.body.style.overflow = 'auto';
-      }
-    }
-
-    // Go to category page with all products
-    function goToCategory(category) {
-      // Store category data in localStorage
-      localStorage.setItem('selectedCategory', category);
-
-      // Navigate directly to category page - products will load there
-      window.location.href = 'category.html';
-    }
-
-    // Load all products for a specific category
-    async function loadAllProductsForCategory(category) {
-      try {
-        // Fetch from combined products file
-        const response = await fetch('combined_products.json');
-        if (!response.ok) {
-          throw new Error('Failed to load combined products data');
-        }
-
-        const allProducts = await response.json();
-
-        // Process products and add folder paths
-        const processedProducts = allProducts.map(product => {
-          // Use exact product name for folder path (preserve spaces)
-          const folderPath = `extracted_images_0/${product.name}`;
-
-          return {
-            ...product,
-            folderPath: folderPath
-          };
-        });
-
-        // Filter products by category
-        const filteredProducts = processedProducts.filter(product => product.category === category);
-
-        // Store filtered products in localStorage
-        localStorage.setItem('categoryProducts', JSON.stringify(filteredProducts));
-
-      } catch (error) {
-        console.error('Error loading products:', error);
-        localStorage.setItem('categoryProducts', JSON.stringify([]));
-      }
-    }
-
-    // Multi-step form functions
-    function nextStep() {
-      const step1 = document.getElementById('step1');
-      const step2 = document.getElementById('step2');
-      const formTitle = document.getElementById('form-title');
-      const backBtn = document.querySelector('.back-btn-small');
-      
-      // Validate step 1
-      const requiredFields = step1.querySelectorAll('[required]');
-      let isValid = true;
-      
-      requiredFields.forEach(field => {
-        if (!field.value.trim()) {
-          isValid = false;
-          field.classList.add('error');
-        } else {
-          field.classList.remove('error');
-        }
-      });
-      
-      if (!isValid) {
-        showNotification('Please fill in all required fields');
-        return;
-      }
-      
-      // Move to step 2
-      step1.style.display = 'none';
-      step2.style.display = 'block';
-      formTitle.textContent = 'Product Interest';
-      
-      // Show back button on step 2
-      backBtn.style.display = 'flex';
-    }
-    
-    function previousStep() {
-      const step1 = document.getElementById('step1');
-      const step2 = document.getElementById('step2');
-      const formTitle = document.getElementById('form-title');
-      const backBtn = document.querySelector('.back-btn-small');
-      
-      // Move back to step 1
-      step2.style.display = 'none';
-      step1.style.display = 'block';
-      formTitle.textContent = 'Business Details';
-      
-      // Hide back button on step 1
-      backBtn.style.display = 'none';
-    }
-
-    // Handle wholesale form submission
-    function handleWholesaleEnquiry(event) {
-      event.preventDefault();
-
-      // Validate product checkboxes
-      const productCheckboxes = document.querySelectorAll('input[name="products"]:checked');
-      if (productCheckboxes.length === 0) {
-        showNotification('Please select at least one product category');
-        return;
-      }
-
-      const formData = new FormData(event.target);
-      const data = Object.fromEntries(formData);
-      
-      // Get selected products
-      const selectedProducts = Array.from(productCheckboxes).map(cb => cb.value);
-      data.products = selectedProducts.join(', ');
-
-      // Create mailto link with form data
-      const subject = encodeURIComponent(`Wholesale Enquiry - ${data.company}`);
-      const body = encodeURIComponent(
-        `Company: ${data.company}\n` +
-        `Contact Person: ${data.contact}\n` +
-        `Email: ${data.email}\n` +
-        `Phone Number: ${data.phone}\n` +
-        `Business Type: ${data['business-type']}\n` +
-        `Products Interested In: ${data.products}\n` +
-        `Order Size: ${data['order-size']}\n\n` +
-        `Additional Requirements:\n${data.message || 'None specified'}`
-      );
-
-      // Send email
-      window.location.href = `mailto:wholesale@zebrosportswear.com?subject=${subject}&body=${body}`;
-
-      // Store form data for display and pre-fill next time
-      localStorage.setItem('lastEnquiryData', JSON.stringify(data));
-
-      // Reset form after submission
-      event.target.reset();
-      
-      // Reset to step 1
-      previousStep();
-    }
-
-    // Header scroll effect
-    window.addEventListener('scroll', function () {
-      const header = document.querySelector('.header');
-      if (window.scrollY > 50) {
-        header.classList.add('scrolled');
-      } else {
-        header.classList.remove('scrolled');
-      }
-    });
-
-    // Smooth scrolling for anchor links
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href'));
-        if (target) {
-          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        }
-      });
-    });
-
-    // Download resource function
-    function downloadResource(type) {
-      // Create download links for different resources
-      const resources = {
-        'catalogue': {
-          url: 'https://example.com/zebro-catalogue.pdf',
-          filename: 'ZEBRO-Product-Catalogue.pdf'
-        },
-        'pitch-deck': {
-          url: 'https://example.com/zebro-pitch-deck.pdf',
-          filename: 'ZEBRO-Wholesale-Pitch-Deck.pdf'
-        },
-        'planning-summary': {
-          url: 'https://example.com/zebro-container-planning.pdf',
-          filename: 'ZEBRO-Container-Planning-Summary.pdf'
-        }
-      };
-
-      const resource = resources[type];
-      const link = document.createElement('a');
-      link.href = resource.url;
-      link.download = resource.filename;
-      link.target = '_blank';
-      link.click();
-
-      // Show download confirmation
-      setTimeout(() => {
-        showNotification(`${resource.filename} download started`);
-      }, 100);
-    }
-
-    // WhatsApp functionality
-    function openWhatsApp() {
-      const phoneNumber = '919876543210'; // Replace with actual WhatsApp number
-      const message = encodeURIComponent('Hi! I\'m interested in wholesale partnership with ZEBRO Sportswear.');
-      window.open(`https://wa.me/${phoneNumber}?text=${message}`, '_blank');
-    }
-
-    // Show notification
-    function showNotification(message) {
-      const notification = document.createElement('div');
-      notification.className = 'notification';
-      notification.textContent = message;
-      notification.style.cssText = `
-        position: fixed;
-        top: 20px;
-        right: 20px;
-        background: #10b981;
-        color: white;
-        padding: 16px 24px;
-        border-radius: 8px;
-        z-index: 1000;
-        animation: slideIn 0.3s ease-out;
-      `;
-      document.body.appendChild(notification);
-
-      setTimeout(() => {
-        notification.style.animation = 'slideOut 0.3s ease-out';
-        setTimeout(() => {
-          document.body.removeChild(notification);
-        }, 300);
-      }, 3000);
-    }
-
-    // Add animation styles
-    const style = document.createElement('style');
-    style.textContent = `
-      @keyframes slideIn {
-        from {
-          transform: translateX(100%);
-          opacity: 0;
-        }
-        to {
-          transform: translateX(0);
-          opacity: 1;
-        }
-      }
-      
-      @keyframes slideOut {
-        from {
-          transform: translateX(0);
-          opacity: 1;
-        }
-        to {
-          transform: translateX(100%);
-          opacity: 0;
-        }
-      }
-      
-      .form-navigation {
-        display: flex;
-        gap: 12px;
-        align-items: center;
-        justify-content: flex-start;
-      }
-      
-      .back-btn-small {
-        display: flex;
-        align-items: center;
-        gap: 10px;
-        background: linear-gradient(135deg, #dcb639 0%, #dcb639 100%);
-        color: white;
-        padding: 18px 24px;
-        border: 1px solid #dcb639;
-        border-radius: 10px;
-        font-size: 15px;
-        font-weight: 600;
-        cursor: pointer;
-        transition: all 0.3s ease;
-        position: relative;
-        overflow: hidden;
-        box-shadow: 0 2px 8px rgba(79, 70, 229, 0.2);
-      }
-      
-      .back-btn-small:hover {
-        background: linear-gradient(135deg, #4f46e5 0%, #4338ca 100%);
-        border-color: #4338ca;
-        transform: translateY(-2px);
-        box-shadow: 0 8px 24px rgba(79, 70, 229, 0.3);
-      }
-      
-      .back-btn-small:active {
-        transform: translateY(-1px);
-        box-shadow: 0 4px 16px rgba(79, 70, 229, 0.25);
-      }
-      
-      .back-btn-small svg {
-        transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-        flex-shrink: 0;
-      }
-      
-      .back-btn-small:hover svg {
-        transform: translateX(-3px);
-      }
-      
-      .whatsapp-float {
-        position: fixed;
-        bottom: 30px;
-        right: 30px;
-        width: 60px;
-        height: 60px;
-        background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
-        border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        cursor: pointer;
-        box-shadow: 0 4px 20px rgba(37, 211, 102, 0.3);
-        transition: all 0.3s ease;
-        z-index: 1000;
-        overflow: hidden;
-      }
-      
-      .whatsapp-float:hover {
-        transform: scale(1.1);
-        box-shadow: 0 6px 30px rgba(37, 211, 102, 0.4);
-      }
-      
-      .whatsapp-float:active {
-        transform: scale(1.05);
-      }
-      
-      .whatsapp-float svg {
-        width: 28px;
-        height: 28px;
-        transition: transform 0.3s ease;
-      }
-      
-      .whatsapp-float:hover svg {
-        transform: rotate(10deg) scale(1.1);
-      }
-      
-      .whatsapp-tooltip {
-        position: absolute;
-        right: 70px;
-        top: 50%;
-        transform: translateY(-50%);
-        background: rgba(0, 0, 0, 0.8);
-        color: white;
-        padding: 8px 12px;
-        border-radius: 6px;
-        font-size: 14px;
-        white-space: nowrap;
-        opacity: 0;
-        pointer-events: none;
-        transition: opacity 0.3s ease;
-      }
-      
-      .whatsapp-float:hover .whatsapp-tooltip {
-        opacity: 1;
-      }
-      
-      @media (max-width: 768px) {
-        .form-navigation {
-          flex-direction: column;
-          gap: 8px;
-        }
-        
-        .back-btn-small, .submit-btn-modern {
-          width: 100%;
-          justify-content: center;
-        }
-      }
-    `;
-    document.head.appendChild(style);
-  </script>
-</body>
+  </body>
 
 </html>
