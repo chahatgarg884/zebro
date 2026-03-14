@@ -47,6 +47,23 @@
 .scroll-animate.stagger-3 { transition-delay: 0.3s; }
 .scroll-animate.stagger-4 { transition-delay: 0.4s; }
 
+/* Scroll margin for anchor links */
+#retail-ready {
+    scroll-margin-top: 120px;
+}
+
+#enquiry-form {
+    scroll-margin-top: 120px;
+}
+
+#featured {
+    scroll-margin-top: 120px;
+}
+
+#categories {
+    scroll-margin-top: 120px;
+}
+
 /* NEW WHOLESALE ENQUIRY DESIGN */
 
  .form-actions {
@@ -4190,7 +4207,7 @@
 
  .social-proof-grid {
      display: grid;
-     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
      gap: 40px;
      position: relative;
      z-index: 1;
