@@ -386,12 +386,14 @@
 .highlight-tag {
   background: rgba(220, 182, 57, 0.1);
   color: var(--accent);
-  padding: 3px 8px;
-  border-radius: 12px;
-  font-size: 10px;
+  padding: 6px 12px;
+  border-radius: 16px;
+  font-size: 14px;
   font-weight: 600;
   border: 1px solid rgba(220, 182, 57, 0.2);
   transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
 
 .highlight-tag:hover {
@@ -433,12 +435,14 @@
 .highlight-tag {
   background: rgba(220, 182, 57, 0.1);
   color: var(--accent);
-  padding: 2px 6px;
-  border-radius: 8px;
-  font-size: 8px;
+  padding: 6px 12px;
+  border-radius: 16px;
+  font-size: 14px;
   font-weight: 600;
   border: 1px solid rgba(220, 182, 57, 0.2);
   transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
 
 .highlight-tag:hover {
@@ -983,8 +987,8 @@
   }
 
   .highlight-tag {
-    font-size: 9px;
-    padding: 2px 6px;
+    font-size: 12px;
+    padding: 4px 8px;
   }
 
   .insta-reference {
@@ -993,8 +997,8 @@
   }
 
   .highlight-tag {
-    font-size: 7px;
-    padding: 1px 4px;
+    font-size: 10px;
+    padding: 3px 6px;
   }
 
   /* CTA Zone */
@@ -1187,8 +1191,8 @@
   }
 
   .highlight-tag {
-    font-size: 8px;
-    padding: 2px 5px;
+    font-size: 11px;
+    padding: 3px 6px;
   }
 
   .insta-reference {
@@ -1197,8 +1201,8 @@
   }
 
   .highlight-tag {
-    font-size: 6px;
-    padding: 1px 3px;
+    font-size: 9px;
+    padding: 2px 4px;
   }
 
   .cta-content {
